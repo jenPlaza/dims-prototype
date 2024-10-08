@@ -1,0 +1,32 @@
+<script type=application/ld+json>
+{
+"@context": "https://schema.org/",
+          "@type": "Organization",
+          "name": "DIM Studio",
+			"url":"https://dimstudio.neocities.org",
+          "logo": "https://dimstudio.neocities.org/images/logos/logo_purple.png",
+          "description": "DIM studio focuses on empowering talented youth, promoting peace, and fostering global development through music. It aligns with our mission to support young musicians and utilize music as a transformative force for social change.",
+"seeks":"To create a thriving community of talented youths who are empowered to pursue their passion for music, fostering a culture of peace, creativity, and development across the
+globe.",
+"contactPoint":"Dr. Philip Bangura",
+"email":"aypad@gmail.com",
+          "address": "Freetown, Sierra Leonne, WAFR",
+          "telephone": "+232 75 769929",
+          "areaServed": "Freetown, Sierra Leonne, WAFR",
+		"parentOrganization": [
+                    {
+                              "@type": "Organization",
+"name": "Africa Youth for Peace and Development",
+          "logo": "https://aypad.org/assets/images/icons/logo_sml-min.png",
+			"url":"https://aypad.org",
+          "description": "AYPAD is a youth serving, empowerment, and advocacy movement with a mission and vision of ensuring peace and development among youth around the world through enabling empowerment activities such as capacity building and leadership training, formal and non-formal education, social soft skills activities, environmental health, IT skills and sporting activities.",
+"contactPoint":"Dr. Philip Bangura",
+"email":"aypad@gmail.com",
+          "address": "Freetown, Sierra Leonne, WAFR",
+          "telephone": "+232 75 769929",
+          "areaServed": "Freetown, Sierra Leonne, WAFR",
+          "mainEntityOfPage": "https://aypad.org/assets/pdf/aypad_profile-compressed.pdf"
+					}
+]
+}
+</script>

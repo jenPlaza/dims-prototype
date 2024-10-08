@@ -1,0 +1,284 @@
+header {
+  position: sticky;
+  background-color: var(--wisteria-purple);
+}
+/*-----------------------Hero ----*/
+main {
+  background: url('../images/jason-rosewell-ASKeuOZqhYU-unsplash_puple-min.png')
+    no-repeat top center / 100% 100%;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -1px;
+  position: relative;
+  margin-bottom: -2px;
+  background-position: -78px 125px;
+}
+main > div {
+  width: 90%;
+  height: auto;
+  text-align: center;
+  top: 0;
+  position: relative;
+}
+main > div h1 {
+  font-size: 50px;
+}
+main > div section h5 {
+  font-size: medium;
+}
+main > div section h5 a {
+  color: var(--white);
+}
+main > div section h5 a:hover {
+  background: linear-gradient(
+    to right,
+    var(--bean-red_two),
+    var(--purplish-pink),
+    var(--bright-ube),
+    var(--white)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+/*-----------------------Feature Service ----*/
+section#feature_service {
+  width: 100%;
+}
+section#feature_service ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+section#feature_service ul li {
+  display: flex;
+  flex-wrap: wrap;
+}
+section#feature_service ul li article {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5%;
+  grid-gap: 8%;
+  box-shadow: inset 0px 0px 0px 1px var(--light-border);
+}
+section#feature_service ul li:nth-of-type(1) article {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--bright-ube) 15%,
+    var(--white) 75%
+  );
+}
+section#feature_service ul li:nth-of-type(2) article {
+  background-image: linear-gradient(
+    to top right,
+    var(--bright-ube) 15%,
+    var(--white) 75%
+  );
+}
+section#feature_service ul li:nth-of-type(3) article {
+  background-image: linear-gradient(
+    to bottom left,
+    var(--bright-ube) 15%,
+    var(--white) 75%
+  );
+}
+section#feature_service ul li:nth-of-type(4) article {
+  background-image: linear-gradient(
+    to top left,
+    var(--bright-ube) 15%,
+    var(--white) 75%
+  );
+}
+section#feature_service ul li article section p {
+  color: var(--tulip-pink);
+}
+section#feature_service ul li article figure {
+  width: 45%;
+  align-self: flex-start;
+}
+section#feature_service ul li article div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/*-----------------------Audio ----*/
+section#audio {
+  background: url('../images/soundtrap-uCNrr-3i2oI-unsplash_purple-min.png')
+    no-repeat top center / 100% 100%;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+section#audio > div {
+  width: 90%;
+  height: auto;
+  text-align: center;
+  position: relative;
+  bottom: 12%;
+}
+h2 {
+  font-size: 42px;
+}
+h5 {
+  font-size: 20px;
+}
+/*-----------------------Mobility ----*/
+section#mobility > div {
+  width: 90%;
+  height: auto;
+  text-align: center;
+}
+section#mobility > div h2 {
+  text-align: center;
+  white-space: nowrap;
+}
+section#mobility div figure img {
+  width: 75px;
+}
+/*-----------------------PARALEX ----*/
+#parallex-set-1 {
+  background-image: url('../images/parallex/soundtrap-sFnAVHjF688-unsplash_purple-min.png');
+}
+
+@media screen and (min-device-width: 576px) {
+  section#feature_service ul li article figure {
+    width: 30%;
+  }
+}
+@media screen and (min-device-width: 768px) {
+  main {
+    background-position: 0 80px;
+  }
+  section#feature_service ul li:nth-of-type(2) article {
+    background-image: linear-gradient(
+      to bottom left,
+      var(--bright-ube) 15%,
+      var(--white) 75%
+    );
+  }
+  section#feature_service ul li:nth-of-type(3) article {
+    background-image: linear-gradient(
+      to top right,
+      var(--bright-ube) 15%,
+      var(--white) 75%
+    );
+  }
+  section#feature_service ul li article figure {
+    width: 50%;
+  }
+}
+@media screen and (min-device-width: 992px) {
+  main {
+    height: 715px;
+  }
+  main > div {
+    width: 70%;
+  }
+  section#audio > div {
+    width: 70%;
+  }
+  section#audio > div h2 {
+    white-space: nowrap;
+  }
+  section#mobility > div {
+    width: 70%;
+  }
+}
+@media screen and (min-device-width: 1200px) {
+  main {
+    height: 850px;
+  }
+  main > div {
+    width: 57%;
+  }
+  main > div h1 {
+    font-size: 60px;
+  }
+  main > div section h5 {
+    font-size: x-large;
+  }
+  section#feature_service ul {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 50%));
+  }
+  section#feature_service ul li article figure {
+    width: 25%;
+  }
+  section#feature_service ul li article {
+    padding: 3%;
+  }
+  section#feature_service ul li:nth-of-type(2) article {
+    background-image: linear-gradient(
+      to bottom left,
+      var(--bright-ube) 15%,
+      var(--white) 75%
+    );
+  }
+  section#feature_service ul li:nth-of-type(3) article {
+    background-image: linear-gradient(
+      to top right,
+      var(--bright-ube) 15%,
+      var(--white) 75%
+    );
+  }
+  section#audio > div {
+    width: 66%;
+  }
+  section#audio > div h2 {
+    font-size: 45px;
+  }
+  section#audio > div h5 {
+    font-size: 24px;
+  }
+  section#mobility div figure img {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main {
+    height: 950px;
+  }
+  section#audio > div {
+    width: 58%;
+  }
+  section#mobility > div {
+    width: 53%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  main {
+    height: 1100px;
+  }
+  main > div {
+    width: 54%;
+  }
+  section#feature_service ul {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  section#feature_service ul li article figure {
+    width: 40%;
+  }
+  section#feature_service ul li article {
+    align-items: flex-start;
+  }
+  section#audio > div {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  main {
+    height: 1300px;
+    background-position: 0 75px;
+  }
+}
+@media screen and (min-width: 2400px) {
+  main {
+    height: 1500px;
+    background-position: 0 75px;
+  }
+}

@@ -1,0 +1,423 @@
+@-ms-viewport {
+  width: device-width;
+}
+:root {
+  --white: #ffffff;
+  --light-border: #ebebeb;
+  --fog: #dcd6f0;
+  --wisteria-purple: #ceb1ce;
+  --pale-purple: #b498ca;
+  --bright-ube: #d298e8;
+  --lavender-indigo-one: #9c56dc;
+  --lavender-indigo-two: #9053f5;
+  --eggplant: #352d53;
+  --dirty-purple: #8f6a9d;
+  --old-mauve: #864a68;
+  --bean-red_one: #f35962;
+  --bean-red_two: #fa575f;
+  --tulip-pink: #c65e8f;
+  --purplish-pink: #c757a0;
+  --glaucous: #6184c3;
+  --silk-blue: #5684c8;
+  --rhino: #2b4264;
+  --wild-blue-yonder: #8586c6;
+  --chetwode-blue: #8e8fd3;
+  --mulled-wine: #47486a;
+  --old-mauve: #864a68;
+  --turkish-rose: #b8648d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  font: normal normal normal 12px / 1.2 'Hind Madurai', sans-serif;
+  position: relative;
+  background-image: linear-gradient(
+    var(--wisteria-purple) 89.5%,
+    var(--dirty-purple)
+  );
+}
+h1 {
+  font: normal normal bold 60px/1.4 'Bubblegum Sans', serif;
+  color: var(--white);
+}
+h2 {
+  font: normal normal bold 45px/1.4 'Bubblegum Sans', serif;
+  color: var(--white);
+}
+
+h3 {
+  font: normal normal normal 40px/1.4 'Quicksand', sans-serif;
+  color: var(--white);
+}
+
+h4 {
+  font: normal normal normal 32px/1.4 'Quicksand', serif;
+  color: var(--white);
+}
+h4 em {
+  font: normal normal bold 34px/1 'Quicksand', sans-serif;
+  color: var(--tulip-pink);
+}
+
+h5 {
+  font: normal normal normal 24px/1.4 'Hind Madurai', serif;
+  color: var(--white);
+}
+h5 em {
+  font: normal normal bold 26px/1.4 'Hind Madurai', serif;
+  color: var(--tulip-pink);
+}
+h6 b {
+  font: normal normal bold 18px/1.2 'Hind Madurai', serif;
+  color: var(--tulip-pink);
+}
+h6 {
+  font: normal normal normal 14px/1.2 'Hind Madurai', serif;
+  color: var(--tulip-pink);
+}
+h6 em {
+  font: normal normal normal 16px/1.2 'Hind Madurai', serif;
+  color: var(--white);
+}
+p b {
+  font: normal normal bold 14px/1.4 'Hind Madurai', sans-serif;
+  color: var(--white);
+}
+p {
+  color: var(--white);
+}
+nav a,
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+header {
+  top: 0;
+  z-index: 1;
+  padding: 0.5%;
+  width: 100%;
+}
+header > div nav ul,
+footer section:nth-child(2) ul {
+  filter: drop-shadow(2px 1px 0 var(--eggplant));
+}
+header.in-place {
+  width: 100%;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+}
+
+header.in-place.scrolling {
+  background-color: var(--wisteria-purple);
+  box-shadow: 5px -1px 12px -5px grey;
+}
+header figure {
+  /* width: 50%; */
+  width: 85%;
+  display: flex;
+  align-items: center;
+  grid-gap: 8px;
+}
+header > div > a#logo figure img {
+  width: 83px;
+  margin-top: -8px;
+}
+header figure h4 {
+  font-weight: bolder;
+  background: linear-gradient(
+    to right,
+    var(--bean-red_two),
+    var(--purplish-pink),
+    var(--lavender-indigo-one),
+    var(--lavender-indigo-two)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  white-space: nowrap;
+  filter: drop-shadow(0 0 0 var(--eggplant));
+}
+header > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2%;
+  margin-top: 3%;
+}
+header > div > a#logo {
+  width: calc(100% - 42px);
+}
+header > div figure#menu {
+  display: block;
+  width: 42px;
+}
+header figure#menu img {
+  width: 40px;
+  height: 40px;
+}
+.nav-none {
+  display: none;
+}
+.nav-block {
+  display: block;
+}
+
+header > div nav#nav {
+  padding: 1% 0;
+  width: 100%;
+  justify-content: end;
+  display: flex;
+  margin-left: 1%;
+}
+header > div nav#nav ul {
+  display: flex;
+  width: 100%;
+  max-width: 445px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+ul li {
+  list-style: none;
+  height: auto;
+}
+/*-----------------------Mobility ----*/
+section#mobility,
+section#commitment {
+  background-image: linear-gradient(var(--silk-blue), var(--rhino));
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3% 0 10% 0;
+}
+/*-----------------------PARALEX ----*/
+.parallex-section {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.parallex {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+}
+.parallex1 {
+  height: 40vh;
+  background-position: left 0px bottom 0px;
+}
+.parallex-section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+/*-----------------------Testimonials ----*/
+section#testimonials ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+section#testimonials ul li article {
+  padding: 2% 3% 0 3%;
+  height: 145px;
+  background-image: linear-gradient(var(--silk-blue), var(--rhino));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section#testimonials ul li article p em {
+  font-weight: bold;
+}
+
+/*-----------------------Footer ----*/
+footer {
+  background-color: var(--wisteria-purple);
+  width: 100%;
+  height: 140px;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3%;
+}
+footer section {
+  width: 100%;
+}
+footer section:first-child {
+  display: flex;
+  align-items: center;
+  grid-gap: 8px;
+  color: white;
+}
+footer section:nth-child(2) {
+  text-align: center;
+  margin-bottom: 2%;
+}
+footer section:nth-child(2) ul {
+  display: flex;
+  justify-content: center;
+  grid-gap: 15px;
+}
+footer section:last-child {
+  display: flex;
+  justify-content: center;
+}
+footer section:last-child ul {
+  display: flex;
+  grid-gap: 10px;
+}
+footer section#socialM ul li {
+  list-style: none;
+}
+footer section#socialM ul li a figure {
+  width: 26px;
+  height: 26px;
+}
+footer section#socialM ul li a figure img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-device-width: 576px) {
+  header > div > a#logo figure img {
+    width: 83px;
+  }
+  header > div nav#nav {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+  }
+  section#testimonials ul li article {
+    height: 115px;
+  }
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 55px;
+  }
+  footer section {
+    width: 100%;
+  }
+  footer section:last-child {
+    position: relative;
+    justify-content: center;
+  }
+}
+@media screen and (min-device-width: 768px) {
+  header > div {
+    margin-top: 1%;
+  }
+  header > div > a#logo {
+    width: 39%;
+  }
+  header > div figure#menu {
+    display: none !important;
+  }
+  header > div nav#nav {
+    display: flex !important;
+    padding: 1% 0;
+    width: 61%;
+    justify-content: end;
+    display: flex;
+  }
+  header > div nav#nav ul {
+    width: 78%;
+  }
+  section#mobility,
+  section#commitment {
+    padding: 3% 0 7% 0;
+  }
+  section#testimonials ul li article {
+    height: 130px;
+  }
+  footer {
+    padding: 0 3%;
+  }
+  footer section {
+    width: calc(100% / 3);
+  }
+  footer section:nth-child(2) {
+    margin-left: -65px;
+    margin-bottom: 0;
+  }
+  footer section:last-child {
+    position: relative;
+    right: -0.5%;
+    justify-content: flex-end;
+  }
+  footer section:last-child ul {
+    justify-content: end;
+  }
+}
+@media screen and (min-device-width: 992px) {
+  header > div nav#nav ul {
+    width: 65%;
+    max-width: 375px;
+  }
+  section#mobility {
+    padding: 3% 0 6% 0;
+  }
+  section#testimonials ul li article {
+    padding: 5% 3% 0 3%;
+    height: 165px;
+    justify-content: flex-start;
+  }
+  footer {
+    height: 60px;
+  }
+  footer section {
+    padding: 0;
+  }
+  footer section:nth-child(2) {
+    margin-left: 0;
+  }
+  footer section:last-child {
+    right: 0;
+  }
+}
+@media screen and (min-device-width: 1200px) {
+  header > div nav#nav ul {
+    min-width: 375px;
+    width: 52%;
+  }
+  section#mobility {
+    padding: 3% 0 5% 0;
+  }
+  section#testimonials ul li article {
+    padding: 5% 3% 0 3%;
+    justify-content: flex-start;
+    height: 160px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  section#testimonials ul li article {
+    height: 145px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  section#mobility {
+    padding: 3% 0 4% 0;
+  }
+  section#testimonials ul li article {
+    height: 140px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  section#testimonials ul li article {
+    height: 128px;
+  }
+}

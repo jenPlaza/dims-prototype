@@ -1,9 +1,24 @@
 //NAVIGATION MENU
 var navMenuArray = [
   {
-    link_id: 'testimonials',
-    link_name: 'Testimonials',
-    link_href: './index.html#testimonials',
+    link_id: 'home',
+    link_name: 'Home',
+    link_href: './index.html#DIM',
+  },
+  {
+    link_id: 'about',
+    link_name: 'About Us',
+    link_href: './aboutus.html',
+  },
+  {
+    link_id: 'service',
+    link_name: 'Our Service',
+    link_href: '/',
+  },
+  {
+    link_id: 'team',
+    link_name: 'Our Team',
+    link_href: '/',
   },
 ];
 
@@ -67,7 +82,7 @@ var testimonialArray = [
       'background-image: linear-gradient(var(--bright-ube),var(--dirty-purple));',
     article_name: 'David Miguel',
     article_testimonial:
-      'I have been using Dims Studio and I must say, it has completely transformed my music listening experience. What sets Dims Studio apart from other music apps is their trainers. These trainers have helped me discover my music intuition through valuable insights and tips on how to improve my music listening skills. I highly recommend it to all music lovers out there. Trust me, you won’t be disappointed!',
+      'I have been using Dim Studio and I must say, it has completely transformed my music listening experience. What sets Dim Studio apart from other music apps is their trainers. These trainers have helped me discover my music intuition through valuable insights and tips on how to improve my music listening skills. I highly recommend it to all music lovers out there. Trust me, you won’t be disappointed!',
   },
   {
     id: 'JOkon_04',
@@ -75,7 +90,7 @@ var testimonialArray = [
       'background-image: linear-gradient(var(--turkish-rose),var(--old-mauve));',
     article_name: 'Joyce Okon',
     article_testimonial:
-      'Dim Studio is so easy to use and the trainers are amazing. I have always dreamed of being a singer and with Dims Studio my dreams have been put into motion. I highly recommend Dim Studio to anybody looking for a reliable and versatile music software. Thank you for creating such an amazing product!',
+      'Dim Studio is so easy to use and the trainers are amazing. I have always dreamed of being a singer and with Dim Studio my dreams have been put into motion. I highly recommend Dim Studio to anybody looking for a reliable and versatile music software. Thank you for creating such an amazing product!',
   },
 ];
 

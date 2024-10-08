@@ -4,25 +4,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DIM Studio</title>
-    <link rel="stylesheet" href="dimStyles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./css/dimReusable.css" />
+    <link rel="stylesheet" href="./css/dimIndex.css" />
   </head>
-  <body onload="navMenu(); footerMedia();">
-    <header>
+  <body onload="displayServices(); displayTestimonials();">
+    <header class="in-place">
       <div id="navigation_menu">
-        <figure>
-          <img
-            src="./images/logos/logo_purple-min.png"
-            alt="snowcone colored logo"
-            width="100%"
-            height="100%"
-          />
-          <h4>DIM Studio</h4>
+        <!-- logo -->
+        <a href="/" id="logo"
+          ><figure>
+            <img
+              src="./images/logos/logo_purple-min.png"
+              alt="snowcone colored logo"
+              width="100%"
+              height="100%"
+            />
+            <h4>DIM Studio</h4>
+          </figure></a
+        >
+        <!-- hamburger -->
+        <figure id="menu" onclick="appear();">
+          <img src="./images/icons/menu.png" alt="hamburger icon" />
         </figure>
-        <nav id="nav"></nav>
+        <!-- navigation -->
+        <nav id="nav" style="display: none">
+          <ul>
+            <li>
+              <a href="./index.html"><h5>Home</h5></a>
+            </li>
+            <li>
+              <a href="./aboutus.html"><h5>About Us</h5></a>
+            </li>
+            <li>
+              <a href="/"><h5>Our Service</h5></a>
+            </li>
+            <li>
+              <a href="/"><h5>Our Team</h5></a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main id="DIM">
@@ -34,47 +54,22 @@
             who lack financial resources by providing them with the platforms,
             training, and opportunities needed to develop their music careers,
             thereby contributing to peace and development through the
-            transformative power of music - An AYPAD Initiative.
+            transformative power of music -
+            <a href="https://aypad.org" target="_blank">An AYPAD Initiative</a>.
           </h5>
         </section>
       </div>
     </main>
     <!-- features -->
-    <section id="feature_service">
-      <ul>
-        <li>
-          <article>
-            <figure>
-              <img
-                src="./images/icons/brain_pink.png"
-                alt="person brain icon pink color"
-                width="100%"
-                height="100%"
-              />
-            </figure>
-            <section>
-              <h4><em>Intuitive User Interface</em></h4>
-              <h5>
-                <em>
-                  Most mobile music software is designed with simplicity in
-                  mind. Users can easily navigate through different tools and
-                  effects, allowing them to focus on their creativity without
-                  overwhelming complexity
-                </em>
-              </h5>
-            </section>
-          </article>
-        </li>
-      </ul>
-    </section>
+    <section id="feature_service"></section>
     <!--   audio sample -->
     <section id="audio">
       <div>
         <h2>You Create, You Record, Together We Produce</h2>
         <h5>
-          You shouldn’t wait another minute to check out Dims Studio Audio
-          Beats. Invest in yourself, you won’t regret it. Take the first step
-          towards a transformative musical journey by registering for an online
+          You shouldn’t wait another minute to check out Dim Studio Audio Beats.
+          Invest in yourself, you won’t regret it. Take the first step towards a
+          transformative musical journey by registering for an online
           consultation now.
         </h5>
       </div>
@@ -109,22 +104,7 @@
       <div class="parallex parallex1" id="parallex-set-1"></div>
     </section>
     <!-- testimonials -->
-    <section id="testimonials">
-      <ul>
-        <li>
-          <article>
-            <h5>Christian Lawan</h5>
-            <p>
-              I have been using Dim Studio for my music production needs and I
-              am beyond impressed with its capabilities. Not only does it
-              provide a platform for collaboration with other musicians and lead
-              trainers, but it is also incredibly affordable. Thank you for
-              creating such an amazing product!
-            </p>
-          </article>
-        </li>
-      </ul>
-    </section>
+    <section id="testimonials"></section>
     <!--   footer -->
     <footer>
       <section>
@@ -142,11 +122,7 @@
           <div>1-232-75-769929</div>
         </div>
       </section>
-      <section>
-        <a href="#DIM"
-          ><h6><em>Top</em></h6></a
-        >
-      </section>
+      <section id="map"></section>
       <section id="socialM"></section>
     </footer>
     <script type="text/javascript" src="./js/dimEdit.js"></script>
