@@ -1,0 +1,117 @@
+/*--------------------- Navigation ------*/
+header.in-place {
+  padding: 0 2%;
+}
+header.in-place > div {
+  padding-right: 0;
+}
+header.in-place > div nav#nav ul {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+}
+header.in-place > div nav#nav ul li {
+  white-space: nowrap;
+}
+header.in-place > div nav#nav ul li h5 {
+  font-size: 20px;
+}
+/*-----------------------Main ----*/
+main > figure.banner {
+  margin-bottom: 0;
+  height: 425px;
+}
+main > figure.banner h1 {
+  top: 140px;
+  text-align: center;
+  left: 0;
+}
+main figure:last-child {
+  background: url(../images/tim-mossholder-MfqINxPDpKU-unsplash.jpg) no-repeat
+    top center / 100% 100%;
+  background-size: cover;
+  width: 100%;
+  height: 15vh;
+  position: relative;
+  background-position: 50% 30%;
+  /* height: 22vh;
+  position: relative;
+  background-position: 50% 48%; */
+}
+/*-----------------------What we do ----*/
+body section:has(> div.description) {
+  background: linear-gradient(to right, var(--gun-powder), var(--cinder));
+  display: flex;
+  justify-content: center;
+  padding: 10% 0;
+}
+section > div.description {
+  display: grid;
+}
+section > div.description h4 {
+  justify-self: flex-start;
+  margin-left: 7%;
+  margin-bottom: 1.5%;
+}
+section > div.description p {
+  color: var(--white);
+}
+@media screen and (min-device-width: 576px) {
+  main > figure.banner {
+    height: 330px;
+  }
+  body section:has(> div.description) {
+    padding: 7% 0;
+  }
+}
+@media screen and (min-device-width: 768px) {
+  header.in-place > div nav#nav ul {
+    margin: 0;
+  }
+  main > figure.banner {
+    height: 295px;
+  }
+  main > figure.banner h1 {
+    top: 105px;
+    width: 89%;
+    margin-left: 0;
+  }
+  main figure:last-child {
+    height: 20vh;
+  }
+  body section:has(> div.description) {
+    padding: 5% 0;
+  }
+}
+@media screen and (min-device-width: 777px) {
+  main > figure.banner {
+    height: 218px;
+  }
+  main > figure.banner h1 {
+    margin-left: 10%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-device-width: 992px) {
+  main > figure.banner {
+    height: 210px;
+  }
+}
+@media screen and (min-device-width: 1200px) {
+  main > figure.banner h1 {
+    top: -20px;
+  }
+  main figure:last-child {
+    height: 22vh;
+    position: relative;
+    background-position: 50% 48%;
+  }
+  body section:has(> div.description) {
+    padding: 4% 0;
+  }
+}
+@media screen and (min-device-width: 1400px) {
+}
+@media screen and (min-device-width: 1600px) {
+}

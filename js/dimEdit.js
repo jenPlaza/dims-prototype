@@ -8,12 +8,12 @@ var navMenuArray = [
   {
     link_id: 'about',
     link_name: 'About Us',
-    link_href: './aboutus.html',
+    link_href: './about-us.html',
   },
   {
     link_id: 'service',
     link_name: 'Our Service',
-    link_href: '/',
+    link_href: './our-services.html',
   },
   {
     link_id: 'team',

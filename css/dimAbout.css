@@ -1,4 +1,4 @@
-/*-----------------------Hero ----*/
+/*---------------------------*/
 header {
   padding: 0 5% 0 0;
 }
@@ -23,38 +23,6 @@ main {
   background: linear-gradient(to bottom, var(--fog) 15%, var(--white) 43%);
   height: auto;
   padding-bottom: 5%;
-}
-main > figure {
-  background: linear-gradient(
-    to right,
-    var(--wild-blue-yonder) 15%,
-    var(--pale-purple) 95%
-  );
-  background-size: cover;
-  width: 100%;
-  height: 225px;
-  position: relative;
-  top: 0;
-  margin-bottom: 5%;
-}
-main > figure h1 {
-  top: 125px;
-  left: 5%;
-  position: relative;
-  filter: drop-shadow(2px 3px 1px var(--eggplant));
-}
-main > div {
-  width: 90%;
-  height: 100%;
-  text-align: center;
-  top: 0;
-  position: relative;
-}
-main > div p {
-  font-size: 20px;
-  color: var(--eggplant);
-  text-align: justify;
-  line-height: 1.5;
 }
 
 /*-----------------------Mobility ----*/
@@ -92,22 +60,11 @@ section#mobility div figure img {
     max-width: 375px;
     margin: 0;
   }
-
-  main > figure {
-    height: 175px;
-  }
-  main > figure h1 {
-    margin-left: 7%;
-    top: 80px;
-  }
 }
 
 @media screen and (min-device-width: 992px) {
   header > div nav ul {
     width: 63%;
-  }
-  main > figure {
-    margin-bottom: 4%;
   }
   section#mobility > div {
     width: 90%;
@@ -119,19 +76,6 @@ section#mobility div figure img {
   }
   main {
     background-color: var(--white);
-  }
-  main > figure {
-    height: 175px;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    margin-bottom: 3%;
-  }
-  main > figure h1 {
-    width: 75%;
-    top: -15px;
-    left: 0;
-    margin-left: -3%;
   }
   main > div {
     width: 90%;
@@ -157,9 +101,6 @@ section#mobility div figure img {
   }
   header > div nav ul {
     width: 38%;
-  }
-  main > figure {
-    margin-bottom: 1.5%;
   }
 }
 @media screen and (min-width: 2000px) {

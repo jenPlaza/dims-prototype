@@ -10,7 +10,8 @@
   --bright-ube: #d298e8;
   --lavender-indigo-one: #9c56dc;
   --lavender-indigo-two: #9053f5;
-  --eggplant: #352d53;
+  --gun-powder: #423766;
+  --cinder: #352d53;
   --dirty-purple: #8f6a9d;
   --old-mauve: #864a68;
   --bean-red_one: #f35962;
@@ -34,7 +35,9 @@
 body {
   overflow-x: hidden;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100%;
+  border: 1px solid transparent;
   font: normal normal normal 12px / 1.2 'Hind Madurai', sans-serif;
   position: relative;
   background-image: linear-gradient(
@@ -105,7 +108,7 @@ header {
 }
 header > div nav ul,
 footer section:nth-child(2) ul {
-  filter: drop-shadow(2px 1px 0 var(--eggplant));
+  filter: drop-shadow(2px 1px 0 var(--cinder));
 }
 header.in-place {
   width: 100%;
@@ -140,7 +143,7 @@ header figure h4 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   white-space: nowrap;
-  filter: drop-shadow(0 0 0 var(--eggplant));
+  filter: drop-shadow(0 0 0 var(--cinder));
 }
 header > div {
   display: flex;
@@ -187,6 +190,41 @@ ul li {
   list-style: none;
   height: auto;
 }
+/*-----------------------Main ----*/
+figure.banner {
+  background: linear-gradient(
+    to right,
+    var(--wild-blue-yonder) 15%,
+    var(--pale-purple) 95%
+  );
+  background-size: cover;
+  width: 100%;
+  height: 225px;
+  position: relative;
+  top: 0;
+  margin-bottom: 5%;
+}
+figure.banner h1 {
+  top: 125px;
+  left: 5%;
+  position: relative;
+  filter: drop-shadow(2px 3px 1px var(--cinder));
+}
+/*-----------------------description paragraphs ----*/
+div.description {
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  position: relative;
+}
+div.description p {
+  font-size: 20px;
+  color: var(--cinder);
+  text-align: justify;
+  line-height: 1.5;
+}
+
 /*-----------------------Mobility ----*/
 section#mobility,
 section#commitment {
@@ -337,6 +375,13 @@ footer section#socialM ul li a figure img {
   header > div nav#nav ul {
     width: 78%;
   }
+  main > figure.banner {
+    height: 200px;
+  }
+  main > figure.banner h1 {
+    margin-left: 7%;
+    top: 80px;
+  }
   section#mobility,
   section#commitment {
     padding: 3% 0 7% 0;
@@ -368,6 +413,9 @@ footer section#socialM ul li a figure img {
     width: 65%;
     max-width: 375px;
   }
+  main > figure.banner {
+    margin-bottom: 4%;
+  }
   section#mobility {
     padding: 3% 0 6% 0;
   }
@@ -394,6 +442,18 @@ footer section#socialM ul li a figure img {
     min-width: 375px;
     width: 52%;
   }
+  main > figure.banner {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 3%;
+  }
+  main > figure.banner h1 {
+    width: 75%;
+    top: -15px;
+    left: 0;
+    margin-left: -3%;
+  }
   section#mobility {
     padding: 3% 0 5% 0;
   }
@@ -409,6 +469,9 @@ footer section#socialM ul li a figure img {
   }
 }
 @media screen and (min-width: 1600px) {
+  main > figure.banner {
+    margin-bottom: 1.5%;
+  }
   section#mobility {
     padding: 3% 0 4% 0;
   }
