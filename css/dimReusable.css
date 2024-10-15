@@ -28,14 +28,18 @@
   --turkish-rose: #b8648d;
 }
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 body {
   overflow-x: hidden;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
   min-height: 100%;
   border: 1px solid transparent;
   font: normal normal normal 12px / 1.2 'Hind Madurai', sans-serif;
@@ -103,13 +107,10 @@ a {
 header {
   top: 0;
   z-index: 1;
-  padding: 0.5%;
+  padding: 0.5% 5% 0.5% 0.5%;
   width: 100%;
 }
-header > div nav ul,
-footer section:nth-child(2) ul {
-  filter: drop-shadow(2px 1px 0 var(--cinder));
-}
+
 header.in-place {
   width: 100%;
   position: fixed;
@@ -178,19 +179,40 @@ header > div nav#nav {
   display: flex;
   margin-left: 1%;
 }
+header > div nav#nav ul,
+footer section:nth-child(2) ul {
+  filter: drop-shadow(2px 1px 0 var(--cinder));
+}
 header > div nav#nav ul {
   display: flex;
-  width: 100%;
-  max-width: 445px;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin-top: 7px;
+  width: 104%;
+  max-width: 375px;
+  margin: 0 auto;
 }
 ul li {
   list-style: none;
   height: auto;
 }
+header > div nav#nav ul li {
+  white-space: nowrap;
+}
+header > div nav#nav ul li h5 {
+  font-size: 20px;
+}
 /*-----------------------Main ----*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -1px;
+  position: relative;
+  margin-bottom: -2px;
+  background: linear-gradient(to bottom, var(--fog) 15%, var(--white) 43%);
+  height: auto;
+  padding-bottom: 5%;
+}
 figure.banner {
   background: linear-gradient(
     to right,
@@ -331,6 +353,9 @@ footer section#socialM ul li a figure img {
   height: 100%;
 }
 @media screen and (min-device-width: 576px) {
+  header {
+    padding: 0 5% 0 0.5%;
+  }
   header > div > a#logo figure img {
     width: 83px;
   }
@@ -356,6 +381,9 @@ footer section#socialM ul li a figure img {
   }
 }
 @media screen and (min-device-width: 768px) {
+  header {
+    padding: 0 0.5%;
+  }
   header > div {
     margin-top: 1%;
   }
@@ -373,14 +401,16 @@ footer section#socialM ul li a figure img {
     display: flex;
   }
   header > div nav#nav ul {
-    width: 78%;
+    width: 80%;
+    max-width: 375px;
+    margin: 0;
   }
   main > figure.banner {
     height: 200px;
   }
   main > figure.banner h1 {
-    margin-left: 7%;
-    top: 80px;
+    top: 105px;
+    width: 85%;
   }
   section#mobility,
   section#commitment {
@@ -390,7 +420,7 @@ footer section#socialM ul li a figure img {
     height: 130px;
   }
   footer {
-    padding: 0 3%;
+    padding: 0 3% 0 0.5%;
   }
   footer section {
     width: calc(100% / 3);
@@ -410,7 +440,7 @@ footer section#socialM ul li a figure img {
 }
 @media screen and (min-device-width: 992px) {
   header > div nav#nav ul {
-    width: 65%;
+    width: 63%;
     max-width: 375px;
   }
   main > figure.banner {
@@ -426,6 +456,7 @@ footer section#socialM ul li a figure img {
   }
   footer {
     height: 60px;
+    padding: 0 2% 0 0.5%;
   }
   footer section {
     padding: 0;
@@ -438,9 +469,15 @@ footer section#socialM ul li a figure img {
   }
 }
 @media screen and (min-device-width: 1200px) {
+  header {
+    padding: 0 2% 0 0;
+  }
   header > div nav#nav ul {
     min-width: 375px;
-    width: 52%;
+    width: 54%;
+  }
+  main {
+    background-color: var(--white);
   }
   main > figure.banner {
     display: flex;
@@ -449,10 +486,10 @@ footer section#socialM ul li a figure img {
     margin-bottom: 3%;
   }
   main > figure.banner h1 {
-    width: 75%;
-    top: -15px;
     left: 0;
     margin-left: -3%;
+    width: 75%;
+    top: -15px;
   }
   section#mobility {
     padding: 3% 0 5% 0;
@@ -464,11 +501,23 @@ footer section#socialM ul li a figure img {
   }
 }
 @media screen and (min-width: 1400px) {
+  header {
+    padding: 0;
+  }
+  header > div nav#nav ul {
+    width: 45%;
+  }
   section#testimonials ul li article {
     height: 145px;
   }
 }
 @media screen and (min-width: 1600px) {
+  main {
+    padding-bottom: 3%;
+  }
+  header > div nav#nav ul {
+    width: 38%;
+  }
   main > figure.banner {
     margin-bottom: 1.5%;
   }
@@ -480,7 +529,15 @@ footer section#socialM ul li a figure img {
   }
 }
 @media screen and (min-width: 2000px) {
+  header > div nav ul {
+    width: 32%;
+  }
   section#testimonials ul li article {
     height: 128px;
+  }
+}
+@media screen and (min-width: 2400px) {
+  header > div nav ul {
+    width: 28%;
   }
 }

@@ -18,7 +18,88 @@ var navMenuArray = [
   {
     link_id: 'team',
     link_name: 'Our Team',
-    link_href: '/',
+    link_href: './our-team.html"',
+  },
+];
+
+//TEAM
+var teamArray = [
+  {
+    team_id: 'DIR',
+    mem_image_src: './images/team/dr-phillip-bangura.png',
+    mem_image_alt: 'Dr Phillip Bangura Headshot',
+    mem_name: 'Dr Phillip Bangura',
+    mem_DIM_role: 'DIMS Executive DIR',
+    mem_country: ' Freetown, Sierra Leone Africa',
+    mem_pro_title: 'Executive Director of Africa Youth for Peace & Development',
+    mem_bio:
+      'Executive Director for Africa Youth for Peace and Development(AYPAD).  Worked with the organization for 10+ years, and implemented several peace and sustainable development projects, with the ultimate aim of positively transforming the lives of young people in difficult circumstances.',
+  },
+  {
+    team_id: 'SUPER02',
+    mem_image_src: './images/team/ozioma-roseline-umera.jpg',
+    mem_image_alt: 'Ozioma Roseline Umera Headshot',
+    mem_name: 'Ozioma Roseline Umera',
+    mem_DIM_role: 'DIMS Project SUPER',
+    mem_country: 'Africa',
+    mem_pro_title: 'Permanent Secretary AYPAD',
+    mem_bio:
+      'Ozioma Umera is a distinguished information science professional, renowned for her exceptional academic achievements, extensive experience, and commitment to excellence. Academically, Ozioma boasts an impressive portfolio. She holds a Bachelors Degree in Library and Information Science from Nnamdi Azikiwe University, Awka, Anambra State. Additionally, she obtained an Honours Degree in Information Science and a Masters in Information Technology from the University of Pretoria, South Africa. These qualifications have equipped her with the expertise to navigate the complexities of information management.Professionally, Ozioma has accumulated over a decade of experience in information management. Her career commenced in 2014 at the Academic Staff Union of Universities (ASUU) national secretariat, where she served for nine years in Research Services. In 2023, she transitioned to JAYEX Development and Training, Africas premier capacity building and training institute, as a Consultant in Research Development. Furthermore, she was appointed Assistant Lecturer by the Department of Information Science at the University of Pretoria in the same year. Oziomas affiliations with esteemed professional bodies underscore her commitment to excellence. She is a member of the Association for Information Science and Technologists (ASSIST), the Librarians Registration Council of Nigeria, and the Nigeria Library Association. As a respected expert in her field, Ozioma has shared her insights at conferences and forums. Notably, she addressed the African Centre of Excellence for Information Ethics conference, discussing "Bridging the Digital Divide" and highlighting the struggles and triumphs of the older generation in interacting with technology. Her participation in international conferences, including the UNESCO conference on Artificial Intelligence and the Mastercard Foundations leadership training, demonstrates her dedication to staying abreast of global trends. Currently, Ozioma serves as a member of the Board of Governors for Freya International Schools of Research and Implementation (FISORI).',
+  },
+  {
+    team_id: 'SUPER01',
+    mem_image_src: './images/team/dr-jim-tamuro.png',
+    mem_image_alt: 'Dr Jim Tamuro Headshot',
+    mem_name: 'Dr Jim Tamuro ',
+    mem_DIM_role: 'DIMS Project SUPER',
+    mem_country: 'Africa',
+    mem_pro_title: 'Principal Coordinator AYPAD',
+    mem_bio:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et velit justo. Nullam id enim maximus, elementum neque vitae, interdum odio. Fusce at magna id sem feugiat commodo. Vivamus eget turpis suscipit, rhoncus elit in, tempor massa. Cras placerat libero porta placerat mattis. Integer posuere in magna sit amet sodales. Nulla at nunc at neque placerat interdum. Cras eleifend iaculis turpis. Cras sit amet nibh a felis porta vulputate eget non justo. Donec eu sapien nisl. Donec bibendum iaculis nunc, ut luctus nibh molestie sed.',
+  },
+  {
+    team_id: 'COORD01',
+    mem_image_src: './images/team/diego-paniagua.png',
+    mem_image_alt: 'Diego Paniagua Headshot',
+    mem_name: 'Diego Paniagua',
+    mem_DIM_role: 'DIMS Project COORD',
+    mem_country: 'Africa',
+    mem_pro_title: 'Lorem Ipsium',
+    mem_bio:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et velit justo. Nullam id enim maximus, elementum neque vitae, interdum odio. Fusce at magna id sem feugiat commodo. Vivamus eget turpis suscipit, rhoncus elit in, tempor massa. Cras placerat libero porta placerat mattis. Integer posuere in magna sit amet sodales. Nulla at nunc at neque placerat interdum. Cras eleifend iaculis turpis. Cras sit amet nibh a felis porta vulputate eget non justo. Donec eu sapien nisl. Donec bibendum iaculis nunc, ut luctus nibh molestie sed.',
+  },
+  {
+    team_id: 'COORD02',
+    mem_image_src: './images/team/sandeep-morar.png',
+    mem_image_alt: 'Sandeep Morar Headshot',
+    mem_name: 'Sandeep Morar',
+    mem_DIM_role: 'DIMS Project COORD',
+    mem_country: 'Africa',
+    mem_pro_title: 'Lorem Ipsium',
+    mem_bio:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et velit justo. Nullam id enim maximus, elementum neque vitae, interdum odio. Fusce at magna id sem feugiat commodo. Vivamus eget turpis suscipit, rhoncus elit in, tempor massa. Cras placerat libero porta placerat mattis. Integer posuere in magna sit amet sodales. Nulla at nunc at neque placerat interdum. Cras eleifend iaculis turpis. Cras sit amet nibh a felis porta vulputate eget non justo. Donec eu sapien nisl. Donec bibendum iaculis nunc, ut luctus nibh molestie sed.',
+  },
+  {
+    team_id: 'Mngr',
+    mem_image_src: './images/team/magda-leena-chisulo.jpg',
+    mem_image_alt: 'Magda Leena Chisulo Headshot',
+    mem_name: 'Magda Leena Chisulo ',
+    mem_DIM_role: 'DIMS Graphics Manager',
+    mem_country: 'Africa',
+    mem_pro_title: 'Business Risk and Compliance Clerk',
+    mem_bio:
+      'I am a Business Risk and Compliance Clerk at a bank, with a background in communication and a solid foundation in graphic design. I have hands-on experience creating visual content for various projects, including designing logos, marketing materials, and digital assets. In addition to my design skills, I hold an Honors Degree and a Bachelors Degree in Communication, as well as a Diploma in Public Relations. I am currently pursuing a Master’s in Management. ',
+  },
+  {
+    team_id: 'web',
+    mem_image_src: './images/team/jen-plaza.jpg',
+    mem_image_alt: 'Jennifer Plaza Headshot',
+    mem_name: 'Jennifer Plaza',
+    mem_DIM_role: 'DIMS Frontend Developer  ',
+    mem_country: 'Orlando, Florida USA',
+    mem_pro_title: 'Web Design and Development',
+    mem_bio:
+      'I obtained my undergraduate degree in Web Design & Development from Full Sail University on November 24, 2020. I was born and raised in Miami, Florida; I moved to Orlando, Florida in 2006. I am the youngest sibling of two. I enjoy gardening, painting, and my new hobby growing my own organic food. Since 2006, I worked for the American Hotel and Lodging Educational Institute (AHLEI) until they merged with the National Restaurant Association (NRA). Withtin that period, I found my ninch for websites; I decided to go back to school. I graduated in 2020; since then I have been involved in various volunteer projects, aquired some work experience, and slowly been modeling my skills and structuring my habits into best practices. In June of 2024, I joined AYPAD as a volunteer and have had the blessing of being part of a few of their many projects. Its been a great opportunity and I am happy to conitnue particpating as they feel fit.',
   },
 ];
 

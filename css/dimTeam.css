@@ -1,0 +1,289 @@
+body:has(section#team) {
+  background: transparent;
+}
+/*----------------------- MAIN ----*/
+main {
+  background: url('../images/israel-palacio-Y20JJ_ddy9M-unsplash_purple.png')
+    no-repeat top center / 100% 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 66vh;
+}
+figure.banner {
+  background: transparent;
+}
+figure.banner h1 {
+  width: 95%;
+}
+
+main > figure.banner div {
+  position: relative;
+  top: 60%;
+  left: 5%;
+  padding: 0 5% 0 0;
+  display: flex;
+  align-items: center;
+  height: 250px;
+  width: 95%;
+}
+/*----------------------- DIR ----*/
+section#DIR {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  padding-bottom: 7%;
+  position: relative;
+}
+section#DIR figure {
+  width: 100%;
+  height: 300px;
+}
+section#DIR h5 {
+  padding-top: 2%;
+  padding-left: 0;
+  color: var(--eggplant) !important;
+}
+section#DIR section {
+  padding: 0 3%;
+}
+section#DIR section div:nth-child(2) {
+  margin-bottom: 2%;
+}
+section#DIR section div:last-child p {
+  color: var(--eggplant);
+  text-align: justify;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+/*----------------------- TEAM ----*/
+
+section#team {
+  width: 100%;
+  padding: 3% 0;
+  background: linear-gradient(to bottom, var(--fog) 15%, var(--white) 100%);
+  position: relative;
+}
+section#team > ul {
+  max-width: 2000px;
+  width: 100%;
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  padding: 0;
+  gap: 5px;
+}
+section#team > ul li {
+  list-style: none;
+  width: auto;
+  height: auto;
+  border: 1px solid var(--fog);
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 7% 0;
+}
+
+section#team > ul li article > figure {
+  width: 300px;
+  height: 275px;
+  position: relative;
+  margin-bottom: 0;
+}
+section#team > ul li article > figure img {
+  width: 300px;
+  height: 235px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 15px;
+}
+section#team > ul li:nth-child(5) article > figure img {
+  object-position: 0 50%;
+}
+section#team > ul li article > figure figcaption {
+  position: relative;
+  top: 10px;
+}
+section#team > ul li article > figure figcaption h5 {
+  color: var(--eggplant) !important;
+  position: absolute;
+  bottom: -25px;
+}
+section#team > ul li article section {
+  width: 300px;
+  height: 18%;
+  display: flex;
+  flex-direction: column;
+}
+section#team > ul li article section div:nth-child(1) {
+  margin-bottom: 3%;
+}
+section#team > ul li article section div:nth-child(2) {
+  color: var(--eggplant);
+  white-space: nowrap;
+}
+section#team > ul li article section div:last-child p {
+  color: var(--eggplant);
+  white-space: normal;
+  font-weight: lighter;
+  line-height: 1.5;
+  text-align: justify;
+}
+@media screen and (min-device-width: 576px) {
+  main {
+    height: 51vh;
+  }
+  main > figure.banner div {
+    height: 150px;
+  }
+  /*----------------------- DIR ----*/
+  section#DIR figure {
+    margin: 0;
+  }
+  section#DIR figure img {
+    width: 100%;
+    margin: 0;
+  }
+  section#DIR section {
+    width: 100%;
+  }
+  section#DIR section div:nth-child(2) {
+    margin: 1.5% 0;
+  }
+
+  /*----------------------- TEAM ----*/
+  section#team > ul {
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  section#team > ul li {
+    border-radius: 25px;
+  }
+  section#team > ul li article section {
+    width: 400px;
+  }
+  section#team > ul li article > figure,
+  section#team > ul li article > figure,
+  section#team > ul li article > figure img,
+  section#team > ul li article section {
+    width: 375px;
+  }
+  section#team > ul li article > figure {
+    height: 282px;
+  }
+  section#team > ul li:last-child article > figure img {
+    object-position: 0 50%;
+  }
+  section#team > ul li:nth-child(1) article > figure img {
+    object-position: 0 40%;
+  }
+}
+@media screen and (min-device-width: 768px) {
+  /*----------------------- Main ----*/
+  main {
+    height: 54vh;
+  }
+  /*----------------------- DIR ----*/
+  section#DIR {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    padding: 3%;
+  }
+  section#DIR figure {
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+  }
+  section#DIR figure img {
+    border-radius: 15px;
+  }
+  section#DIR section {
+    width: 60%;
+  }
+  section#DIR section h5 {
+    padding-left: 0;
+  }
+  section#DIR section div:nth-child(2) {
+    margin-bottom: 2%;
+  }
+  /*----------------------- Team ----*/
+  section#team > ul {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+  section#team > ul li article > figure,
+  section#team > ul li article > figure,
+  section#team > ul li article > figure img,
+  section#team > ul li article section {
+    width: 305px;
+  }
+  section#team > ul li article section div:last-child p {
+    max-height: 200px;
+    overflow: scroll;
+  }
+}
+
+@media screen and (min-device-width: 992px) {
+  main {
+    height: 44vh;
+  }
+  main > figure.banner div {
+    height: 200px;
+    top: 36%;
+  }
+  /*----------------------- DIR ----*/
+  section#DIR {
+    padding: 6%;
+  }
+  /*----------------------- Team ----*/
+  section#team > ul {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  section#team > ul li article > figure,
+  section#team > ul li article > figure,
+  section#team > ul li article > figure img,
+  section#team > ul li article section {
+    width: 375px;
+  }
+}
+@media screen and (min-device-width: 1200px) {
+  main {
+    height: 33vh;
+  }
+  main > figure.banner {
+    flex-flow: wrap-reverse;
+  }
+  main > figure.banner div {
+    top: 215px;
+    width: 90%;
+    left: 2.5%;
+  }
+  /*----------------------- Team ----*/
+  section#team > ul {
+    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  }
+  section#team > ul li article > figure,
+  section#team > ul li article > figure,
+  section#team > ul li article > figure img,
+  section#team > ul li article section {
+    width: 400px;
+  }
+}
+@media screen and (min-device-width: 1400px) {
+  main > figure.banner div {
+    top: 225px;
+  }
+}
+@media screen and (min-device-width: 1600px) {
+  main {
+    height: 425px;
+  }
+}

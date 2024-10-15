@@ -19,6 +19,35 @@ function appear() {
   }
 }
 
+//TEAM
+function displayTeam() {
+  var teamMembers = '<ul>';
+  for (var t = 1; t < teamArray.length; t++) {
+    teamMembers += '<li><article><figure>';
+    teamMembers +=
+      '<img src="' +
+      teamArray[t].mem_image_src +
+      '" alt="' +
+      teamArray[t].mem_image_alt +
+      '" width="100%" height="100%" />';
+    teamMembers +=
+      '<figcaption><h5>' +
+      teamArray[t].mem_name +
+      '</h5></figcaption></figure>';
+    teamMembers +=
+      '<section><div><h6><b>' +
+      teamArray[t].mem_DIM_role +
+      '</b><br />' +
+      teamArray[t].mem_country +
+      '</h6></div>';
+    teamMembers += '<div>' + teamArray[t].mem_pro_title + '</div>';
+    teamMembers += '<div><p>' + teamArray[t].mem_bio + '</p></div>';
+    teamMembers += '</section></article></li>';
+  }
+  teamMembers += '</ul>';
+  document.getElementById('team').innerHTML = teamMembers;
+}
+
 //FEATURE SERVICES
 function displayServices() {
   var newService = '<ul>';
