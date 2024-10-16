@@ -3,7 +3,7 @@ body:has(section#team) {
 }
 /*----------------------- MAIN ----*/
 main {
-  background: url('../images/israel-palacio-Y20JJ_ddy9M-unsplash_purple.png')
+  background: url('../images/israel-palacio-Y20JJ_ddy9M-unsplash_purple-min.png')
     no-repeat top center / 100% 100%;
   background-size: cover;
   background-position: 50% 50%;
@@ -226,7 +226,7 @@ section#team > ul li article section div:last-child p {
     width: 305px;
   }
   section#team > ul li article section div:last-child p {
-    max-height: 200px;
+    max-height: 130px;
     overflow: scroll;
   }
 }
@@ -252,6 +252,9 @@ section#team > ul li article section div:last-child p {
   section#team > ul li article > figure img,
   section#team > ul li article section {
     width: 375px;
+  }
+  section#team > ul li:nth-child(3) article > figure img {
+    object-position: 0 20%;
   }
 }
 @media screen and (min-device-width: 1200px) {

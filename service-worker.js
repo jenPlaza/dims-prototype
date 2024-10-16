@@ -2,7 +2,7 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/service-worker.js');
   });
-};
+}
 
 // Core assets
 let coreAssets = [
@@ -17,9 +17,9 @@ let coreAssets = [
   './images/jason-rosewell-ASKeuOZqhYU-unsplash_puple-min.png',
   './images/soundtrap-uCNrr-3i2oI-unsplash_purple-min.png',
   './images/parallex/soundtrap-sFnAVHjF688-unsplash_purple-min.png',
-  './images/parallex/soundtrap-5Wj_tk8_Ens-unsplash_purple.png',
-  './images/tim-mossholder-MfqINxPDpKU-unsplash.jpg',
-  './images/israel-palacio-Y20JJ_ddy9M-unsplash_purple.png',
+  './images/parallex/soundtrap-5Wj_tk8_Ens-unsplash_purple-min.png',
+  './images/tim-mossholder-MfqINxPDpKU-unsplash.jpg-min',
+  './images/israel-palacio-Y20JJ_ddy9M-unsplash_purple-min.png',
   './css/dimReusable.css',
   './css/dimIndex.css',
   './css/dimAbout.css',
@@ -48,7 +48,10 @@ self.addEventListener('fetch', function (event) {
 
   // Bug fix
   // https://stackoverflow.com/a/49719964
-  if (event.request.cache === 'only-if-cached' && event.request.mode !== 'same-origin')
+  if (
+    event.request.cache === 'only-if-cached' &&
+    event.request.mode !== 'same-origin'
+  )
     return;
 
   // HTML files
@@ -79,7 +82,10 @@ self.addEventListener('fetch', function (event) {
 
   // CSS & JavaScript
   // Offline-first
-  if (request.headers.get('Accept').includes('text/css') || request.headers.get('Accept').includes('text/javascript')) {
+  if (
+    request.headers.get('Accept').includes('text/css') ||
+    request.headers.get('Accept').includes('text/javascript')
+  ) {
     event.respondWith(
       caches.match(request).then(function (response) {
         return (
@@ -93,30 +99,27 @@ self.addEventListener('fetch', function (event) {
     );
     return;
   }
-// Images
+  // Images
   // Offline-first
-  if (request.url.match(/\.(jpe?g|png|gif|svg)$/)){
-     event.respondWith(
-       caches.match(request).then(function (response) {
-         return (
-           response ||
-           fetch(request).then(function (response) {
+  if (request.url.match(/\.(jpe?g|png|gif|svg)$/)) {
+    event.respondWith(
+      caches.match(request).then(function (response) {
+        return (
+          response ||
+          fetch(request).then(function (response) {
             // Save a copy of it in cache
-             let copy = response.clone();
-             event.waitUntil(
-               caches.open('app').then(function (cache) {
+            let copy = response.clone();
+            event.waitUntil(
+              caches.open('app').then(function (cache) {
                 return cache.put(request, copy);
-               })
-             );
+              })
+            );
 
-             // Return the response
-             return response;
-           })
-         );
-       })
-     );
-   }
+            // Return the response
+            return response;
+          })
+        );
+      })
+    );
+  }
 });
-
-
-

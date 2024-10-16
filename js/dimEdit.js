@@ -62,11 +62,11 @@ var teamArray = [
     mem_image_src: './images/team/diego-paniagua.png',
     mem_image_alt: 'Diego Paniagua Headshot',
     mem_name: 'Diego Paniagua',
-    mem_DIM_role: 'DIMS Project COORD',
+    mem_DIM_role: 'DIMS Project Music Advisor',
     mem_country: 'Africa',
-    mem_pro_title: 'Lorem Ipsium',
+    mem_pro_title: 'Music Producer and Music Law Advisor',
     mem_bio:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et velit justo. Nullam id enim maximus, elementum neque vitae, interdum odio. Fusce at magna id sem feugiat commodo. Vivamus eget turpis suscipit, rhoncus elit in, tempor massa. Cras placerat libero porta placerat mattis. Integer posuere in magna sit amet sodales. Nulla at nunc at neque placerat interdum. Cras eleifend iaculis turpis. Cras sit amet nibh a felis porta vulputate eget non justo. Donec eu sapien nisl. Donec bibendum iaculis nunc, ut luctus nibh molestie sed.',
+      'Music Producer and Music Law Advisor, with 8 years of experience in composing, recording, mixing, mastering, sound design, music law and marketing. I have worked for studios and agencies. I am always looking forward to helping artists and creatives to achieve their goals.',
   },
   {
     team_id: 'COORD02',
