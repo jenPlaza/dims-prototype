@@ -45,8 +45,8 @@ body {
   font: normal normal normal 12px / 1.2 'Hind Madurai', sans-serif;
   position: relative;
   background-image: linear-gradient(
-    var(--wisteria-purple) 89.5%,
-    var(--dirty-purple)
+    var(--wisteria-purple) 40.5%,
+    var(--dirty-purple) 65%
   );
 }
 h1 {
@@ -307,7 +307,7 @@ section#testimonials ul li article p em {
 footer {
   background-color: var(--wisteria-purple);
   width: 100%;
-  height: 140px;
+  height: auto;
   padding: 1%;
   display: flex;
   align-items: center;
@@ -455,8 +455,7 @@ footer section#socialM ul li a figure img {
     justify-content: flex-start;
   }
   footer {
-    height: 60px;
-    padding: 0 2% 0 0.5%;
+    padding: 1% 2% 1% 0.5%;
   }
   footer section {
     padding: 0;

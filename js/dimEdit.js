@@ -26,7 +26,7 @@ var navMenuArray = [
 var teamArray = [
   {
     team_id: 'DIR',
-    mem_image_src: './images/team/dr-phillip-bangura.png',
+    mem_image_src: './images/team/dr-phillip-bangura-min.png',
     mem_image_alt: 'Dr Phillip Bangura Headshot',
     mem_name: 'Dr Phillip Bangura',
     mem_DIM_role: 'DIMS Executive DIR',
@@ -37,7 +37,7 @@ var teamArray = [
   },
   {
     team_id: 'SUPER02',
-    mem_image_src: './images/team/ozioma-roseline-umera.jpg',
+    mem_image_src: './images/team/ozioma-roseline-umera-min.jpg',
     mem_image_alt: 'Ozioma Roseline Umera Headshot',
     mem_name: 'Ozioma Roseline Umera',
     mem_DIM_role: 'DIMS Project SUPER',
@@ -48,18 +48,18 @@ var teamArray = [
   },
   {
     team_id: 'SUPER01',
-    mem_image_src: './images/team/dr-jim-tamuro.png',
+    mem_image_src: './images/team/dr-jim-tamuro-min.jpeg',
     mem_image_alt: 'Dr Jim Tamuro Headshot',
     mem_name: 'Dr Jim Tamuro ',
     mem_DIM_role: 'DIMS Project SUPER',
-    mem_country: 'Africa',
-    mem_pro_title: 'Principal Coordinator AYPAD',
+    mem_country: 'Republic of Uganda',
+    mem_pro_title: 'Doctor',
     mem_bio:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et velit justo. Nullam id enim maximus, elementum neque vitae, interdum odio. Fusce at magna id sem feugiat commodo. Vivamus eget turpis suscipit, rhoncus elit in, tempor massa. Cras placerat libero porta placerat mattis. Integer posuere in magna sit amet sodales. Nulla at nunc at neque placerat interdum. Cras eleifend iaculis turpis. Cras sit amet nibh a felis porta vulputate eget non justo. Donec eu sapien nisl. Donec bibendum iaculis nunc, ut luctus nibh molestie sed.',
+      'Dr. Jim is a Ugandan Medicale Doctor with over 3 years of Project design, Implementation and Supervision. He currently serves as the Principal Project Coordinator of Africa Youth For and Development (AYPAD). He also serves as the United Nations Volunteers Hiring Manager under Africa Youth For Peace and Development on the Unified Volunteer Platform (UVP).',
   },
   {
     team_id: 'COORD01',
-    mem_image_src: './images/team/diego-paniagua.png',
+    mem_image_src: './images/team/diego-paniagua-min.JPG',
     mem_image_alt: 'Diego Paniagua Headshot',
     mem_name: 'Diego Paniagua',
     mem_DIM_role: 'DIMS Project Music Advisor',
@@ -69,30 +69,19 @@ var teamArray = [
       'Music Producer and Music Law Advisor, with 8 years of experience in composing, recording, mixing, mastering, sound design, music law and marketing. I have worked for studios and agencies. I am always looking forward to helping artists and creatives to achieve their goals.',
   },
   {
-    team_id: 'COORD02',
-    mem_image_src: './images/team/sandeep-morar.png',
-    mem_image_alt: 'Sandeep Morar Headshot',
-    mem_name: 'Sandeep Morar',
-    mem_DIM_role: 'DIMS Project COORD',
-    mem_country: 'Africa',
-    mem_pro_title: 'Lorem Ipsium',
-    mem_bio:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et velit justo. Nullam id enim maximus, elementum neque vitae, interdum odio. Fusce at magna id sem feugiat commodo. Vivamus eget turpis suscipit, rhoncus elit in, tempor massa. Cras placerat libero porta placerat mattis. Integer posuere in magna sit amet sodales. Nulla at nunc at neque placerat interdum. Cras eleifend iaculis turpis. Cras sit amet nibh a felis porta vulputate eget non justo. Donec eu sapien nisl. Donec bibendum iaculis nunc, ut luctus nibh molestie sed.',
-  },
-  {
     team_id: 'Mngr',
-    mem_image_src: './images/team/magda-leena-chisulo.jpg',
+    mem_image_src: './images/team/magda-leena-chisulo-min.jpeg',
     mem_image_alt: 'Magda Leena Chisulo Headshot',
     mem_name: 'Magda Leena Chisulo ',
     mem_DIM_role: 'DIMS Graphics Manager',
     mem_country: 'Africa',
     mem_pro_title: 'Business Risk and Compliance Clerk',
     mem_bio:
-      'I am a Business Risk and Compliance Clerk at a bank, with a background in communication and a solid foundation in graphic design. I have hands-on experience creating visual content for various projects, including designing logos, marketing materials, and digital assets. In addition to my design skills, I hold an Honors Degree and a Bachelors Degree in Communication, as well as a Diploma in Public Relations. I am currently pursuing a Master’s in Management. ',
+      'I am a Business Risk and Compliance Clerk at a bank, combining a strong foundation in communication with a solid expertise in graphic design. I hold an Honors Degree and a Bachelors Degree in Communication, along with a Diploma in Public Relations, and am currently pursuing a Master’s in Management to broaden my professional capabilities. As a graphic designer, I have developed and executed visual content for a variety of projects, including logos, marketing materials, and digital assets. My role as Graphics Manager for DIMS has been a particularly rewarding experience, enabling me to hone my leadership abilities while showcasing my design skills. In addition to my professional experience, I am an active volunteer with the United Nations Volunteers (UNV), having contributed to both Cohort 6 and 11 by writing non-scientific articles. I have also earned certifications from the Young African Leaders Initiative (YALI), FAO, and UNDP, strengthening my knowledge in communication, leadership, and development. Outside of work, I am passionate about traveling and vlogging, capturing moments through photography, particularly inspired by nature’s beauty.',
   },
   {
     team_id: 'web',
-    mem_image_src: './images/team/jen-plaza.jpg',
+    mem_image_src: './images/team/jen-plaza-min.png',
     mem_image_alt: 'Jennifer Plaza Headshot',
     mem_name: 'Jennifer Plaza',
     mem_DIM_role: 'DIMS Frontend Developer  ',

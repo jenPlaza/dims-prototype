@@ -176,11 +176,14 @@ section#team > ul li article section div:last-child p {
   section#team > ul li article > figure {
     height: 282px;
   }
-  section#team > ul li:last-child article > figure img {
+  section#team > ul li article > figure img {
     object-position: 0 50%;
   }
   section#team > ul li:nth-child(1) article > figure img {
     object-position: 0 40%;
+  }
+  section#team > ul li:nth-child(3) article > figure img {
+    object-position: 0 20%;
   }
 }
 @media screen and (min-device-width: 768px) {
@@ -252,9 +255,6 @@ section#team > ul li article section div:last-child p {
   section#team > ul li article > figure img,
   section#team > ul li article section {
     width: 375px;
-  }
-  section#team > ul li:nth-child(3) article > figure img {
-    object-position: 0 20%;
   }
 }
 @media screen and (min-device-width: 1200px) {
