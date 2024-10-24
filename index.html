@@ -35,8 +35,8 @@
     <title>
       DIM Studio - Empowering Youth for Transformative Change through Music.
     </title>
-    <link rel=stylesheet href=./css/dimReusable.css> <link rel=stylesheet
-    href=./css/dimIndex.css>
+    <link rel=stylesheet href=./css/dimReusable.css /> <link rel=stylesheet
+    href=./css/logos.css /> <link rel=stylesheet href=./css/dimIndex.css />
     <script src="./service-worker.js"></script>
     <script type="application/ld+json">
             {
@@ -173,27 +173,23 @@
             }
     </script>
   </head>
-  <body onload="displayServices(); displayTestimonials();">
-    <header class="in-place">
-      <div id="navigation_menu">
-        <!-- logo -->
-        <a href="/" id="logo"
-          ><figure>
-            <img
-              src="./images/logos/logo_DIMS_purple-min.png"
-              alt="snowcone colored logo"
-              width="100%"
-              height="100%"
-            />
-            <h4>DIM Studio</h4>
-          </figure></a
-        >
-        <!-- hamburger -->
-        <figure id="menu" onclick="appear();">
-          <img src="./images/icons/menu.png" alt="hamburger icon" />
-        </figure>
-        <!-- navigation -->
-        <nav id="nav" style="display: none">
+  <body onload="displayServices(); displayTestimonials(); displayBrands();">
+    <header id="AYPAD" class="in-place"></header>
+    <!-- DIMS logo -->
+    <section class="DIMS">
+      <figure>
+        <a href="./index.html" id="logo">
+          <img
+            src="./images/logos/logo_DIMS_purple-min.png"
+            alt="Daughter company logo to AYPAD.org"
+            width="100%"
+            height="100%"
+          />
+          <h4>DIM Studio</h4>
+        </a>
+      </figure>
+      <header class="in-place">
+        <nav>
           <ul>
             <li>
               <a href="./index.html"><h5>Home</h5></a>
@@ -209,8 +205,8 @@
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </header>
+    </section>
     <main id="DIM">
       <div>
         <h1>Put Your Dreams In Motion</h1>
@@ -271,19 +267,25 @@
     </section>
     <!-- testimonials -->
     <section id="testimonials"></section>
+    <!-- Foolow DIMS -->
+    <section id="follow_DIMS">
+      <h5>Follow DIMS</h5>
+      <div id="socialM_DIMS"></div>
+    </section>
     <!--   footer -->
     <footer>
       <section>
         <div id="logo">
           <img
-            src="./images/logos/logo_purple-min.png"
+            src="./images/logos/logo_aypad-min.png"
             alt="logo"
             width="50px"
             height="50px"
           />
         </div>
         <div>
-          <p><b>DIM Studio</b></p>
+          <!-- <p><b>DIM Studio</b></p> -->
+          <p><b>Africa Youth for Peace and Development</b></p>
           <address>
             Shelter for Africa<br />
             House National stadium Syke street <br />Freetown - Sierra Leone

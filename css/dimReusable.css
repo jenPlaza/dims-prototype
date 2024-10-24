@@ -5,7 +5,7 @@
   --white: #ffffff;
   --light-border: #ebebeb;
   --fog: #dcd6f0;
-  --wisteria-purple: #ceb1ce;
+  --wisteria-purple: #c3a8c3;
   --pale-purple: #b498ca;
   --bright-ube: #d298e8;
   --lavender-indigo-one: #9c56dc;
@@ -26,6 +26,7 @@
   --mulled-wine: #47486a;
   --old-mauve: #864a68;
   --turkish-rose: #b8648d;
+  --eggplant: #432e41;
 }
 * {
   box-sizing: border-box;
@@ -40,14 +41,15 @@ body {
 body {
   overflow-x: hidden;
   min-width: 100%;
-  min-height: 100%;
-  border: 1px solid transparent;
+  min-height: 100vh;
+  /* border: 1px solid transparent; */
   font: normal normal normal 12px / 1.2 'Hind Madurai', sans-serif;
   position: relative;
   background-image: linear-gradient(
-    var(--wisteria-purple) 40.5%,
-    var(--dirty-purple) 65%
+    var(--wisteria-purple) 15%,
+    var(--dirty-purple) 100%
   );
+  border: 3px;
 }
 h1 {
   font: normal normal bold 60px/1.4 'Bubblegum Sans', serif;
@@ -104,35 +106,107 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-header {
+body > header {
   top: 0;
   z-index: 1;
-  padding: 0.5% 5% 0.5% 0.5%;
-  width: 100%;
-}
-
-header.in-place {
+  padding: 0.5% 0;
   width: 100%;
   position: fixed;
-  transition: 0.3s ease-in-out;
+  height: 75px;
 }
-
-header.in-place.scrolling {
-  background-color: var(--wisteria-purple);
-  box-shadow: 5px -1px 12px -5px grey;
-}
-header figure {
+body > header figure {
   /* width: 50%; */
   width: 85%;
   display: flex;
   align-items: center;
   grid-gap: 8px;
 }
-header > div > a#logo figure img {
-  width: 83px;
+body > header > div > a#logo figure img {
+  width: 125px;
   margin-top: -8px;
 }
-header figure h4 {
+body > header > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2%;
+  margin-top: 3%;
+}
+body > header > div > a#logo {
+  width: 75%;
+}
+body > header > div figure#menu {
+  display: block;
+  width: 42px;
+  margin-right: 17px;
+}
+body > header figure#menu img {
+  width: 40px;
+  height: 40px;
+}
+.nav-none {
+  display: none;
+}
+.nav-block {
+  display: block;
+}
+
+body > header > div nav#nav {
+  padding: 1% 0;
+  width: 100%;
+  justify-content: end;
+  display: flex;
+  margin-left: 1%;
+}
+/* body > header > div nav#nav ul, */
+footer section:nth-child(2) ul {
+  filter: drop-shadow(2px 1px 0 var(--cinder));
+}
+body > header > div nav#nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 104%;
+  max-width: 375px;
+  margin: 0 auto;
+}
+ul li {
+  list-style: none;
+  height: auto;
+}
+body > header > div nav#nav ul li {
+  white-space: nowrap;
+}
+body > header > div nav#nav ul li h5 {
+  font-size: 20px;
+}
+/*-----------------------CHILD LOGO DIMS ----*/
+body section.DIMS {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--wisteria-purple);
+  position: fixed;
+  top: 75px;
+  height: auto;
+  padding: 2%;
+  z-index: 0;
+}
+body section.DIMS figure a img {
+  width: 85px;
+}
+body section.DIMS figure a {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  width: 200px;
+  justify-content: center;
+}
+body section.DIMS figure a h4 {
   font-weight: bolder;
   background: linear-gradient(
     to right,
@@ -146,72 +220,50 @@ header figure h4 {
   white-space: nowrap;
   filter: drop-shadow(0 0 0 var(--cinder));
 }
-header > div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 2%;
-  margin-top: 3%;
-}
-header > div > a#logo {
-  width: calc(100% - 42px);
-}
-header > div figure#menu {
-  display: block;
-  width: 42px;
-}
-header figure#menu img {
-  width: 40px;
-  height: 40px;
-}
-.nav-none {
-  display: none;
-}
-.nav-block {
-  display: block;
-}
-
-header > div nav#nav {
-  padding: 1% 0;
-  width: 100%;
-  justify-content: end;
-  display: flex;
-  margin-left: 1%;
-}
-header > div nav#nav ul,
-footer section:nth-child(2) ul {
-  filter: drop-shadow(2px 1px 0 var(--cinder));
-}
-header > div nav#nav ul {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  width: 104%;
-  max-width: 375px;
-  margin: 0 auto;
-}
-ul li {
-  list-style: none;
-  height: auto;
-}
-header > div nav#nav ul li {
-  white-space: nowrap;
-}
-header > div nav#nav ul li h5 {
-  font-size: 20px;
-}
 /*-----------------------Main ----*/
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: -1px;
+  top: 215px;
   position: relative;
   margin-bottom: -2px;
   background: linear-gradient(to bottom, var(--fog) 15%, var(--white) 43%);
   height: auto;
-  padding-bottom: 5%;
+  padding: 0 1% 5% 1%;
+  z-index: -1;
+}
+section.DIMS header.in-place {
+  width: 100%;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+  top: 215px;
+}
+
+section.DIMS header.in-place.scrolling {
+  background-color: var(--wisteria-purple);
+  box-shadow: 5px -1px 12px -5px grey;
+}
+section.DIMS header.in-place {
+  position: fixed;
+  z-index: 0;
+  height: 60px;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--wisteria-purple);
+}
+section.DIMS header.in-place nav ul {
+  display: flex;
+  gap: 22px;
+  max-width: 370px;
+  width: 95%;
+  margin: 0 auto;
+  overflow-x: scroll;
+}
+section.DIMS header.in-place nav li {
+  white-space: nowrap;
 }
 figure.banner {
   background: linear-gradient(
@@ -220,31 +272,35 @@ figure.banner {
     var(--pale-purple) 95%
   );
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 225px;
   position: relative;
   top: 0;
+  /*top: 75px; */
   margin-bottom: 5%;
 }
 figure.banner h1 {
   top: 125px;
-  left: 5%;
+  padding-left: 5%;
   position: relative;
   filter: drop-shadow(2px 3px 1px var(--cinder));
 }
 /*-----------------------description paragraphs ----*/
 div.description {
   width: 90%;
-  height: 100%;
+  height: 100vh;
+  max-height: 2300px;
   text-align: center;
   top: 0;
   position: relative;
+  overflow-y: scroll;
 }
 div.description p {
   font-size: 20px;
   color: var(--cinder);
   text-align: justify;
   line-height: 1.5;
+  padding-bottom: 225px;
 }
 
 /*-----------------------Mobility ----*/
@@ -258,18 +314,20 @@ section#commitment {
   align-items: center;
   justify-content: center;
   padding: 3% 0 10% 0;
+  z-index: -1;
 }
 /*-----------------------PARALEX ----*/
 .parallex-section {
   margin: 0;
   padding: 0;
   position: relative;
+  z-index: -1;
 }
 .parallex {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  z-index: 1;
+  z-index: -1;
   display: block;
   width: 100%;
   position: -webkit-sticky; /* Safari */
@@ -277,7 +335,7 @@ section#commitment {
 }
 .parallex1 {
   height: 40vh;
-  background-position: left 0px bottom 0px;
+  background-position: 50% 50%;
 }
 .parallex-section > div {
   display: flex;
@@ -302,27 +360,46 @@ section#testimonials ul li article {
 section#testimonials ul li article p em {
   font-weight: bold;
 }
+/*-----------------------Follow DIMS ----*/
+section#follow_DIMS {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--wisteria-purple);
+}
+section#follow_DIMS > div#socialM {
+  align-self: center;
+  margin-top: 2%;
+}
+section#follow_DIMS ul {
+  display: flex;
+  grid-gap: 28px;
+}
 
 /*-----------------------Footer ----*/
-footer {
-  background-color: var(--wisteria-purple);
+footer,
+section#follow_DIMS {
   width: 100%;
   height: auto;
-  padding: 1%;
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  padding: 3%;
+  padding: 6% 3%;
+}
+footer {
+  align-items: center;
+  background-color: var(--eggplant);
+  height: 200px;
 }
 footer section {
   width: 100%;
 }
 footer section:first-child {
   display: flex;
-  align-items: center;
+  align-items: start;
   grid-gap: 8px;
   color: white;
+  margin-bottom: 2%;
 }
 footer section:nth-child(2) {
   text-align: center;
@@ -333,44 +410,78 @@ footer section:nth-child(2) ul {
   justify-content: center;
   grid-gap: 15px;
 }
+footer section:nth-child(2) ul li:nth-child(4) {
+  display: none;
+}
 footer section:last-child {
   display: flex;
   justify-content: center;
 }
 footer section:last-child ul {
   display: flex;
-  grid-gap: 10px;
+  grid-gap: 27px;
 }
-footer section#socialM ul li {
+footer section#socialM ul li,
+section#follow_DIMS ul li {
   list-style: none;
 }
-footer section#socialM ul li a figure {
+footer section#socialM ul li a figure,
+section#follow_DIMS ul li a figure {
   width: 26px;
   height: 26px;
 }
-footer section#socialM ul li a figure img {
+footer section#socialM ul li a figure img,
+section#follow_DIMS ul li a figure img {
   width: 100%;
   height: 100%;
 }
 @media screen and (min-device-width: 576px) {
-  header {
-    padding: 0 5% 0 0.5%;
+  body > header {
+    padding: 0;
   }
-  header > div > a#logo figure img {
-    width: 83px;
+  body > header > div > a#logo {
+    width: 85%;
   }
-  header > div nav#nav {
+  body > header > div figure#menu {
+    margin: 0 40px 0 0px;
+  }
+  body > header > div nav#nav {
     display: block;
     width: 75%;
     margin: 0 auto;
   }
+  body section.DIMS {
+    padding: 0%;
+  }
+  section.DIMS header.in-place {
+    top: 200px;
+  }
+  section.DIMS header.in-place nav ul,
+  section.DIMS header#AYPAD nav ul {
+    max-width: 600px;
+    width: 100%;
+  }
+  main {
+    top: 200px;
+  }
   section#testimonials ul li article {
     height: 115px;
+  }
+  section#follow_DIMS {
+    padding: 3%;
+    flex-direction: row;
+  }
+  section#follow_DIMS ul {
+    grid-gap: 30px;
+  }
+  section#follow_DIMS > div#socialM {
+    margin-top: 0;
   }
   footer {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 55px;
+    height: auto;
+    padding: 3%;
   }
   footer section {
     width: 100%;
@@ -381,29 +492,60 @@ footer section#socialM ul li a figure img {
   }
 }
 @media screen and (min-device-width: 768px) {
-  header {
-    padding: 0 0.5%;
+  body > header {
+    padding: 0 1%;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
-  header > div {
+  body > header > div {
     margin-top: 1%;
+    margin-top: 0;
+    padding-right: 0;
+    width: 100%;
+    grid-gap: 15px;
   }
-  header > div > a#logo {
-    width: 39%;
+  body > header > div > a#logo {
+    width: 115px;
   }
-  header > div figure#menu {
+  body > header > div figure#menu {
     display: none !important;
   }
-  header > div nav#nav {
+  body > header > div > a#logo figure img {
+    margin-top: 2px;
+  }
+  body > header > div nav#nav {
     display: flex !important;
     padding: 1% 0;
-    width: 61%;
-    justify-content: end;
+    width: auto;
+    justify-content: start;
     display: flex;
+    width: 535px;
+    max-width: 550px;
   }
-  header > div nav#nav ul {
+  body > header > div nav#nav ul {
     width: 80%;
-    max-width: 375px;
+    max-width: 480px;
     margin: 0;
+    gap: 20px;
+  }
+  body > header > div nav#nav ul li a h5 {
+    color: var(--eggplant);
+  }
+  body section.DIMS {
+    padding: 2%;
+  }
+  body section.DIMS figure a {
+    flex-wrap: nowrap;
+    width: 258px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.DIMS header.in-place {
+    top: 185px;
+  }
+  main {
+    top: 185px;
   }
   main > figure.banner {
     height: 200px;
@@ -411,6 +553,10 @@ footer section#socialM ul li a figure img {
   main > figure.banner h1 {
     top: 105px;
     width: 85%;
+  }
+  div.description p {
+    padding-bottom: 250px;
+    top: 0;
   }
   section#mobility,
   section#commitment {
@@ -420,13 +566,13 @@ footer section#socialM ul li a figure img {
     height: 130px;
   }
   footer {
-    padding: 0 3% 0 0.5%;
+    padding: 2% 2.5% 2% 1%;
   }
   footer section {
     width: calc(100% / 3);
   }
   footer section:nth-child(2) {
-    margin-left: -65px;
+    margin-left: -25px;
     margin-bottom: 0;
   }
   footer section:last-child {
@@ -436,12 +582,15 @@ footer section#socialM ul li a figure img {
   }
   footer section:last-child ul {
     justify-content: end;
+    grid-gap: 15px;
+  }
+  footer section:first-child {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-device-width: 992px) {
-  header > div nav#nav ul {
-    width: 63%;
-    max-width: 375px;
+  main {
+    top: 195px;
   }
   main > figure.banner {
     margin-bottom: 4%;
@@ -454,8 +603,11 @@ footer section#socialM ul li a figure img {
     height: 165px;
     justify-content: flex-start;
   }
+  section#follow_DIMS {
+    padding: 1%;
+  }
   footer {
-    padding: 1% 2% 1% 0.5%;
+    padding: 2% 2% 2% 0.5%;
   }
   footer section {
     padding: 0;
@@ -466,14 +618,13 @@ footer section#socialM ul li a figure img {
   footer section:last-child {
     right: 0;
   }
+  footer section:last-child ul {
+    grid-gap: 30px;
+  }
 }
 @media screen and (min-device-width: 1200px) {
-  header {
-    padding: 0 2% 0 0;
-  }
-  header > div nav#nav ul {
-    min-width: 375px;
-    width: 54%;
+  body > header {
+    padding: 0 1%;
   }
   main {
     background-color: var(--white);
@@ -500,22 +651,25 @@ footer section#socialM ul li a figure img {
   }
 }
 @media screen and (min-width: 1400px) {
-  header {
-    padding: 0;
+  main {
+    top: 205px;
   }
-  header > div nav#nav ul {
+  body > header > div nav#nav ul {
     width: 45%;
   }
   section#testimonials ul li article {
     height: 145px;
   }
+  footer {
+    padding: 1% 2% 1% 0.5%;
+  }
 }
 @media screen and (min-width: 1600px) {
+  section.DIMS header.in-place {
+    top: 175px;
+  }
   main {
     padding-bottom: 3%;
-  }
-  header > div nav#nav ul {
-    width: 38%;
   }
   main > figure.banner {
     margin-bottom: 1.5%;
@@ -527,16 +681,35 @@ footer section#socialM ul li a figure img {
     height: 140px;
   }
 }
+@media screen and (min-width: 1800px) {
+  body section.DIMS {
+    padding: 0 2% 1% 2%;
+  }
+  main {
+    top: 175px;
+    background-position: 0px -75px;
+  }
+  section.DIMS header.in-place {
+    padding: 1%;
+  }
+  footer {
+    padding: 1% 1% 1% 0.5%;
+  }
+}
 @media screen and (min-width: 2000px) {
-  header > div nav ul {
-    width: 32%;
+  body section.DIMS {
+    padding: 0 0 1% 0;
+  }
+  main {
+    top: 175px;
+  }
+  section.DIMS header.in-place {
+    padding: 1%;
   }
   section#testimonials ul li article {
     height: 128px;
   }
-}
-@media screen and (min-width: 2400px) {
-  header > div nav ul {
-    width: 28%;
+  footer {
+    padding: 1% 1% 1% 0.5%;
   }
 }

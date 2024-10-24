@@ -1,6 +1,31 @@
-header {
-  position: sticky;
-  background-color: var(--wisteria-purple);
+body {
+  background-image: linear-gradient(
+    var(--wisteria-purple) 15%,
+    var(--dirty-purple) 100%
+  ) !important;
+}
+body > header,
+body > header.in-place > div nav#nav > ul {
+  background-color: var(--wisteria-purple) !important;
+  filter: none !important;
+}
+/* AYPAD link container  */
+body > header#AYPAD > div nav#nav {
+  background: var(--wisteria_purple);
+}
+body > header#AYPAD > div nav#nav > ul {
+  top: -5px;
+}
+/*-----------------------SECTION DIMS ----*/
+body section.DIMS,
+section.DIMS header.in-place {
+  background-color: var(--wisteria-purple) !important;
+  z-index: 1;
+}
+section.DIMS header.in-place nav ul li a h5 {
+  -webkit-text-fill-color: white !important;
+  -webkit-background-clip: text;
+  filter: none !important;
 }
 /*-----------------------Hero ----*/
 main {
@@ -8,32 +33,33 @@ main {
     no-repeat top center / 100% 100%;
   background-size: cover;
   width: 100%;
-  height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: -1px;
+  height: 650px;
   position: relative;
   margin-bottom: -2px;
-  background-position: -78px 125px;
+  background-position: -50px 36px;
 }
-main > div {
+main > header.DIMS {
+  position: fixed;
+}
+main div {
   width: 90%;
   height: auto;
+  margin: auto;
   text-align: center;
-  top: 0;
+  top: -10%;
   position: relative;
+  z-index: -1;
 }
-main > div h1 {
+main div h1 {
   font-size: 50px;
 }
-main > div section h5 {
+main div section h5 {
   font-size: medium;
 }
-main > div section h5 a {
+main div section h5 a {
   color: var(--white);
 }
-main > div section h5 a:hover {
+main div section h5 a:hover {
   background: linear-gradient(
     to right,
     var(--bean-red_two),
@@ -47,6 +73,9 @@ main > div section h5 a:hover {
 /*-----------------------Feature Service ----*/
 section#feature_service {
   width: 100%;
+  position: relative;
+  top: 150px;
+  z-index: -1;
 }
 section#feature_service ul {
   display: grid;
@@ -114,6 +143,8 @@ section#audio {
   display: flex;
   align-items: end;
   justify-content: center;
+  z-index: -2;
+  position: relative;
 }
 section#audio > div {
   width: 90%;
@@ -121,12 +152,10 @@ section#audio > div {
   text-align: center;
   position: relative;
   bottom: 12%;
+  z-index: -1;
 }
 h2 {
   font-size: 42px;
-}
-h5 {
-  font-size: 20px;
 }
 /*-----------------------Mobility ----*/
 section#mobility > div {
@@ -152,8 +181,21 @@ section#mobility div figure img {
   }
 }
 @media screen and (min-device-width: 768px) {
+  section.DIMS header.in-place {
+    top: 185px;
+  }
+  body > header#AYPAD > div nav#nav > ul {
+    top: 0;
+  }
   main {
-    background-position: 0 80px;
+    background-position: 0 36px;
+    height: 550px;
+  }
+  main div {
+    top: -1%;
+  }
+  section#follow_DIMS {
+    padding: 2%;
   }
   section#feature_service ul li:nth-of-type(2) article {
     background-image: linear-gradient(
@@ -176,9 +218,16 @@ section#mobility div figure img {
 @media screen and (min-device-width: 992px) {
   main {
     height: 715px;
+    background-position: 0 18px;
   }
-  main > div {
+  main div {
     width: 70%;
+  }
+  section#follow_DIMS {
+    padding: 1.5% 2% 1% 1%;
+  }
+  section.DIMS header.in-place {
+    top: 195px;
   }
   section#audio > div {
     width: 70%;
@@ -189,18 +238,22 @@ section#mobility div figure img {
   section#mobility > div {
     width: 70%;
   }
+  footer section:last-child ul {
+    grid-gap: 30px;
+  }
 }
 @media screen and (min-device-width: 1200px) {
   main {
-    height: 850px;
+    height: 800px;
+    background-position: 0 -15px;
   }
-  main > div {
+  main div {
     width: 57%;
   }
-  main > div h1 {
+  main div h1 {
     font-size: 60px;
   }
-  main > div section h5 {
+  main div section h5 {
     font-size: x-large;
   }
   section#feature_service ul {
@@ -241,7 +294,7 @@ section#mobility div figure img {
 }
 @media screen and (min-width: 1400px) {
   main {
-    height: 950px;
+    height: 900px;
   }
   section#audio > div {
     width: 58%;
@@ -252,9 +305,9 @@ section#mobility div figure img {
 }
 @media screen and (min-width: 1600px) {
   main {
-    height: 1100px;
+    background-position: 0px -50px;
   }
-  main > div {
+  main div {
     width: 54%;
   }
   section#feature_service ul {
@@ -270,15 +323,25 @@ section#mobility div figure img {
     width: 50%;
   }
 }
+@media screen and (min-width: 1800px) {
+  section#follow_DIMS {
+    padding: 1%;
+  }
+}
 @media screen and (min-width: 2000px) {
+  section.DIMS header.in-place {
+    top: 175px;
+  }
   main {
-    height: 1300px;
-    background-position: 0 75px;
+    height: 1000px;
   }
 }
 @media screen and (min-width: 2400px) {
   main {
-    height: 1500px;
-    background-position: 0 75px;
+    height: 1100px;
+    background-position: 0 -102px;
+  }
+  section.DIMS header.in-place {
+    top: 180px;
   }
 }

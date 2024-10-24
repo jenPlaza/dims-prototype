@@ -1,13 +1,28 @@
+body section.DIMS,
+section.DIMS header.in-place {
+  background: var(--white) !important;
+  z-index: 1;
+}
+figure.banner {
+  background: transparent;
+}
+section.DIMS header.in-place {
+  top: 215px;
+}
+nav#nav section.logo_container > header > div {
+  right: 14px;
+}
 /*-----------------------Main ----*/
 main {
-  padding-bottom: 0;
+  padding: 0;
 }
 main > figure.banner {
   margin-bottom: 0;
-  height: 425px;
+  height: 400px;
 }
 main > figure.banner h1 {
-  left: 10%;
+  left: 0;
+  padding-left: 10%;
 }
 main figure:last-child {
   background: url(../images/tim-mossholder-MfqINxPDpKU-unsplash-min.jpg)
@@ -18,12 +33,18 @@ main figure:last-child {
   position: relative;
   background-position: 50% 30%;
 }
+div.description {
+  min-height: 800px;
+  max-height: 1000px;
+}
 /*-----------------------What we do ----*/
 body section:has(> div.description) {
   background: linear-gradient(to right, var(--gun-powder), var(--cinder));
   display: flex;
   justify-content: center;
   padding: 10% 0;
+  top: 215px;
+  position: relative;
 }
 section > div.description {
   display: grid;
@@ -36,7 +57,20 @@ section > div.description h4 {
 section > div.description p {
   color: var(--white);
 }
+body section#testimonials {
+  position: relative;
+  top: 0;
+}
 @media screen and (min-device-width: 576px) {
+  section.DIMS header.in-place {
+    top: 200px;
+  }
+  body > header > div figure#menu {
+    margin: 5px 17px 0 0px;
+  }
+  nav#nav section.logo_container > header > div {
+    right: 22px;
+  }
   main {
     padding: 0;
   }
@@ -50,12 +84,38 @@ section > div.description p {
     background-position: 50% 53%;
   }
   body section:has(> div.description) {
+    top: 200px;
+  }
+  body section:has(> div.description) {
     padding: 7% 0;
   }
 }
 @media screen and (min-device-width: 768px) {
   body section:has(> div.description) {
     padding: 5% 0;
+  }
+  section.DIMS header.in-place {
+    top: 185px;
+  }
+  body section:has(> div.description) {
+    top: 185px;
+  }
+  div.description {
+    min-height: 500px;
+    max-height: 825px;
+    top: 0;
+  }
+  section > div.description h4 {
+    margin-bottom: 0;
+    height: 80px;
+  }
+  div.description p {
+    padding-bottom: 75px;
+    top: -59px;
+    position: relative;
+  }
+  section#follow_DIMS {
+    padding: 2%;
   }
 }
 @media screen and (min-device-width: 835px) {
@@ -72,6 +132,23 @@ section > div.description p {
   main > figure.banner h1 {
     width: 90vw;
   }
+  div.description {
+    min-height: 400px;
+    max-height: 500px;
+    overflow-y: unset;
+  }
+  div.description p {
+    top: 0;
+  }
+  body section#testimonials {
+    top: 180px;
+  }
+  section#testimonials ul {
+    padding-bottom: 175px;
+  }
+  section#follow_DIMS {
+    padding: 1% 2% 1% 1%;
+  }
 }
 @media screen and (min-device-width: 1200px) {
   main > figure.banner {
@@ -79,7 +156,8 @@ section > div.description p {
   }
   main > figure.banner h1 {
     width: 85%;
-    left: 5.5%;
+    left: 0;
+    padding-left: 5%;
   }
   main figure:last-child {
     height: 13vh;
@@ -93,6 +171,16 @@ section > div.description p {
 @media screen and (min-device-width: 1600px) {
   main > figure.banner h1 {
     width: 85vw;
-    left: 5%;
+  }
+  section#follow_DIMS {
+    padding: 1%;
+  }
+}
+@media screen and (min-device-width: 2000px) {
+  section.DIMS header.in-place {
+    top: 175px;
+  }
+  main {
+    top: 190px;
   }
 }

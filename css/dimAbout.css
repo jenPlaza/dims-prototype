@@ -1,3 +1,14 @@
+body section.DIMS,
+section.DIMS header.in-place {
+  background: var(--white) !important;
+  z-index: 1;
+}
+figure.banner {
+  background: transparent;
+}
+section.DIMS header.in-place {
+  top: 215px;
+}
 /*-----------------------Mobility ----*/
 section#mobility > div {
   width: 90%;
@@ -27,9 +38,41 @@ section#mobility div figure img {
   height: 45vh;
   background-position: 50% 50%;
 }
+@media screen and (min-device-width: 576px) {
+  section.DIMS header.in-place {
+    top: 202px;
+  }
+  figure.banner h1 {
+    top: 111px;
+  }
+  div.description {
+    top: -34px;
+  }
+}
+@media screen and (min-device-width: 768px) {
+  section.DIMS header.in-place {
+    top: 185px;
+  }
+  main {
+    top: 260px;
+  }
+  main > figure.banner {
+    height: 165px;
+  }
+  main > figure.banner h1 {
+    top: 51px;
+  }
+}
 @media screen and (min-device-width: 992px) {
   section#mobility > div {
     width: 90%;
+  }
+  div.description {
+    min-height: 1100px;
+    max-height: 900px;
+  }
+  div.description p {
+    padding-bottom: 50px;
   }
 }
 @media screen and (min-device-width: 1200px) {
@@ -41,8 +84,37 @@ section#mobility div figure img {
     position: relative;
     padding-top: 1%;
   }
+  main {
+    top: 262px;
+  }
   main > div p,
   section#mobility > div {
     text-align: justify;
+  }
+  main > figure.banner h1 {
+    top: -18px;
+  }
+  div.description {
+    min-height: 800px;
+    max-height: 1000px;
+  }
+  section.DIMS header.in-place {
+    top: 202px;
+  }
+}
+@media screen and (min-device-width: 1600px) {
+  section.DIMS header.in-place {
+    top: 210px;
+  }
+  div.description {
+    max-height: 900px;
+  }
+}
+@media screen and (min-device-width: 2000px) {
+  section.DIMS header.in-place {
+    top: 175px;
+  }
+  div.description {
+    max-height: 700px;
   }
 }

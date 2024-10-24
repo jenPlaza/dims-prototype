@@ -37,6 +37,7 @@
       Music
     </title>
     <link rel="stylesheet" href="./css/dimReusable.css" />
+    <link rel=stylesheet href=./css/logos.css />
     <link rel="stylesheet" href="./css/dimTeam.css" />
     <script src="./service-worker.js"></script>
     <script type="application/ld+json">
@@ -174,27 +175,23 @@
             }
     </script>
   </head>
-  <body onload="displayTeam();">
-    <header class="in-place">
-      <div id="navigation_menu">
-        <!-- logo -->
-        <a href="/" id="logo"
-          ><figure>
-            <img
-              src="./images/logos/logo_DIMS_purple-min.png"
-              alt="snowcone colored logo"
-              width="100%"
-              height="100%"
-            />
-            <h4>DIM Studio</h4>
-          </figure></a
-        >
-        <!-- hamburger -->
-        <figure id="menu" onclick="appear();">
-          <img src="./images/icons/menu.png" alt="hamburger icon" />
-        </figure>
-        <!-- navigation -->
-        <nav id="nav" style="display: none">
+  <body onload="displayTeam(); displayBrands()">
+    <header id="AYPAD"></header>
+    <!-- DIMS logo -->
+    <section class="DIMS">
+      <figure>
+        <a href="./index.html" id="logo">
+          <img
+            src="./images/logos/logo_DIMS_purple-min.png"
+            alt="Daughter company logo to AYPAD.org"
+            width="100%"
+            height="100%"
+          />
+          <h4>DIM Studio</h4>
+        </a>
+      </figure>
+      <header class="in-place">
+        <nav>
           <ul>
             <li>
               <a href="./index.html"><h5>Home</h5></a>
@@ -210,24 +207,24 @@
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </header>
+    </section>
     <main>
       <figure class="banner">
         <h1>Our team</h1>
-        <div>
-          <h5>
-            To create a thriving community of talented youths who are empowered
-            to pursue their passion for music, fostering a culture of peace,
-            creativity, and development across the globe.
-          </h5>
-        </div>
       </figure>
+      <div class="description">
+        <p>
+          To create a thriving community of talented youths who are empowered to
+          pursue their passion for music, fostering a culture of peace,
+          creativity, and development across the globe.
+        </p>
+      </div>
     </main>
     <section id="DIR">
       <figure>
         <img
-          src="./images/team/dr-phillip-bangura-min.jpeg"
+          src="./images/team/dr-phillip-bangura-min.png"
           alt="dr-phillip-bangura headshot"
           width="100%"
           height="100%"
@@ -254,12 +251,17 @@
       </section>
     </section>
     <section id="team"></section>
+    <!-- Foolow DIMS -->
+    <section id="follow_DIMS">
+      <h5>Follow DIMS</h5>
+      <div id="socialM_DIMS"></div>
+    </section>
     <!--   footer -->
     <footer>
       <section>
         <div id="logo">
           <img
-            src="./images/logos/logo_purple-min.png"
+            src="./images/logos/logo_aypad-min.png"
             alt="logo"
             width="50px"
             height="50px"

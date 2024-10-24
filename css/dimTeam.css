@@ -1,31 +1,33 @@
-body:has(section#team) {
-  background: transparent;
-}
 /*----------------------- MAIN ----*/
 main {
-  background: url('../images/israel-palacio-Y20JJ_ddy9M-unsplash_purple-min.png')
-    no-repeat top center / 100% 100%;
-  background-size: cover;
-  background-position: 50% 50%;
+  background: linear-gradient(to bottom, var(--fog) 15%, var(--white));
   width: 100%;
-  height: 66vh;
+  height: 345px;
+  padding: 0;
+  z-index: -1;
 }
 figure.banner {
   background: transparent;
+  top: 100px;
+  height: 100px;
 }
 figure.banner h1 {
-  width: 95%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 7%;
 }
 
-main > figure.banner div {
+main div.description {
   position: relative;
-  top: 60%;
-  left: 5%;
-  padding: 0 5% 0 0;
   display: flex;
   align-items: center;
-  height: 250px;
-  width: 95%;
+  top: 80px;
+  height: 150px;
+  overflow: unset;
+}
+main div.description p {
+  padding-bottom: 0;
 }
 /*----------------------- DIR ----*/
 section#DIR {
@@ -33,8 +35,8 @@ section#DIR {
   flex-direction: column;
   flex-wrap: wrap;
   height: auto;
-  padding-bottom: 7%;
   position: relative;
+  top: 350px;
 }
 section#DIR figure {
   width: 100%;
@@ -65,6 +67,8 @@ section#team {
   padding: 3% 0;
   background: linear-gradient(to bottom, var(--fog) 15%, var(--white) 100%);
   position: relative;
+  z-index: -1;
+  top: 400px;
 }
 section#team > ul {
   max-width: 2000px;
@@ -72,7 +76,7 @@ section#team > ul {
   margin: auto auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-  padding: 0;
+  padding: 0 0 350px 0;
   gap: 5px;
 }
 section#team > ul li {
@@ -134,20 +138,51 @@ section#team > ul li article section div:last-child p {
   line-height: 1.5;
   text-align: justify;
 }
+section#follow_DIMS {
+  position: fixed;
+  bottom: 200px;
+}
+footer {
+  position: fixed !important;
+  bottom: 0;
+}
 @media screen and (min-device-width: 576px) {
-  main {
-    height: 51vh;
+  section.DIMS header.in-place nav ul {
+    max-width: 500px;
+    width: 100%;
   }
-  main > figure.banner div {
-    height: 150px;
+  main {
+    height: 325px;
+    top: 260px;
+  }
+  main > figure.banner h1 {
+    left: 0;
+    padding-left: 7%;
+  }
+  main div.description {
+    left: 3%;
+  }
+  figure.banner {
+    top: 50px;
+    margin-bottom: 2%;
+  }
+  main div.description {
+    top: 25px;
   }
   /*----------------------- DIR ----*/
   section#DIR figure {
     margin: 0;
+    height: 400px;
   }
   section#DIR figure img {
     width: 100%;
     margin: 0;
+  }
+  section.DIMS header.in-place {
+    top: 200px;
+  }
+  body section.DIMS {
+    top: 74px;
   }
   section#DIR section {
     width: 100%;
@@ -157,8 +192,12 @@ section#team > ul li article section div:last-child p {
   }
 
   /*----------------------- TEAM ----*/
+  section#team {
+    padding: 3% 0 15% 0;
+  }
   section#team > ul {
     width: 90%;
+    padding: 0 0 105px 0;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
   section#team > ul li {
@@ -185,18 +224,38 @@ section#team > ul li article section div:last-child p {
   section#team > ul li:nth-child(3) article > figure img {
     object-position: 0 20%;
   }
+  section#follow_DIMS {
+    bottom: 175px;
+  }
 }
 @media screen and (min-device-width: 768px) {
   /*----------------------- Main ----*/
   main {
-    height: 54vh;
+    height: 275px;
+  }
+  main > figure.banner {
+    left: 0;
+    height: 100px;
+  }
+  main > figure.banner h1 {
+    padding: 1% 0 0% 5%;
+    top: 0;
+    left: 0;
+  }
+  main div.description {
+    position: relative;
+    left: 0.5%;
+  }
+  section.DIMS header.in-place {
+    top: 185px;
   }
   /*----------------------- DIR ----*/
   section#DIR {
     flex-direction: row;
     width: 100%;
     align-items: center;
-    padding: 3%;
+    padding: 3% 0% 3% 5.5%;
+    top: 300px;
   }
   section#DIR figure {
     width: 40%;
@@ -219,8 +278,13 @@ section#team > ul li article section div:last-child p {
     margin-bottom: 2%;
   }
   /*----------------------- Team ----*/
+  section#team {
+    top: 340px;
+    padding: 3% 0 17% 0;
+  }
   section#team > ul {
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    padding-bottom: 80px;
   }
   section#team > ul li article > figure,
   section#team > ul li article > figure,
@@ -232,21 +296,32 @@ section#team > ul li article section div:last-child p {
     max-height: 130px;
     overflow: scroll;
   }
+  section#follow_DIMS {
+    bottom: 90px;
+    padding: 3% 2% 3% 3%;
+  }
+  footer {
+    position: relative;
+    bottom: -12px;
+  }
 }
-
 @media screen and (min-device-width: 992px) {
-  main {
-    height: 44vh;
+  section.DIMS header.in-place {
+    top: 194px;
   }
-  main > figure.banner div {
-    height: 200px;
-    top: 36%;
+  main div.description {
+    top: 0;
   }
+
   /*----------------------- DIR ----*/
   section#DIR {
-    padding: 6%;
+    top: 235px;
   }
   /*----------------------- Team ----*/
+  section#team {
+    top: 300px;
+    padding: 3% 0 15% 0;
+  }
   section#team > ul {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
@@ -258,16 +333,21 @@ section#team > ul li article section div:last-child p {
   }
 }
 @media screen and (min-device-width: 1200px) {
-  main {
-    height: 33vh;
+  section.DIMS header.in-place {
+    top: 202px;
   }
   main > figure.banner {
     flex-flow: wrap-reverse;
   }
-  main > figure.banner div {
-    top: 215px;
-    width: 90%;
-    left: 2.5%;
+  main > figure.banner h1 {
+    padding: 1% 0 0% 12.5%;
+    width: 100%;
+  }
+  section#DIR {
+    padding: 3% 2% 3% 5%;
+  }
+  section#team {
+    padding: 3% 0 14% 0;
   }
   /*----------------------- Team ----*/
   section#team > ul {
@@ -279,14 +359,44 @@ section#team > ul li article section div:last-child p {
   section#team > ul li article section {
     width: 400px;
   }
+  section#follow_DIMS {
+    padding: 1% 2% 2% 3%;
+  }
 }
 @media screen and (min-device-width: 1400px) {
-  main > figure.banner div {
-    top: 225px;
+  section.DIMS header.in-place {
+    top: 210px;
+  }
+  section#team {
+    top: 275px;
+    padding: 3% 0 11% 0;
+  }
+  section#follow_DIMS {
+    padding: 1% 2% 1% 3%;
   }
 }
 @media screen and (min-device-width: 1600px) {
-  main {
-    height: 425px;
+  section#DIR {
+    padding: 0% 6%;
+  }
+  section#follow_DIMS {
+    padding: 1% 2% 1% 3%;
+  }
+}
+@media screen and (min-device-width: 2000px) {
+  section.DIMS header.in-place {
+    top: 175px;
+  }
+  section#team {
+    top: 350px;
+    padding: 3% 0 10% 0;
+  }
+  section#follow_DIMS {
+    padding: 1% 1% 1% 3%;
+  }
+}
+@media screen and (min-device-width: 2400px) {
+  section#follow_DIMS {
+    padding: 1% 1% 1.25% 3%;
   }
 }
