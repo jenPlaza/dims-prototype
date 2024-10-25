@@ -772,6 +772,9 @@ section#follow_DIMS ul li a figure img {
   section#testimonials ul li article {
     height: 130px;
   }
+  section#follow_DIMS {
+    padding: 2%;
+  }
   footer {
     padding: 2% 2.5% 2% 1%;
   }
@@ -796,6 +799,14 @@ section#follow_DIMS ul li a figure img {
   }
 }
 @media screen and (min-device-width: 992px) {
+  nav#nav section.logo_container {
+    gap: 0;
+  }
+  body > header#AYPAD > div nav#nav section.logo_container header {
+    width: auto;
+    min-width: 350px;
+    max-width: 25%;
+  }
   body > header#AYPAD > div nav#nav section.logo_container > ul {
     justify-content: center;
     left: 400px;
@@ -815,7 +826,7 @@ section#follow_DIMS ul li a figure img {
     justify-content: flex-start;
   }
   section#follow_DIMS {
-    padding: 1%;
+    padding: 1.5% 2% 1% 1%;
   }
   footer {
     padding: 2% 2% 2% 0.5%;
@@ -841,10 +852,7 @@ section#follow_DIMS ul li a figure img {
     width: 400px;
   }
   body > header#AYPAD > div nav#nav section.logo_container > ul {
-    left: 0;
-  }
-  body > header#AYPAD > div nav#nav section.logo_container header {
-    width: 400px;
+    left: 275px;
   }
   nav#nav section.logo_container > header > div {
     top: 55px;
@@ -852,6 +860,7 @@ section#follow_DIMS ul li a figure img {
   }
   section.DIMS header.in-place {
     top: 202px;
+    height: 60px;
   }
   main {
     background-color: var(--white);
@@ -897,11 +906,10 @@ section#follow_DIMS ul li a figure img {
 }
 @media screen and (min-width: 1600px) {
   body > header#AYPAD div nav#nav section.logo_container header {
-    width: 500px;
     left: 0;
   }
   section.DIMS header.in-place {
-    top: 175px;
+    top: 215px;
   }
   main {
     padding-bottom: 3%;
@@ -927,19 +935,39 @@ section#follow_DIMS ul li a figure img {
   main {
     background-position: 0px -75px;
   }
+  section#follow_DIMS {
+    padding: 1%;
+  }
+
   footer {
     padding: 1% 1% 1% 0.5%;
   }
 }
 @media screen and (min-width: 2000px) {
-  body > header#AYPAD div nav#nav section.logo_container header {
-    margin: 0 1%;
-    left: 0;
+  nav#nav section.logo_container {
+    padding: 0 3%;
+  }
+  body > header#AYPAD > div nav#nav section.logo_container header {
+    max-width: 20%;
+  }
+  body > header#AYPAD > div nav#nav section.logo_container > ul {
+    left: 50px;
+  }
+  section.logo_container ul#brands li {
+    padding: 1.5%;
   }
   body section.DIMS {
     padding: 0 0 1% 0;
   }
   section#testimonials ul li article {
     height: 128px;
+  }
+}
+@media screen and (min-width: 2200px) {
+  body > header#AYPAD > div nav#nav section.logo_container header {
+    max-width: 25%;
+  }
+  body > header#AYPAD > div nav#nav section.logo_container > ul {
+    left: 0;
   }
 }

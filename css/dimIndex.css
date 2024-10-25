@@ -204,9 +204,6 @@ section#mobility div figure img {
   main div {
     top: -1%;
   }
-  section#follow_DIMS {
-    padding: 2%;
-  }
   section#feature_service ul li:nth-of-type(2) article {
     background-image: linear-gradient(
       to bottom left,
@@ -235,9 +232,6 @@ section#mobility div figure img {
   }
   main div {
     width: 70%;
-  }
-  section#follow_DIMS {
-    padding: 1.5% 2% 1% 1%;
   }
   section.DIMS header.in-place {
     top: 195px;
@@ -340,9 +334,6 @@ section#mobility div figure img {
   }
 }
 @media screen and (min-width: 1800px) {
-  section#follow_DIMS {
-    padding: 1%;
-  }
 }
 @media screen and (min-width: 2000px) {
   section.DIMS header.in-place {

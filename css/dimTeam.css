@@ -112,8 +112,16 @@ section#team > ul li article section div:nth-child(1) {
   justify-content: space-between;
   width: 100%;
 }
+section#team > ul li article section div:nth-child(2) {
+  font-weight: 500;
+  text-transform: uppercase;
+}
 section#team > ul li:nth-child(3) article section div:nth-child(1) {
   display: none;
+}
+section#team > ul li:nth-child(3) article section div:last-child p,
+section#team > ul li:nth-child(2) article section div:last-child p {
+  overflow: unset;
 }
 section#team > ul li article section div:nth-child(2) {
   color: var(--eggplant);
@@ -274,9 +282,6 @@ section#team > ul li article section div:last-child p {
   section#team > ul li article section {
     width: 400px;
   }
-  section#follow_DIMS {
-    padding: 1% 2% 2% 3%;
-  }
 }
 @media screen and (min-device-width: 1400px) {
   section#team > ul li article > figure,
@@ -284,9 +289,6 @@ section#team > ul li article section div:last-child p {
   section#team > ul li article > figure img,
   section#team > ul li article section {
     width: 500px;
-  }
-  section#follow_DIMS {
-    padding: 1% 2% 1% 3%;
   }
 }
 @media screen and (min-device-width: 1600px) {
@@ -296,14 +298,6 @@ section#team > ul li article section div:last-child p {
   section#team > ul li article section {
     width: 400px;
   }
-  section#follow_DIMS {
-    padding: 1% 2% 1% 3%;
-  }
-}
-@media screen and (min-device-width: 2000px) {
-  section#follow_DIMS {
-    padding: 1% 1% 1% 3%;
-  }
 }
 @media screen and (min-device-width: 2400px) {
   main {
@@ -311,8 +305,5 @@ section#team > ul li article section div:last-child p {
   }
   main div.description {
     top: -50px;
-  }
-  section#follow_DIMS {
-    padding: 1% 1% 1.25% 3%;
   }
 }

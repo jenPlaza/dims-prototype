@@ -89,10 +89,10 @@ var teamArray = [
     mem_name: 'Dr Jim Tamuro ',
     mem_DIM_role: 'DIMS Project SUPER',
     mem_country: 'Republic of Uganda',
-    mem_pro_title: 'Doctor',
+    mem_pro_title: 'Doctor of Medicine (MD)',
     mem_linkedIn: 'https://www.linkedin.com/in/jim-tamuro-3b077421b/',
     mem_bio:
-      'Dr. Jim is a Ugandan Medicale Doctor with over 3 years of Project design, Implementation and Supervision. He currently serves as the Principal Project Coordinator of Africa Youth For and Development (AYPAD). He also serves as the United Nations Volunteers Hiring Manager under Africa Youth For Peace and Development on the Unified Volunteer Platform (UVP).',
+      'Dr. Jim is a Ugandan Medicale Doctor with over 3 years of Project design, Implementation and Supervision. He currently serves as the Principal Project Coordinator of Africa Youth For and Development (AYPAD). He also serves as the United Nations Volunteers Hiring Manager under Africa Youth For Peace and Development on the Unified Volunteer Platform (UVP).<span style="color:rgba(255, 255, 255, 0);"> ******* DO NOT REMOVE ADDING WHITE SPACE ********* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>',
   },
   {
     team_id: 'COORD01',
@@ -104,7 +104,19 @@ var teamArray = [
     mem_pro_title: 'Music Producer and Music Law Advisor',
     mem_linkedIn: '',
     mem_bio:
-      'Music Producer and Music Law Advisor, with 8 years of experience in composing, recording, mixing, mastering, sound design, music law and marketing. I have worked for studios and agencies. I am always looking forward to helping artists and creatives to achieve their goals.',
+      'Music Producer and Music Law Advisor, with 8 years of experience in composing, recording, mixing, mastering, sound design, music law and marketing. I have worked for studios and agencies. I am always looking forward to helping artists and creatives to achieve their goals.<span style="color:rgba(255, 255, 255, 0);"> ******* DO NOT REMOVE ADDING WHITE SPACE ********* Lorem ipsum odor amet, consectetuer adipiscing elit. Dapibus nullam purus aliquet rhoncus tristique aliquet molestie ullamcorper. Suspendisse efficitur proin ad odio sagittis nisl iaculis blandit. Ornare neque euismod natoque convallis tortor. Ridiculus sem per justo rutrum laoreet luctus sem consectetur porttitor. Ante enim curabitur non interdum torquent. Elementum leo odio erat ullamcorper malesuada sem est. Massa vel senectus nulla nec molestie nisi est proin. Ante viverra tellus eget orci ut quisque. Sollicitudin ullamcorper venenatis gravida elementum integer nam praesent eu.</span>',
+  },
+  {
+    team_id: 'web',
+    mem_image_src: './images/team/jen-plaza-min.png',
+    mem_image_alt: 'Jennifer Plaza Headshot',
+    mem_name: 'Jennifer Plaza',
+    mem_DIM_role: 'DIMS Frontend Developer  ',
+    mem_country: 'Orlando, Florida USA',
+    mem_pro_title: 'Web Design and Development',
+    mem_linkedIn: 'https://www.linkedin.com/in/jenn-plaza-339613321/',
+    mem_bio:
+      'I obtained my undergraduate degree in Web Design & Development from Full Sail University on November 24, 2020. I was born and raised in Miami, Florida; I moved to Orlando, Florida in 2006. I am the youngest sibling of two. I enjoy gardening, painting, and my new hobby growing my own organic food. Since 2006, I worked for the American Hotel and Lodging Educational Institute (AHLEI) until they merged with the National Restaurant Association (NRA). Withtin that period, I found my enthusiasm for websites; I decided to go back to school. I graduated in 2020; since then I have been involved in various volunteer projects, aquired some work experience, and slowly been modeling my skills and structuring my habits into best practices. In June of 2024, I joined AYPAD as a volunteer and have had the blessing of being part of a few of their many projects. Its been a great opportunity and I am happy to conitnue particpating as they feel fit.',
   },
   {
     team_id: 'Mngr',
@@ -118,18 +130,6 @@ var teamArray = [
       'https://www.linkedin.com/in/ngangamagda2/?originalSubdomain=na',
     mem_bio:
       'I am a Business Risk and Compliance Clerk at a bank, combining a strong foundation in communication with a solid expertise in graphic design. I hold an Honors Degree and a Bachelors Degree in Communication, along with a Diploma in Public Relations, and am currently pursuing a Master’s in Management to broaden my professional capabilities. As a graphic designer, I have developed and executed visual content for a variety of projects, including logos, marketing materials, and digital assets. My role as Graphics Manager for DIMS has been a particularly rewarding experience, enabling me to hone my leadership abilities while showcasing my design skills. In addition to my professional experience, I am an active volunteer with the United Nations Volunteers (UNV), having contributed to both Cohort 6 and 11 by writing non-scientific articles. I have also earned certifications from the Young African Leaders Initiative (YALI), FAO, and UNDP, strengthening my knowledge in communication, leadership, and development. Outside of work, I am passionate about traveling and vlogging, capturing moments through photography, particularly inspired by nature’s beauty.',
-  },
-  {
-    team_id: 'web',
-    mem_image_src: './images/team/jen-plaza-min.png',
-    mem_image_alt: 'Jennifer Plaza Headshot',
-    mem_name: 'Jennifer Plaza',
-    mem_DIM_role: 'DIMS Frontend Developer  ',
-    mem_country: 'Orlando, Florida USA',
-    mem_pro_title: 'Web Design and Development',
-    mem_linkedIn: 'https://www.linkedin.com/in/jenn-plaza-339613321/',
-    mem_bio:
-      'I obtained my undergraduate degree in Web Design & Development from Full Sail University on November 24, 2020. I was born and raised in Miami, Florida; I moved to Orlando, Florida in 2006. I am the youngest sibling of two. I enjoy gardening, painting, and my new hobby growing my own organic food. Since 2006, I worked for the American Hotel and Lodging Educational Institute (AHLEI) until they merged with the National Restaurant Association (NRA). Withtin that period, I found my ninch for websites; I decided to go back to school. I graduated in 2020; since then I have been involved in various volunteer projects, aquired some work experience, and slowly been modeling my skills and structuring my habits into best practices. In June of 2024, I joined AYPAD as a volunteer and have had the blessing of being part of a few of their many projects. Its been a great opportunity and I am happy to conitnue particpating as they feel fit.',
   },
 ];
 

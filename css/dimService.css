@@ -126,9 +126,6 @@ body section#testimonials {
     top: 0;
     position: relative;
   }
-  section#follow_DIMS {
-    padding: 2%;
-  }
 }
 @media screen and (min-device-width: 835px) {
   main > figure.banner {
@@ -153,9 +150,6 @@ body section#testimonials {
   }
   div.description p {
     top: 0;
-  }
-  section#follow_DIMS {
-    padding: 1% 2% 1% 1%;
   }
 }
 @media screen and (min-device-width: 1200px) {
@@ -188,9 +182,6 @@ body section#testimonials {
   }
   body section:has(> div.description) {
     padding: 4% 0 2% 0;
-  }
-  section#follow_DIMS {
-    padding: 1%;
   }
 }
 @media screen and (min-device-width: 2000px) {
