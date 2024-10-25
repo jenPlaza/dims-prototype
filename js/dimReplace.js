@@ -101,11 +101,13 @@ function displayTeam() {
       teamArray[t].mem_name +
       '</h5></figcaption></figure>';
     teamMembers +=
-      '<section><div><span><h6><b>' +
+      '<section><div><h6><b>' +
       teamArray[t].mem_DIM_role +
-      '</b><img src="./images/icons/linkedin_pink_circle.png" alt="linkedIn icon"  /></span><br />' +
+      '</b><br />' +
       teamArray[t].mem_country +
-      '</h6></div>';
+      '</h6><div><a href="' +
+      teamArray[t].mem_linkedIn +
+      '" ><img src="./images/icons/linkedin_pink.png" alt="linkedIn icon" width="25px" height="25px" /></a></div></div>';
     teamMembers += '<div>' + teamArray[t].mem_pro_title + '</div>';
     teamMembers += '<div><p>' + teamArray[t].mem_bio + '</p></div>';
     teamMembers += '</section></article></li>';

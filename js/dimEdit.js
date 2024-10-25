@@ -66,6 +66,7 @@ var teamArray = [
     mem_DIM_role: 'DIMS Executive DIR',
     mem_country: ' Freetown, Sierra Leone Africa',
     mem_pro_title: 'Executive Director of Africa Youth for Peace & Development',
+    mem_linkedIn: '',
     mem_bio:
       'Executive Director for Africa Youth for Peace and Development(AYPAD).  Worked with the organization for 10+ years, and implemented several peace and sustainable development projects, with the ultimate aim of positively transforming the lives of young people in difficult circumstances.',
   },
@@ -77,6 +78,7 @@ var teamArray = [
     mem_DIM_role: 'DIMS Project SUPER',
     mem_country: 'Africa',
     mem_pro_title: 'Permanent Secretary AYPAD',
+    mem_linkedIn: 'https://www.linkedin.com/in/umera-ozioma-9778a3259/',
     mem_bio:
       'Ozioma Umera is a distinguished information science professional, renowned for her exceptional academic achievements, extensive experience, and commitment to excellence. Academically, Ozioma boasts an impressive portfolio. She holds a Bachelors Degree in Library and Information Science from Nnamdi Azikiwe University, Awka, Anambra State. Additionally, she obtained an Honours Degree in Information Science and a Masters in Information Technology from the University of Pretoria, South Africa. These qualifications have equipped her with the expertise to navigate the complexities of information management.Professionally, Ozioma has accumulated over a decade of experience in information management. Her career commenced in 2014 at the Academic Staff Union of Universities (ASUU) national secretariat, where she served for nine years in Research Services. In 2023, she transitioned to JAYEX Development and Training, Africas premier capacity building and training institute, as a Consultant in Research Development. Furthermore, she was appointed Assistant Lecturer by the Department of Information Science at the University of Pretoria in the same year. Oziomas affiliations with esteemed professional bodies underscore her commitment to excellence. She is a member of the Association for Information Science and Technologists (ASSIST), the Librarians Registration Council of Nigeria, and the Nigeria Library Association. As a respected expert in her field, Ozioma has shared her insights at conferences and forums. Notably, she addressed the African Centre of Excellence for Information Ethics conference, discussing "Bridging the Digital Divide" and highlighting the struggles and triumphs of the older generation in interacting with technology. Her participation in international conferences, including the UNESCO conference on Artificial Intelligence and the Mastercard Foundations leadership training, demonstrates her dedication to staying abreast of global trends. Currently, Ozioma serves as a member of the Board of Governors for Freya International Schools of Research and Implementation (FISORI).',
   },
@@ -88,6 +90,7 @@ var teamArray = [
     mem_DIM_role: 'DIMS Project SUPER',
     mem_country: 'Republic of Uganda',
     mem_pro_title: 'Doctor',
+    mem_linkedIn: 'https://www.linkedin.com/in/jim-tamuro-3b077421b/',
     mem_bio:
       'Dr. Jim is a Ugandan Medicale Doctor with over 3 years of Project design, Implementation and Supervision. He currently serves as the Principal Project Coordinator of Africa Youth For and Development (AYPAD). He also serves as the United Nations Volunteers Hiring Manager under Africa Youth For Peace and Development on the Unified Volunteer Platform (UVP).',
   },
@@ -99,6 +102,7 @@ var teamArray = [
     mem_DIM_role: 'DIMS Project Music Advisor',
     mem_country: 'Africa',
     mem_pro_title: 'Music Producer and Music Law Advisor',
+    mem_linkedIn: '',
     mem_bio:
       'Music Producer and Music Law Advisor, with 8 years of experience in composing, recording, mixing, mastering, sound design, music law and marketing. I have worked for studios and agencies. I am always looking forward to helping artists and creatives to achieve their goals.',
   },
@@ -110,6 +114,8 @@ var teamArray = [
     mem_DIM_role: 'DIMS Graphics Manager',
     mem_country: 'Africa',
     mem_pro_title: 'Business Risk and Compliance Clerk',
+    mem_linkedIn:
+      'https://www.linkedin.com/in/ngangamagda2/?originalSubdomain=na',
     mem_bio:
       'I am a Business Risk and Compliance Clerk at a bank, combining a strong foundation in communication with a solid expertise in graphic design. I hold an Honors Degree and a Bachelors Degree in Communication, along with a Diploma in Public Relations, and am currently pursuing a Master’s in Management to broaden my professional capabilities. As a graphic designer, I have developed and executed visual content for a variety of projects, including logos, marketing materials, and digital assets. My role as Graphics Manager for DIMS has been a particularly rewarding experience, enabling me to hone my leadership abilities while showcasing my design skills. In addition to my professional experience, I am an active volunteer with the United Nations Volunteers (UNV), having contributed to both Cohort 6 and 11 by writing non-scientific articles. I have also earned certifications from the Young African Leaders Initiative (YALI), FAO, and UNDP, strengthening my knowledge in communication, leadership, and development. Outside of work, I am passionate about traveling and vlogging, capturing moments through photography, particularly inspired by nature’s beauty.',
   },
@@ -121,6 +127,7 @@ var teamArray = [
     mem_DIM_role: 'DIMS Frontend Developer  ',
     mem_country: 'Orlando, Florida USA',
     mem_pro_title: 'Web Design and Development',
+    mem_linkedIn: 'https://www.linkedin.com/in/jenn-plaza-339613321/',
     mem_bio:
       'I obtained my undergraduate degree in Web Design & Development from Full Sail University on November 24, 2020. I was born and raised in Miami, Florida; I moved to Orlando, Florida in 2006. I am the youngest sibling of two. I enjoy gardening, painting, and my new hobby growing my own organic food. Since 2006, I worked for the American Hotel and Lodging Educational Institute (AHLEI) until they merged with the National Restaurant Association (NRA). Withtin that period, I found my ninch for websites; I decided to go back to school. I graduated in 2020; since then I have been involved in various volunteer projects, aquired some work experience, and slowly been modeling my skills and structuring my habits into best practices. In June of 2024, I joined AYPAD as a volunteer and have had the blessing of being part of a few of their many projects. Its been a great opportunity and I am happy to conitnue particpating as they feel fit.',
   },

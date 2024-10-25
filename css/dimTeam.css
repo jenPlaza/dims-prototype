@@ -108,6 +108,12 @@ section#team > ul li article section {
 }
 section#team > ul li article section div:nth-child(1) {
   margin-bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+section#team > ul li:nth-child(3) article section div:nth-child(1) {
+  display: none;
 }
 section#team > ul li article section div:nth-child(2) {
   color: var(--eggplant);
