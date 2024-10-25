@@ -1,10 +1,8 @@
-body section.DIMS,
-section.DIMS header.in-place {
-  background: var(--white) !important;
-  z-index: 1;
-}
 figure.banner {
   background: transparent;
+}
+main div.description {
+  padding-bottom: 80px;
 }
 section.DIMS header.in-place {
   top: 215px;
@@ -17,7 +15,7 @@ section#mobility > div {
 section#mobility > div h2 {
   text-align: left;
   white-space: nowrap;
-  margin-left: 7%;
+  /* margin-left: 7%; */
 }
 section#mobility div > div h6 em b {
   color: var(--white);
@@ -41,26 +39,23 @@ section#mobility div figure img {
 @media screen and (min-device-width: 576px) {
   section.DIMS header.in-place {
     top: 202px;
-  }
-  figure.banner h1 {
-    top: 111px;
-  }
-  div.description {
-    top: -34px;
+    height: 75px;
   }
 }
 @media screen and (min-device-width: 768px) {
   section.DIMS header.in-place {
     top: 185px;
-  }
-  main {
-    top: 260px;
+    height: 93px;
   }
   main > figure.banner {
     height: 165px;
   }
   main > figure.banner h1 {
-    top: 51px;
+    top: 0;
+  }
+  main div.description {
+    top: -30px;
+    padding-bottom: 0;
   }
 }
 @media screen and (min-device-width: 992px) {
@@ -68,8 +63,7 @@ section#mobility div figure img {
     width: 90%;
   }
   div.description {
-    min-height: 1100px;
-    max-height: 900px;
+    top: 0;
   }
   div.description p {
     padding-bottom: 50px;
@@ -82,10 +76,9 @@ section#mobility div figure img {
     text-align: center;
     top: 0;
     position: relative;
-    padding-top: 1%;
   }
-  main {
-    top: 262px;
+  div.description p {
+    padding-bottom: 0;
   }
   main > div p,
   section#mobility > div {
@@ -93,13 +86,14 @@ section#mobility div figure img {
   }
   main > figure.banner h1 {
     top: -18px;
-  }
-  div.description {
-    min-height: 800px;
-    max-height: 1000px;
+    padding-left: 0;
   }
   section.DIMS header.in-place {
     top: 202px;
+    height: 75px;
+  }
+  section#mobility > div h2 {
+    margin-left: 7%;
   }
 }
 @media screen and (min-device-width: 1600px) {
@@ -113,6 +107,10 @@ section#mobility div figure img {
 @media screen and (min-device-width: 2000px) {
   section.DIMS header.in-place {
     top: 175px;
+  }
+  main {
+    padding-bottom: 8%;
+    margin-bottom: -5%;
   }
   div.description {
     max-height: 700px;

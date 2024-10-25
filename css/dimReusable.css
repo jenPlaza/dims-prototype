@@ -42,7 +42,6 @@ body {
   overflow-x: hidden;
   min-width: 100%;
   min-height: 100vh;
-  /* border: 1px solid transparent; */
   font: normal normal normal 12px / 1.2 'Hind Madurai', sans-serif;
   position: relative;
   background-image: linear-gradient(
@@ -50,6 +49,17 @@ body {
     var(--dirty-purple) 100%
   );
   border: 3px;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+body div#body {
+  position: relative;
+  top: 275px;
+  flex: 1;
+  z-index: -1;
 }
 h1 {
   font: normal normal bold 60px/1.4 'Bubblegum Sans', serif;
@@ -101,11 +111,22 @@ p b {
 p {
   color: var(--white);
 }
+.nav-none {
+  display: none;
+}
+.nav-block {
+  display: block;
+}
 nav a,
 a {
   text-decoration: none;
   cursor: pointer;
 }
+ul li {
+  list-style: none;
+  height: auto;
+}
+/*-----------------------HEADERS ----*/
 body > header {
   top: 0;
   z-index: 1;
@@ -114,27 +135,28 @@ body > header {
   position: fixed;
   height: 75px;
 }
-body > header figure {
-  /* width: 50%; */
-  width: 85%;
-  display: flex;
-  align-items: center;
-  grid-gap: 8px;
+/*-----------------------AYPAD ----*/
+
+body > header#AYPAD {
+  z-index: 5;
+  background: white;
 }
-body > header > div > a#logo figure img {
-  width: 125px;
-  margin-top: -8px;
-}
+
 body > header > div {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-right: 2%;
-  margin-top: 3%;
+  padding: 0;
+  height: 100%;
 }
+
 body > header > div > a#logo {
   width: 75%;
+}
+body > header > div > a#logo figure img {
+  width: 125px;
+  margin-top: -8px;
 }
 body > header > div figure#menu {
   display: block;
@@ -145,12 +167,6 @@ body > header figure#menu img {
   width: 40px;
   height: 40px;
 }
-.nav-none {
-  display: none;
-}
-.nav-block {
-  display: block;
-}
 
 body > header > div nav#nav {
   padding: 1% 0;
@@ -158,29 +174,165 @@ body > header > div nav#nav {
   justify-content: end;
   display: flex;
   margin-left: 1%;
+  background: white;
 }
-/* body > header > div nav#nav ul, */
-footer section:nth-child(2) ul {
-  filter: drop-shadow(2px 1px 0 var(--cinder));
+
+body > header#AYPAD > div nav#nav > ul {
+  height: 225px;
+  padding-bottom: 5%;
+  z-index: 10;
+  position: relative;
+  background: var(--white);
+  top: 10px;
+  left: 0;
+  width: 100%;
+  max-width: 100vw;
+  filter: drop-shadow(2px 4px 2px #dcdcdc);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
-body > header > div nav#nav ul {
+body > header#AYPAD > div nav#nav > ul li {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  width: 104%;
-  max-width: 375px;
+  width: 90%;
+  max-width: 100vw;
   margin: 0 auto;
-}
-ul li {
-  list-style: none;
-  height: auto;
-}
-body > header > div nav#nav ul li {
-  white-space: nowrap;
 }
 body > header > div nav#nav ul li h5 {
   font-size: 20px;
+}
+nav#nav ul li a h5 {
+  color: var(--eggplant);
+}
+/*-----------------------AYPAD Brand dropdown ----*/
+nav#nav ul li.dropdown {
+  float: left;
+  overflow: visible;
+  position: relative;
+}
+nav#nav ul li.dropdown .brandbtn {
+  background-color: inherit;
+  font-family: inherit;
+  position: relative;
+  color: var(--eggplant);
+}
+nav#nav ul li.dropdown:hover .brandbtn {
+  text-decoration: underline;
+}
+
+/*-----------------------AYPAD logo container ----*/
+
+nav#nav section.logo_container {
+  position: absolute;
+  background-color: #fff;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 15;
+  left: 0;
+  top: 290px;
+  height: 420px;
+  width: 100vw;
+  overflow: scroll;
+  padding: 0 4%;
+  align-items: center;
+  border: 3px;
+  gap: 25px;
+}
+
+section.logo_container > header {
+  width: 90%;
+  position: relative;
+  margin: 0px 3% 9% 3%;
+  top: 0;
+  height: 225px;
+}
+
+nav#nav section.logo_container > header > div {
+  position: fixed;
+  right: 42px;
+  top: 305px;
+  font-size: 18px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+section.logo_container > header h3,
+section.logo_container > header h5 {
+  color: var(--eggplant);
+}
+section.logo_container > header h3 {
+  white-space: nowrap;
+}
+
+nav#nav section.logo_container > ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  gap: 5px;
+  position: relative;
+  padding-bottom: 80px;
+  top: 60px;
+}
+
+section.logo_container ul#brands li {
+  list-style: none;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5%;
+  border: 1px solid var(--fog);
+  position: static;
+}
+section.logo_container ul#brands li h5 {
+  color: var(--eggplant);
+  position: absolute;
+  bottom: -25px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  bottom: -10px;
+  white-space: normal;
+}
+
+section.logo_container ul#brands li article figure {
+  width: 300px;
+  height: 275px;
+  position: relative;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.logo_container ul#brands li article figure img {
+  width: 300px;
+  min-height: 200px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 15px;
+  position: relative;
+  padding: 0 3%;
+}
+section.logo_container ul#brands li article figure figcaption {
+  bottom: 0;
+  position: relative;
+  color: var(--eggplant);
+  text-align: center;
+  height: 100px;
 }
 /*-----------------------CHILD LOGO DIMS ----*/
 body section.DIMS {
@@ -188,12 +340,69 @@ body section.DIMS {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--wisteria-purple);
   position: fixed;
   top: 75px;
   height: auto;
   padding: 2%;
-  z-index: 0;
+  background: var(--white);
+  z-index: 1;
+}
+
+section.DIMS header.in-place {
+  top: 213px;
+  left: 0;
+}
+/* DIM HEADER IN- PLACE */
+section.DIMS header.in-place {
+  width: 100%;
+  height: 60px;
+  transition: 0.3s ease-in-out;
+  position: fixed;
+  top: 215px;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  z-index: 1;
+}
+
+section.DIMS header.in-place nav ul li a h5 {
+  background: linear-gradient(
+    to right,
+    var(--wild-blue-yonder) 10%,
+    var(--pale-purple) 20%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* DIM HEADER SCROLLING */
+section.DIMS header.in-place.scrolling {
+  background: linear-gradient(
+    to right,
+    var(--wild-blue-yonder) 15%,
+    var(--pale-purple) 95%
+  ) !important;
+  -webkit-text-fill-color: white;
+  -webkit-background-clip: text;
+  filter: none !important;
+}
+section.DIMS header.in-place.scrolling nav ul li a h5 {
+  -webkit-text-fill-color: white;
+  -webkit-background-clip: text;
+}
+
+section.DIMS header.in-place nav ul {
+  display: flex;
+  gap: 22px;
+  max-width: 370px;
+  width: 95%;
+  margin: 0 auto;
+  overflow-x: scroll;
+}
+section.DIMS header.in-place nav li {
+  white-space: nowrap;
 }
 body section.DIMS figure a img {
   width: 85px;
@@ -220,12 +429,12 @@ body section.DIMS figure a h4 {
   white-space: nowrap;
   filter: drop-shadow(0 0 0 var(--cinder));
 }
+
 /*-----------------------Main ----*/
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 215px;
   position: relative;
   margin-bottom: -2px;
   background: linear-gradient(to bottom, var(--fog) 15%, var(--white) 43%);
@@ -233,74 +442,47 @@ main {
   padding: 0 1% 5% 1%;
   z-index: -1;
 }
-section.DIMS header.in-place {
-  width: 100%;
-  position: fixed;
-  transition: 0.3s ease-in-out;
-  top: 215px;
-}
-
-section.DIMS header.in-place.scrolling {
-  background-color: var(--wisteria-purple);
-  box-shadow: 5px -1px 12px -5px grey;
-}
-section.DIMS header.in-place {
-  position: fixed;
-  z-index: 0;
-  height: 60px;
-  padding: 2%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--wisteria-purple);
-}
-section.DIMS header.in-place nav ul {
-  display: flex;
-  gap: 22px;
-  max-width: 370px;
-  width: 95%;
-  margin: 0 auto;
-  overflow-x: scroll;
-}
-section.DIMS header.in-place nav li {
-  white-space: nowrap;
-}
 figure.banner {
-  background: linear-gradient(
-    to right,
-    var(--wild-blue-yonder) 15%,
-    var(--pale-purple) 95%
-  );
-  background-size: cover;
-  width: 100vw;
-  height: 225px;
+  background: transparent;
   position: relative;
-  top: 0;
-  /*top: 75px; */
+  top: 50px;
+  height: 120px;
+  width: 100vw;
   margin-bottom: 5%;
 }
 figure.banner h1 {
-  top: 125px;
-  padding-left: 5%;
+  background: linear-gradient(
+    to right,
+    var(--wild-blue-yonder) 10%,
+    var(--pale-purple) 20%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  filter: drop-shadow(2px 2px 2px rgba(255, 255, 281, 1));
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 7%;
   position: relative;
-  filter: drop-shadow(2px 3px 1px var(--cinder));
 }
 /*-----------------------description paragraphs ----*/
 div.description {
   width: 90%;
-  height: 100vh;
+  height: auto;
   max-height: 2300px;
   text-align: center;
   top: 0;
   position: relative;
-  overflow-y: scroll;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 div.description p {
   font-size: 20px;
   color: var(--cinder);
   text-align: justify;
   line-height: 1.5;
-  padding-bottom: 225px;
+  padding-bottom: 0;
 }
 
 /*-----------------------Mobility ----*/
@@ -317,12 +499,6 @@ section#commitment {
   z-index: -1;
 }
 /*-----------------------PARALEX ----*/
-.parallex-section {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  z-index: -1;
-}
 .parallex {
   background-repeat: no-repeat;
   background-size: cover;
@@ -337,13 +513,18 @@ section#commitment {
   height: 40vh;
   background-position: 50% 50%;
 }
+.parallex-section {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: -1;
+}
 .parallex-section > div {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
 }
-
 /*-----------------------Testimonials ----*/
 section#testimonials ul {
   display: grid;
@@ -366,25 +547,26 @@ section#follow_DIMS {
   justify-content: center;
   align-items: flex-start;
   background-color: var(--wisteria-purple);
-}
-section#follow_DIMS > div#socialM {
-  align-self: center;
-  margin-top: 2%;
+  position: relative;
+  bottom: 0;
 }
 section#follow_DIMS ul {
   display: flex;
   grid-gap: 28px;
+}
+section#follow_DIMS > div#socialM {
+  align-self: center;
+  margin-top: 2%;
 }
 
 /*-----------------------Footer ----*/
 footer,
 section#follow_DIMS {
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 6% 3%;
+  padding: 6% 3% 6% 2%;
 }
 footer {
   align-items: center;
@@ -409,6 +591,7 @@ footer section:nth-child(2) ul {
   display: flex;
   justify-content: center;
   grid-gap: 15px;
+  filter: drop-shadow(2px 1px 0 var(--cinder));
 }
 footer section:nth-child(2) ul li:nth-child(4) {
   display: none;
@@ -436,9 +619,6 @@ section#follow_DIMS ul li a figure img {
   height: 100%;
 }
 @media screen and (min-device-width: 576px) {
-  body > header {
-    padding: 0;
-  }
   body > header > div > a#logo {
     width: 85%;
   }
@@ -447,22 +627,30 @@ section#follow_DIMS ul li a figure img {
   }
   body > header > div nav#nav {
     display: block;
-    width: 75%;
+    width: 100vw;
     margin: 0 auto;
   }
   body section.DIMS {
     padding: 0%;
+    top: 74px;
   }
   section.DIMS header.in-place {
-    top: 200px;
+    top: 202px;
+    left: unset;
+    max-width: 100%;
+    height: 75px;
   }
-  section.DIMS header.in-place nav ul,
-  section.DIMS header#AYPAD nav ul {
-    max-width: 600px;
+  section.DIMS header.in-place nav ul {
+    max-width: 500px;
     width: 100%;
   }
   main {
-    top: 200px;
+    top: 0;
+    height: auto;
+  }
+  figure.banner {
+    top: 50px;
+    margin-bottom: 5%;
   }
   section#testimonials ul li article {
     height: 115px;
@@ -498,15 +686,34 @@ section#follow_DIMS ul li a figure img {
     align-items: center;
     width: 100%;
   }
-  body > header > div {
-    margin-top: 1%;
-    margin-top: 0;
-    padding-right: 0;
+  body > header#AYPAD > div {
     width: 100%;
-    grid-gap: 15px;
+    gap: 0;
   }
+  body > header#AYPAD > div nav#nav {
+    display: flex !important;
+    padding: 1% 0;
+    width: auto;
+    justify-content: start;
+    width: 400px;
+    max-width: 450px;
+    margin: 0 auto 0 0;
+  }
+  body > header.in-place > div nav#nav > ul,
+  body > header#AYPAD > div nav#nav > ul {
+    background-color: transparent;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    max-width: 650px;
+    top: 0;
+    padding-bottom: 0;
+    gap: 20px;
+  }
+
+  /* ---------------------------------AYPAD Navigation -------------------------- */
   body > header > div > a#logo {
-    width: 115px;
+    width: 150px;
   }
   body > header > div figure#menu {
     display: none !important;
@@ -514,24 +721,28 @@ section#follow_DIMS ul li a figure img {
   body > header > div > a#logo figure img {
     margin-top: 2px;
   }
-  body > header > div nav#nav {
-    display: flex !important;
-    padding: 1% 0;
-    width: auto;
-    justify-content: start;
-    display: flex;
-    width: 535px;
-    max-width: 550px;
-  }
-  body > header > div nav#nav ul {
-    width: 80%;
-    max-width: 480px;
-    margin: 0;
-    gap: 20px;
-  }
+
   body > header > div nav#nav ul li a h5 {
     color: var(--eggplant);
   }
+  nav#nav section.logo_container {
+    top: 75px;
+  }
+  nav#nav section.logo_container header {
+    width: 300px;
+    height: 325px;
+    margin: 2%;
+    top: 0;
+  }
+  nav#nav section.logo_container > header > div {
+    top: 73px;
+    right: 13px;
+  }
+
+  nav#nav section.logo_container ul#brands {
+    top: 38px;
+  }
+  /* ---------------------------------------------- */
   body section.DIMS {
     padding: 2%;
   }
@@ -542,10 +753,8 @@ section#follow_DIMS ul li a figure img {
     align-items: center;
   }
   section.DIMS header.in-place {
-    top: 185px;
-  }
-  main {
-    top: 185px;
+    top: 187px;
+    height: 93px;
   }
   main > figure.banner {
     height: 200px;
@@ -553,10 +762,8 @@ section#follow_DIMS ul li a figure img {
   main > figure.banner h1 {
     top: 105px;
     width: 85%;
-  }
-  div.description p {
-    padding-bottom: 250px;
-    top: 0;
+    padding: 1% 0 0% 6%;
+    left: 0;
   }
   section#mobility,
   section#commitment {
@@ -571,6 +778,9 @@ section#follow_DIMS ul li a figure img {
   footer section {
     width: calc(100% / 3);
   }
+  footer section:first-child {
+    margin-bottom: 0;
+  }
   footer section:nth-child(2) {
     margin-left: -25px;
     margin-bottom: 0;
@@ -584,13 +794,14 @@ section#follow_DIMS ul li a figure img {
     justify-content: end;
     grid-gap: 15px;
   }
-  footer section:first-child {
-    margin-bottom: 0;
-  }
 }
 @media screen and (min-device-width: 992px) {
-  main {
-    top: 195px;
+  body > header#AYPAD > div nav#nav section.logo_container > ul {
+    justify-content: center;
+    left: 400px;
+  }
+  section.DIMS header.in-place {
+    top: 194px;
   }
   main > figure.banner {
     margin-bottom: 4%;
@@ -626,12 +837,28 @@ section#follow_DIMS ul li a figure img {
   body > header {
     padding: 0 1%;
   }
+  section.logo_container > header h3 {
+    width: 400px;
+  }
+  body > header#AYPAD > div nav#nav section.logo_container > ul {
+    left: 0;
+  }
+  body > header#AYPAD > div nav#nav section.logo_container header {
+    width: 400px;
+  }
+  nav#nav section.logo_container > header > div {
+    top: 55px;
+    right: 13px;
+  }
+  section.DIMS header.in-place {
+    top: 202px;
+  }
   main {
     background-color: var(--white);
   }
   main > figure.banner {
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     margin-bottom: 3%;
   }
@@ -640,6 +867,10 @@ section#follow_DIMS ul li a figure img {
     margin-left: -3%;
     width: 75%;
     top: -15px;
+    padding: 1% 0 0% 12.5%;
+  }
+  main div.description {
+    top: 0;
   }
   section#mobility {
     padding: 3% 0 5% 0;
@@ -651,8 +882,8 @@ section#follow_DIMS ul li a figure img {
   }
 }
 @media screen and (min-width: 1400px) {
-  main {
-    top: 205px;
+  section.DIMS header.in-place {
+    top: 210px;
   }
   body > header > div nav#nav ul {
     width: 45%;
@@ -665,6 +896,10 @@ section#follow_DIMS ul li a figure img {
   }
 }
 @media screen and (min-width: 1600px) {
+  body > header#AYPAD div nav#nav section.logo_container header {
+    width: 500px;
+    left: 0;
+  }
   section.DIMS header.in-place {
     top: 175px;
   }
@@ -677,39 +912,34 @@ section#follow_DIMS ul li a figure img {
   section#mobility {
     padding: 3% 0 4% 0;
   }
-  section#testimonials ul li article {
-    height: 140px;
-  }
 }
 @media screen and (min-width: 1800px) {
   body section.DIMS {
     padding: 0 2% 1% 2%;
   }
-  main {
-    top: 175px;
-    background-position: 0px -75px;
-  }
   section.DIMS header.in-place {
     padding: 1%;
+    top: 170px !important;
+  }
+  body div#body {
+    top: 240px;
+  }
+  main {
+    background-position: 0px -75px;
   }
   footer {
     padding: 1% 1% 1% 0.5%;
   }
 }
 @media screen and (min-width: 2000px) {
+  body > header#AYPAD div nav#nav section.logo_container header {
+    margin: 0 1%;
+    left: 0;
+  }
   body section.DIMS {
     padding: 0 0 1% 0;
   }
-  main {
-    top: 175px;
-  }
-  section.DIMS header.in-place {
-    padding: 1%;
-  }
   section#testimonials ul li article {
     height: 128px;
-  }
-  footer {
-    padding: 1% 1% 1% 0.5%;
   }
 }

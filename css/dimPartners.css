@@ -1,0 +1,172 @@
+body {
+  background-image: var(--white);
+}
+body div#body {
+  top: 0;
+}
+main.partners {
+  width: 100%;
+  min-height: 96%;
+  padding: 1% 0;
+  position: relative;
+  top: 25px;
+  background: transparent;
+}
+body div.back {
+  display: flex;
+  width: 100%;
+  padding: 5% 2%;
+  position: relative;
+  top: 75px;
+  left: 0;
+}
+body div.back a {
+  cursor: pointer;
+}
+body div.back a h5 {
+  font-family: 'Quicksand', serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: var(--eggplant);
+}
+main.partners header {
+  width: 90%;
+  position: relative;
+  margin: 0px 3% 0% 3%;
+  top: 75px;
+  height: 225px;
+}
+main.partners header h3,
+main.partners header h5 {
+  color: var(--eggplant);
+}
+main.partners ul {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  gap: 5px;
+  position: relative;
+  top: 115px;
+}
+main.partners ul li {
+  list-style: none;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5%;
+  border: 1px solid var(--fog);
+  position: static;
+}
+
+main.partners ul li article > a figure {
+  width: 300px;
+  height: 275px;
+  position: relative;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main.partners ul li article > a figure img {
+  width: 300px;
+  min-height: 200px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 15px;
+  position: relative;
+  padding: 0 3%;
+}
+main.partners ul li article > a figure figcaption {
+  bottom: 0;
+  position: relative;
+  color: var(--eggplant);
+  text-align: center;
+  height: 100px;
+}
+main.partners ul li article > a figure figcaption h5 {
+  color: var(--eggplant);
+  position: absolute;
+  bottom: -25px;
+  position: relative;
+}
+
+@media screen and (min-width: 576px) {
+  main.partners {
+    top: 75px;
+  }
+  main.partners header {
+    top: 0;
+    height: 160px;
+    margin: 0 3% 3% 3%;
+  }
+  main.partners ul {
+    top: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body div.back {
+    padding: 3% 2%;
+  }
+  body div.back {
+    padding: 2%;
+  }
+  main.partners header {
+    height: 125px;
+  }
+  main.partners {
+    top: 100px;
+    min-height: 93%;
+  }
+  main.partners ul {
+    padding-bottom: 125px;
+    top: 60px;
+  }
+}
+@media screen and (min-width: 992px) {
+  main.partners ul {
+    padding-bottom: 125px;
+    top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body div.back {
+    padding: 2% 1% 1% 1%;
+  }
+  main.partners {
+    min-height: 90%;
+  }
+  main.partners header {
+    height: 115px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  main.partners {
+    min-height: 85%;
+  }
+  main.partners header {
+    margin: 0 3% 1% 3%;
+  }
+  main.partners ul {
+    top: 0;
+  }
+}
+@media screen and (min-width: 2000px) {
+  main.partners header {
+    margin: 0 3% 0% 3%;
+  }
+}
+@media screen and (min-width: 2400px) {
+  main.partners header {
+    margin: 0 3% 1% 3%;
+  }
+  main.partners ul {
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+}

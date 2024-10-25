@@ -32,6 +32,30 @@ var navigationArray = [
   },
 ];
 
+//DIMS NAVIGATION MENU
+var navArray = [
+  {
+    link_id: 'home',
+    link_name: 'Home',
+    link_href: './index.html',
+  },
+  {
+    link_id: 'about',
+    link_name: 'About Us',
+    link_href: './about-us.html',
+  },
+  {
+    link_id: 'service',
+    link_name: 'Our Service',
+    link_href: './our-services.html',
+  },
+  {
+    link_id: 'team',
+    link_name: 'Our Team',
+    link_href: './our-team.html',
+  },
+];
+
 //TEAM
 var teamArray = [
   {
@@ -174,33 +198,71 @@ var testimonialArray = [
   },
 ];
 
-//partners
+//brand Information
 var brandArray = [
   {
-    link_href: 'https://aypad.org',
-    img_src: './images/logos/logo_aypad-min.png',
-    img_alt: 'AYPAD logo',
-    img_caption: 'Africa Youth for Peace and Development',
+    company_name: 'Africa Youth for Peace and Development',
+    company_add:
+      'Shelter for Africa<br />House National stadium Syke street <br />Freetown - Sierra Leone</address>',
+    company_phone: '1-232-75-769929',
+    logo_info: [
+      {
+        link_href: 'https://aypad.org',
+        img_src: [
+          './images/logos/logo_aypad-min.png',
+          './images/logos/wordLogo_bk.png',
+          './images/logos/wordLogo.png',
+        ],
+        img_alt: 'AYPAD logo',
+        img_caption: 'Africa Youth for Peace and Development',
+      },
+    ],
   },
   {
-    link_href: 'https://www.fisori.org/',
-    img_src: './images/partners/freya_logo-min.png',
-    img_alt: 'Freya logo',
-    img_caption: 'Freya',
+    company_name: 'Freya International Schools of Research and Implementation',
+    company_add: [
+      'Sierra Leone Office<br />P.O Box 123 FreeTown Sierra-Leone(SLE) <br />Freetown - Sierra Leone</address>',
+      'Uganda Office<br />P.O Box 159288 Kampala, <br />GPO Uganda(UGA)</address>',
+    ],
+    company_phone: '',
+    logo_info: [
+      {
+        link_href: 'https://www.fisori.org/',
+        img_src: './images/partners/freya_logo-min.png',
+        img_alt: 'Freya logo',
+        img_caption: 'Freya',
+      },
+    ],
   },
   {
-    link_href: 'https://www.truetalknews.org/',
-    img_src: './images/partners/trueTalk_logo-min.png',
-    img_alt: 'True talk logo',
-    img_caption: 'True Talk',
+    company_name: 'True Talk News',
+    company_add: '',
+    company_phone: '',
+    logo_info: [
+      {
+        link_href: 'https://www.truetalknews.org/',
+        img_src: './images/partners/trueTalk_logo-min.png',
+        img_alt: 'True talk logo',
+        img_caption: 'True Talk',
+      },
+    ],
   },
   {
-    link_href: 'https://dimstudio.neocities.org',
-    img_src: './images/logos/logo_DIMS_purple-min.png',
-    img_alt: 'DIM Studio logo',
-    img_caption: 'DIM Studio',
+    company_name: 'DIM Studio',
+    company_add:
+      'Shelter for Africa<br />House National stadium Syke street <br />Freetown - Sierra Leone</address>',
+    company_phone: '1-232-75-769929',
+    logo_info: [
+      {
+        link_href: 'https://dimstudio.neocities.org',
+        img_src: './images/logos/logo_DIMS_purple-min.png',
+        img_alt: 'DIM Studio logo',
+        img_caption: 'DIM Studio',
+      },
+    ],
   },
 ];
+
 //partners
 var logoArray = [
   {

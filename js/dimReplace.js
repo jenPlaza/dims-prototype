@@ -1,18 +1,11 @@
-//HEADER
-const navbar = document.querySelector('.in-place');
-//console.log(window.scrollY);
-(window.onscroll = function () {
-  if (window.scrollY > 30) {
-    navbar.classList.add('scrolling');
-  } else {
-    navbar.classList.remove('scrolling');
-  }
-})();
-
 var aypadHeader = '<div>';
 aypadHeader += '<a href="https://aypad.org/index" id="logo">';
 aypadHeader +=
-  '<figure><img src="./images/logos/wordLogo_bk.png" alt="AYPAD parent company logo"width="100%"height="100%"/></figure></a>';
+  '<figure><img src="' +
+  brandArray[0].logo_info[0].img_src[1] +
+  '" alt="' +
+  brandArray[0].logo_info[0].img_alt +
+  '"width="100%"height="100%"/></figure></a>';
 aypadHeader +=
   '<figure id="menu" onclick="appear();"><img src="./images/icons/menu.png" alt="hamburger icon" /></figure>';
 aypadHeader += '<nav id="nav" style="display: none"><ul>';
@@ -32,6 +25,37 @@ aypadHeader +=
 aypadHeader += '<ul id="brands"></ul>';
 aypadHeader += '</section></nav></div>';
 document.getElementById('AYPAD').innerHTML = aypadHeader;
+
+var dimsHeader = '<figure><a href="' + navArray[0].link_name + '" id="logo">';
+dimsHeader +=
+  '<img src="' +
+  brandArray[3].logo_info[0].img_src +
+  '" alt="' +
+  brandArray[3].logo_info[0].img_alt +
+  '" width="100%" height="100%" >';
+dimsHeader += '<h4>' + brandArray[3].company_name + '</h4></a></figure>';
+dimsHeader += '<header class="in-place"><nav><ul>';
+for (var d = 0; d < navArray.length; d++) {
+  dimsHeader +=
+    '<li><a href="' +
+    navArray[d].link_href +
+    '"><h5>' +
+    navArray[d].link_name +
+    '</h5></a></li>';
+}
+dimsHeader += '</ul></nav></header>';
+document.querySelector('.DIMS').innerHTML = dimsHeader;
+
+//HEADER
+const navbar = document.querySelector('.in-place');
+//console.log(window.scrollY);
+(window.onscroll = function () {
+  if (window.scrollY > 30) {
+    navbar.classList.add('scrolling');
+  } else {
+    navbar.classList.remove('scrolling');
+  }
+})();
 
 //NAVIGATION MENU
 //Navigation Menu onclick functionality for mobile sizes
@@ -77,9 +101,9 @@ function displayTeam() {
       teamArray[t].mem_name +
       '</h5></figcaption></figure>';
     teamMembers +=
-      '<section><div><h6><b>' +
+      '<section><div><span><h6><b>' +
       teamArray[t].mem_DIM_role +
-      '</b><br />' +
+      '</b><img src="./images/icons/linkedin_pink_circle.png" alt="linkedIn icon"  /></span><br />' +
       teamArray[t].mem_country +
       '</h6></div>';
     teamMembers += '<div>' + teamArray[t].mem_pro_title + '</div>';
@@ -141,39 +165,45 @@ function displayPartners() {
   }
   document.getElementById('logos').innerHTML = newLogo;
 }
+
 function displayBrands() {
   var newBrand = '';
-  for (var t = 0; t < brandArray.length; t++) {
+  newBrand +=
+    '<li><article><a href="' +
+    brandArray[0].logo_info[0].link_href +
+    '"><figure>';
+  newBrand +=
+    '<img src="' +
+    brandArray[0].logo_info[0].img_src[0] +
+    '" alt="' +
+    brandArray[0].logo_info[0].img_alt +
+    '" />';
+  newBrand +=
+    '<figcaption><h5>' +
+    brandArray[0].logo_info[0].img_caption +
+    '</h5></figcaption>';
+  newBrand += '</figure></a></article></li>';
+  for (var t = 1; t < brandArray.length; t++) {
     newBrand +=
-      '<li><article><a href="' + brandArray[t].link_href + '"><figure>';
+      '<li><article><a href="' +
+      brandArray[t].logo_info[0].link_href +
+      '"><figure>';
     newBrand +=
       '<img src="' +
-      brandArray[t].img_src +
+      brandArray[t].logo_info[0].img_src +
       '" alt="' +
-      brandArray[t].img_alt +
+      brandArray[t].logo_info[0].img_alt +
       '" />';
     newBrand +=
-      '<figcaption><h5>' + brandArray[t].img_caption + '</h5></figcaption>';
+      '<figcaption><h5>' +
+      brandArray[t].logo_info[0].img_caption +
+      '</h5></figcaption>';
     newBrand += '</figure></a></article></li>';
   }
   document.getElementById('brands').innerHTML = newBrand;
 }
 
-//FOOTER
-var mapper = '<ul>';
-for (var k = 1; k < navigationArray.length; k++) {
-  mapper += '<li>';
-  mapper +=
-    '<a href="' +
-    navigationArray[k].link_href +
-    '"><h6><em>' +
-    navigationArray[k].link_name +
-    '</em></h6></a>';
-  mapper += ' </li>';
-}
-mapper += '</ul>';
-document.getElementById('map').innerHTML = mapper;
-
+//Follow DIMS
 var media = '<ul>';
 for (var k = 0; k < socialArray.length - 1; k++) {
   media += '<li>';
@@ -190,6 +220,34 @@ for (var k = 0; k < socialArray.length - 1; k++) {
 media += '</ul>';
 document.getElementById('socialM_DIMS').innerHTML = media;
 
+//FOOTER LOCATION
+var locate = '<div id="logo">';
+locate +=
+  '<img src="' +
+  brandArray[0].logo_info[0].img_src[0] +
+  '" alt="logo" width="50px" height="50px" /></div>';
+locate += '<div><p><b>' + brandArray[0].company_name + '</b></p>';
+locate += '<address>' + brandArray[0].company_add + '</address>';
+locate += '<div><b>' + brandArray[0].company_phone + '</b></div></div>';
+
+document.getElementById('location').innerHTML = locate;
+
+//FOOTER MAP
+var mapper = '<ul>';
+for (var k = 1; k < navigationArray.length; k++) {
+  mapper += '<li>';
+  mapper +=
+    '<a href="' +
+    navigationArray[k].link_href +
+    '"><h6><em>' +
+    navigationArray[k].link_name +
+    '</em></h6></a>';
+  mapper += ' </li>';
+}
+mapper += '</ul>';
+document.getElementById('map').innerHTML = mapper;
+
+//FOOTER AYPAD
 var aypad = '<ul>';
 for (var k = 0; k < socialArray.length - 2; k++) {
   aypad += '<li>';

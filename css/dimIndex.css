@@ -36,7 +36,7 @@ main {
   height: 650px;
   position: relative;
   margin-bottom: -2px;
-  background-position: -50px 36px;
+  background-position: -50px 0;
 }
 main > header.DIMS {
   position: fixed;
@@ -46,7 +46,7 @@ main div {
   height: auto;
   margin: auto;
   text-align: center;
-  top: -10%;
+  top: 0;
   position: relative;
   z-index: -1;
 }
@@ -74,7 +74,7 @@ main div section h5 a:hover {
 section#feature_service {
   width: 100%;
   position: relative;
-  top: 150px;
+  top: -25px;
   z-index: -1;
 }
 section#feature_service ul {
@@ -176,19 +176,29 @@ section#mobility div figure img {
 }
 
 @media screen and (min-device-width: 576px) {
+  section.DIMS header.in-place {
+    height: 75px;
+  }
+  main {
+    height: 535px;
+    background-position: -50px 0;
+  }
+  section#feature_service {
+    top: 0;
+  }
   section#feature_service ul li article figure {
     width: 30%;
   }
 }
 @media screen and (min-device-width: 768px) {
   section.DIMS header.in-place {
-    top: 185px;
+    height: 93px;
   }
   body > header#AYPAD > div nav#nav > ul {
     top: 0;
   }
   main {
-    background-position: 0 36px;
+    background-position: 0 0;
     height: 550px;
   }
   main div {
@@ -216,9 +226,12 @@ section#mobility div figure img {
   }
 }
 @media screen and (min-device-width: 992px) {
+  section.DIMS header.in-place {
+    height: 85px;
+  }
   main {
-    height: 715px;
-    background-position: 0 18px;
+    height: 700px;
+    background-position: 0 -25px;
   }
   main div {
     width: 70%;
@@ -228,6 +241,9 @@ section#mobility div figure img {
   }
   section.DIMS header.in-place {
     top: 195px;
+  }
+  section#feature_service {
+    top: 0;
   }
   section#audio > div {
     width: 70%;
@@ -245,7 +261,7 @@ section#mobility div figure img {
 @media screen and (min-device-width: 1200px) {
   main {
     height: 800px;
-    background-position: 0 -15px;
+    background-position: 0 -40px;
   }
   main div {
     width: 57%;
@@ -331,6 +347,7 @@ section#mobility div figure img {
 @media screen and (min-width: 2000px) {
   section.DIMS header.in-place {
     top: 175px;
+    height: 100px;
   }
   main {
     height: 1000px;
@@ -339,7 +356,6 @@ section#mobility div figure img {
 @media screen and (min-width: 2400px) {
   main {
     height: 1100px;
-    background-position: 0 -102px;
   }
   section.DIMS header.in-place {
     top: 180px;
