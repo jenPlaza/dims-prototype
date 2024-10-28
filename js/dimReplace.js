@@ -249,7 +249,7 @@ for (var k = 1; k < navigationArray.length; k++) {
 mapper += '</ul>';
 document.getElementById('map').innerHTML = mapper;
 
-//FOOTER AYPAD
+//FOOTER SOCIAL
 var aypad = '<ul>';
 for (var k = 0; k < socialArray.length - 2; k++) {
   aypad += '<li>';

@@ -62,11 +62,11 @@ body div#body {
   z-index: -1;
 }
 h1 {
-  font: normal normal bold 60px/1.4 'Bubblegum Sans', serif;
+  font: normal normal bold 60px/1.4 'Bubblegum Sans', display;
   color: var(--white);
 }
 h2 {
-  font: normal normal bold 45px/1.4 'Bubblegum Sans', serif;
+  font: normal normal bold 45px/1.4 'Bubblegum Sans', display;
   color: var(--white);
 }
 
@@ -76,7 +76,7 @@ h3 {
 }
 
 h4 {
-  font: normal normal normal 32px/1.4 'Quicksand', serif;
+  font: normal normal normal 32px/1.4 'Quicksand', sans-serif;
   color: var(--white);
 }
 h4 em {
@@ -85,23 +85,23 @@ h4 em {
 }
 
 h5 {
-  font: normal normal normal 24px/1.4 'Hind Madurai', serif;
+  font: normal normal normal 24px/1.4 'Hind Madurai', sans-serif;
   color: var(--white);
 }
 h5 em {
-  font: normal normal bold 26px/1.4 'Hind Madurai', serif;
+  font: normal normal bold 26px/1.4 'Hind Madurai', sans-serif;
   color: var(--tulip-pink);
 }
 h6 b {
-  font: normal normal bold 18px/1.2 'Hind Madurai', serif;
+  font: normal normal bold 18px/1.2 'Hind Madurai', sans-serif;
   color: var(--tulip-pink);
 }
 h6 {
-  font: normal normal normal 14px/1.2 'Hind Madurai', serif;
+  font: normal normal normal 14px/1.2 'Hind Madurai', sans-serif;
   color: var(--tulip-pink);
 }
 h6 em {
-  font: normal normal normal 16px/1.2 'Hind Madurai', serif;
+  font: normal normal normal 16px/1.2 'Hind Madurai', sans-serif;
   color: var(--white);
 }
 p b {
