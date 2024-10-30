@@ -9,35 +9,36 @@
     href=/site.webmanifest> <link rel=canonical
     href=https://dimstudio.neocities.org> <link rel=shortlink
     href=https://dimstudio.neocities.org/ > <link rel=alternate
-    type=application/rss+xml title="DIM Studio » Feed"
+    type=application/rss+xml title="DIM Studio Audio Beats » Feed"
     href=https://dimstudio.neocities.org/feed/ > <link rel=alternate hreflang=en
     href=https://dimstudio.neocities.org>
-    <meta name="author" content="DIM Studio" />
-    <meta name="title" content="DIM Studio" />
+    <meta name="author" content="DIM Studio Audio Beats" />
+    <meta name="title" content="DIM Studio Audio Beats" />
     <meta name="robots" content="index, follow" />
     <meta property=og:url content=https://https://dimstudio.neocities.org>
     <meta
       name="description"
-      content="EMPOWERING. PROMOTING. FOSTERING. MUSIC. Explore our mission in empowering youth through music, promoting peace and development worldwide, and fostering global change and unity. DIM STUDIO - Putting Music Dreams In Motion."
+      content="EMPOWERING. PROMOTING. FOSTERING. MUSIC. Explore our mission in empowering youth through music, promoting peace and development worldwide, and fostering global change and unity. DIM Studio Audio Beats - Putting Music Dreams In Motion."
     />
     <meta
       property="og:description"
-      content="EMPOWERING. PROMOTING. FOSTERING. MUSIC. Explore our mission in empowering youth through music, promoting peace and development worldwide, and fostering global change and unity. DIM STUDIO - Putting Music Dreams In Motion"
+      content="EMPOWERING. PROMOTING. FOSTERING. MUSIC. Explore our mission in empowering youth through music, promoting peace and development worldwide, and fostering global change and unity. DIM Studio Audio Beats - Putting Music Dreams In Motion"
     />
     <meta
       name="keywords"
-      content="music, empowering youth, peace advocate, youth serving, fostering change, DIM, DIM Studio, dreams in motion, putting dreams in motion, promoting music, music transformation, young musicians, harmony, inspiring young adults, recording music, social change"
+      content="music, empowering youth, peace advocate, youth serving, fostering change, DIM, DIM Studio Audio Beats Audio Beats, dreams in motion, putting dreams in motion, promoting music, music transformation, young musicians, harmony, inspiring young adults, recording music, social change"
     />
     <meta
       property="og:title"
-      content="DIM Studio - Empowering Youth for Transformative Change through Music"
+      content="DIM Studio Audio Beats - Empowering Youth for Transformative Change through Music"
     />
     <title>
-      DIM Studio - Empowering Youth for Transformative Change through Music.
+      DIM Studio Audio Beats - Empowering Youth for Transformative Change
+      through Music.
     </title>
-    <link rel=stylesheet href=./css/dimReusable.css /> <link rel=stylesheet
-    href=./css/dimIndex.css />
-
+    <link rel="stylesheet" href="./css/dimReusable.css" />
+    <link rel="stylesheet" href="./css/aypadComponents.css" />
+    <link rel="stylesheet" href="./css/dimIndex.css" />
     <script src="./service-worker.js"></script>
     <script type="application/ld+json">
             {
@@ -181,15 +182,26 @@
               ]
             }
     </script>
+    <style>
+      body {
+        background-image: linear-gradient(
+          var(--wisteria-purple) 15%,
+          var(--dirty-purple) 100%
+        );
+      }
+    </style>
   </head>
-  <body onload="displayServices(); displayTestimonials(); displayBrands();">
-    <header id="AYPAD" class="in-place"></header>
+  <body
+    id="home"
+    onload="displayServices(); displayTestimonials(); displayBrands();"
+  >
+    <header id="AYPAD"></header>
     <!-- DIMS logo -->
     <section class="DIMS"></section>
     <div id="body">
       <main id="DIM">
         <div>
-          <h1>Put Your Dreams In Motion</h1>
+          <!-- <h1>Put Your Dreams In Motion</h1> -->
           <section>
             <h5>
               DIM studio is committed to supporting talented and passionate
@@ -261,6 +273,8 @@
       </footer>
     </div>
     <script type="text/javascript" src="./js/dimEdit.js"></script>
+    <script type="text/javascript" src="./js/aypad/aypadEdit.js"></script>
+    <script type="text/javascript" src="./js/aypad/aypadFunctions.js"></script>
     <script type="text/javascript" src="./js/dimReplace.js"></script>
   </body>
 </html>

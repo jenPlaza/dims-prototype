@@ -27,8 +27,9 @@
       Partners | DIM Studio - Empowering Youth for Transformative Change through
       Music.
     </title>
-    <link rel=stylesheet href=./css/dimReusable.css /> <link rel=stylesheet
-    href=./css/dimPartners.css />
+
+    <link rel="stylesheet" href="./css/aypadComponents.css" />
+    <link rel="stylesheet" href="./css/dimReusable.css" />
     <script src="./service-worker.js"></script>
     <script type="application/ld+json">
             {
@@ -172,10 +173,20 @@
               ]
             }
     </script>
+    <style>
+      body {
+        background-image: var(--white);
+      }
+      body div#body {
+        top: 75px;
+        background: var(--white);
+        z-index: 0;
+      }
+    </style>
   </head>
   <body onload="displayPartners(); displayBrands()">
     <header id="AYPAD" class="in-place"></header>
-    <section class="DIMS" style="display: none"></section>
+    <section class="DIMS"></section>
     <div id="body">
       <div class="back">
         <img
@@ -189,19 +200,18 @@
       </div>
       <main class="partners">
         <header>
-          <h3>Lorem Ipsium</h3>
-          <h5>
-            Lorem ipsum is placeholder text commonly used in the graphic, print,
-            and publishing industries for previewing layouts and visual mockups.
-          </h5>
+          <h3>Partner with us!</h3>
+          <h4>
+            Join us, an organization that is non-governmental, non-political,
+            non-religious, and non-partisan. Our mission is to promote peace and
+            development through the youth of Africa. We need your help to push
+            Africa forward and serve the community.
+          </h4>
         </header>
         <ul id="logos"></ul>
       </main>
       <!-- Follow DIMS -->
-      <section id="follow_DIMS">
-        <h5>Follow DIMS</h5>
-        <div id="socialM_DIMS"></div>
-      </section>
+      <section id="follow_DIMS" style="display: none"></section>
       <!--   footer -->
       <footer>
         <section id="location"></section>
@@ -209,7 +219,7 @@
         <section id="socialM"></section>
       </footer>
     </div>
-    <script type="text/javascript" src="./js/dimEdit.js"></script>
-    <script type="text/javascript" src="./js/dimReplace.js"></script>
+    <script type="text/javascript" src="./js/aypad/aypadEdit.js"></script>
+    <script type="text/javascript" src="./js/aypad/aypadFunctions.js"></script>
   </body>
 </html>

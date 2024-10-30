@@ -10,17 +10,17 @@ body > header.in-place > div nav#nav > ul {
   filter: none !important;
 }
 /* AYPAD link container  */
-body > header#AYPAD > div nav#nav {
+body#home > header#AYPAD > div nav#nav {
   background: var(--wisteria_purple);
 }
-body > header#AYPAD > div nav#nav > ul {
+body#home > header#AYPAD > div nav#nav > ul {
   top: -5px;
 }
 /*-----------------------SECTION DIMS ----*/
 body section.DIMS,
 section.DIMS header.in-place {
   background-color: var(--wisteria-purple) !important;
-  z-index: 1;
+  z-index: 0;
 }
 section.DIMS header.in-place nav ul li a h5 {
   -webkit-text-fill-color: white !important;
@@ -74,7 +74,7 @@ main div section h5 a:hover {
 section#feature_service {
   width: 100%;
   position: relative;
-  top: -25px;
+  /* top: -25px; */
   z-index: -1;
 }
 section#feature_service ul {
@@ -145,6 +145,7 @@ section#audio {
   justify-content: center;
   z-index: -2;
   position: relative;
+  /* top: -25px; */
 }
 section#audio > div {
   width: 90%;
@@ -223,6 +224,9 @@ section#mobility div figure img {
   }
 }
 @media screen and (min-device-width: 992px) {
+  body > header#AYPAD > div nav#nav > ul {
+    top: 2px;
+  }
   section.DIMS header.in-place {
     height: 85px;
   }
@@ -333,8 +337,7 @@ section#mobility div figure img {
     width: 50%;
   }
 }
-@media screen and (min-width: 1800px) {
-}
+
 @media screen and (min-width: 2000px) {
   section.DIMS header.in-place {
     top: 175px;

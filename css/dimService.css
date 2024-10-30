@@ -1,7 +1,7 @@
 body section.DIMS,
 section.DIMS header.in-place {
   background: var(--white) !important;
-  z-index: 1;
+  z-index: 0;
 }
 figure.banner {
   background: transparent;
@@ -52,7 +52,6 @@ section > div.description {
 }
 section > div.description h4 {
   justify-self: flex-start;
-  /* margin-left: 7%; */
   margin-left: 4%;
   margin-bottom: 1.5%;
 }
@@ -65,7 +64,8 @@ body section#testimonials {
 }
 @media screen and (min-device-width: 576px) {
   section.DIMS header.in-place {
-    top: 200px;
+    top: 214px;
+    height: 65px;
   }
   main figure:last-child {
     height: 20vh;
@@ -76,6 +76,7 @@ body section#testimonials {
   }
   nav#nav section.logo_container > header > div {
     right: 22px;
+    z-index: 1;
   }
   main {
     padding: 0;
@@ -99,9 +100,6 @@ body section#testimonials {
 @media screen and (min-device-width: 768px) {
   body section:has(> div.description) {
     padding: 5% 0 0 0;
-  }
-  section.DIMS header.in-place {
-    top: 185px;
   }
   main > figure.banner {
     height: 270px;
@@ -168,6 +166,9 @@ body section#testimonials {
     position: relative;
     background-position: 50% 47%;
   }
+  section.DIMS header.in-place {
+    top: 214px;
+  }
   body section:has(> div.description) {
     padding: 4% 0;
   }
@@ -176,12 +177,20 @@ body section#testimonials {
   }
 }
 @media screen and (min-device-width: 1600px) {
+  section.DIMS header.in-place {
+    top: 213px;
+  }
   main > figure.banner h1 {
     width: 85vw;
     padding-left: 7%;
   }
   body section:has(> div.description) {
     padding: 4% 0 2% 0;
+  }
+}
+@media screen and (min-device-width: 1800px) {
+  section.DIMS header.in-place {
+    top: 195px !important;
   }
 }
 @media screen and (min-device-width: 2000px) {

@@ -1,43 +1,9 @@
-//AYPAD NAVIGATION MENU
-var navigationArray = [
-  {
-    link_id: 'brands',
-    link_name: 'Brands',
-    link_href: '',
-  },
-  {
-    link_id: 'about',
-    link_name: 'About',
-    link_href: 'https://aypad.org/donate#about',
-  },
-  {
-    link_id: 'story',
-    link_name: 'Story',
-    link_href: 'https://aypad.org/story',
-  },
-  {
-    link_id: 'news',
-    link_name: 'News',
-    link_href: 'https://aypad.org/news',
-  },
-  {
-    link_id: 'partners',
-    link_name: 'Partners',
-    link_href: './partners.html',
-  },
-  {
-    link_id: 'donate',
-    link_name: 'Donate',
-    link_href: 'https://aypad.org/donate',
-  },
-];
-
 //DIMS NAVIGATION MENU
 var navArray = [
   {
     link_id: 'home',
     link_name: 'Home',
-    link_href: './index.html',
+    link_href: '/',
   },
   {
     link_id: 'about',
@@ -66,6 +32,7 @@ var teamArray = [
     mem_DIM_role: 'DIMS Executive DIR',
     mem_country: ' Freetown, Sierra Leone Africa',
     mem_pro_title: 'Executive Director of Africa Youth for Peace & Development',
+    mem_portfolio: '',
     mem_linkedIn: '',
     mem_bio:
       'Executive Director for Africa Youth for Peace and Development(AYPAD).  Worked with the organization for 10+ years, and implemented several peace and sustainable development projects, with the ultimate aim of positively transforming the lives of young people in difficult circumstances.',
@@ -78,6 +45,7 @@ var teamArray = [
     mem_DIM_role: 'DIMS Project SUPER',
     mem_country: 'Africa',
     mem_pro_title: 'Permanent Secretary AYPAD',
+    mem_portfolio: '',
     mem_linkedIn: 'https://www.linkedin.com/in/umera-ozioma-9778a3259/',
     mem_bio:
       'Ozioma Umera is a distinguished information science professional, renowned for her exceptional academic achievements, extensive experience, and commitment to excellence. Academically, Ozioma boasts an impressive portfolio. She holds a Bachelors Degree in Library and Information Science from Nnamdi Azikiwe University, Awka, Anambra State. Additionally, she obtained an Honours Degree in Information Science and a Masters in Information Technology from the University of Pretoria, South Africa. These qualifications have equipped her with the expertise to navigate the complexities of information management.Professionally, Ozioma has accumulated over a decade of experience in information management. Her career commenced in 2014 at the Academic Staff Union of Universities (ASUU) national secretariat, where she served for nine years in Research Services. In 2023, she transitioned to JAYEX Development and Training, Africas premier capacity building and training institute, as a Consultant in Research Development. Furthermore, she was appointed Assistant Lecturer by the Department of Information Science at the University of Pretoria in the same year. Oziomas affiliations with esteemed professional bodies underscore her commitment to excellence. She is a member of the Association for Information Science and Technologists (ASSIST), the Librarians Registration Council of Nigeria, and the Nigeria Library Association. As a respected expert in her field, Ozioma has shared her insights at conferences and forums. Notably, she addressed the African Centre of Excellence for Information Ethics conference, discussing "Bridging the Digital Divide" and highlighting the struggles and triumphs of the older generation in interacting with technology. Her participation in international conferences, including the UNESCO conference on Artificial Intelligence and the Mastercard Foundations leadership training, demonstrates her dedication to staying abreast of global trends. Currently, Ozioma serves as a member of the Board of Governors for Freya International Schools of Research and Implementation (FISORI).',
@@ -90,6 +58,7 @@ var teamArray = [
     mem_DIM_role: 'DIMS Project SUPER',
     mem_country: 'Republic of Uganda',
     mem_pro_title: 'Doctor of Medicine (MD)',
+    mem_portfolio: '',
     mem_linkedIn: 'https://www.linkedin.com/in/jim-tamuro-3b077421b/',
     mem_bio:
       'Dr. Jim is a Ugandan Medicale Doctor with over 3 years of Project design, Implementation and Supervision. He currently serves as the Principal Project Coordinator of Africa Youth For and Development (AYPAD). He also serves as the United Nations Volunteers Hiring Manager under Africa Youth For Peace and Development on the Unified Volunteer Platform (UVP).<span style="color:rgba(255, 255, 255, 0);"> ******* DO NOT REMOVE ADDING WHITE SPACE ********* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>',
@@ -102,6 +71,7 @@ var teamArray = [
     mem_DIM_role: 'DIMS Project Music Advisor',
     mem_country: 'Africa',
     mem_pro_title: 'Music Producer and Music Law Advisor',
+    mem_portfolio: '',
     mem_linkedIn: '',
     mem_bio:
       'Music Producer and Music Law Advisor, with 8 years of experience in composing, recording, mixing, mastering, sound design, music law and marketing. I have worked for studios and agencies. I am always looking forward to helping artists and creatives to achieve their goals.<span style="color:rgba(255, 255, 255, 0);"> ******* DO NOT REMOVE ADDING WHITE SPACE ********* Lorem ipsum odor amet, consectetuer adipiscing elit. Dapibus nullam purus aliquet rhoncus tristique aliquet molestie ullamcorper. Suspendisse efficitur proin ad odio sagittis nisl iaculis blandit. Ornare neque euismod natoque convallis tortor. Ridiculus sem per justo rutrum laoreet luctus sem consectetur porttitor. Ante enim curabitur non interdum torquent. Elementum leo odio erat ullamcorper malesuada sem est. Massa vel senectus nulla nec molestie nisi est proin. Ante viverra tellus eget orci ut quisque. Sollicitudin ullamcorper venenatis gravida elementum integer nam praesent eu.</span>',
@@ -114,6 +84,7 @@ var teamArray = [
     mem_DIM_role: 'DIMS Frontend Developer  ',
     mem_country: 'Orlando, Florida USA',
     mem_pro_title: 'Web Design and Development',
+    mem_portfolio: 'https://jennplaza.wordpress.com/',
     mem_linkedIn: 'https://www.linkedin.com/in/jenn-plaza-339613321/',
     mem_bio:
       'I obtained my undergraduate degree in Web Design & Development from Full Sail University on November 24, 2020. I was born and raised in Miami, Florida; I moved to Orlando, Florida in 2006. I am the youngest sibling of two. I enjoy gardening, painting, and my new hobby growing my own organic food. Since 2006, I worked for the American Hotel and Lodging Educational Institute (AHLEI) until they merged with the National Restaurant Association (NRA). Withtin that period, I found my enthusiasm for websites; I decided to go back to school. I graduated in 2020; since then I have been involved in various volunteer projects, aquired some work experience, and slowly been modeling my skills and structuring my habits into best practices. In June of 2024, I joined AYPAD as a volunteer and have had the blessing of being part of a few of their many projects. Its been a great opportunity and I am happy to conitnue particpating as they feel fit.',
@@ -126,6 +97,7 @@ var teamArray = [
     mem_DIM_role: 'DIMS Graphics Manager',
     mem_country: 'Africa',
     mem_pro_title: 'Business Risk and Compliance Clerk',
+    mem_portfolio: '',
     mem_linkedIn:
       'https://www.linkedin.com/in/ngangamagda2/?originalSubdomain=na',
     mem_bio:
@@ -202,214 +174,5 @@ var testimonialArray = [
     article_name: 'Joyce Okon',
     article_testimonial:
       'Dim Studio is so easy to use and the trainers are amazing. I have always dreamed of being a singer and with Dim Studio my dreams have been put into motion. I highly recommend Dim Studio to anybody looking for a reliable and versatile music software. Thank you for creating such an amazing product!',
-  },
-];
-
-//brand Information
-var brandArray = [
-  {
-    company_name: 'Africa Youth for Peace and Development',
-    company_add:
-      'Shelter for Africa<br />House National stadium Syke street <br />Freetown - Sierra Leone</address>',
-    company_phone: '1-232-75-769929',
-    logo_info: [
-      {
-        link_href: 'https://aypad.org',
-        img_src: [
-          './images/logos/logo_aypad-min.png',
-          './images/logos/wordLogo_bk.png',
-          './images/logos/wordLogo.png',
-        ],
-        img_alt: 'AYPAD logo',
-        img_caption: 'Africa Youth for Peace and Development',
-      },
-    ],
-  },
-  {
-    company_name: 'Freya International Schools of Research and Implementation',
-    company_add: [
-      'Sierra Leone Office<br />P.O Box 123 FreeTown Sierra-Leone(SLE) <br />Freetown - Sierra Leone</address>',
-      'Uganda Office<br />P.O Box 159288 Kampala, <br />GPO Uganda(UGA)</address>',
-    ],
-    company_phone: '',
-    logo_info: [
-      {
-        link_href: 'https://www.fisori.org/',
-        img_src: './images/partners/freya_logo-min.png',
-        img_alt: 'Freya logo',
-        img_caption: 'Freya',
-      },
-    ],
-  },
-  {
-    company_name: 'True Talk News',
-    company_add: '',
-    company_phone: '',
-    logo_info: [
-      {
-        link_href: 'https://www.truetalknews.org/',
-        img_src: './images/partners/trueTalk_logo-min.png',
-        img_alt: 'True talk logo',
-        img_caption: 'True Talk',
-      },
-    ],
-  },
-  {
-    company_name: 'DIM Studio',
-    company_add:
-      'Shelter for Africa<br />House National stadium Syke street <br />Freetown - Sierra Leone</address>',
-    company_phone: '1-232-75-769929',
-    logo_info: [
-      {
-        link_href: 'https://dimstudio.neocities.org',
-        img_src: './images/logos/logo_DIMS_purple-min.png',
-        img_alt: 'DIM Studio logo',
-        img_caption: 'DIM Studio',
-      },
-    ],
-  },
-];
-
-//partners
-var logoArray = [
-  {
-    link_href: 'https://www.facebook.com/CommunityYouthNetworkProgramcynpInc/',
-    img_src: './images/partners/communityYouthNetworkProgram.png',
-    img_alt: 'Community Youth Network Program logo',
-    img_caption: 'Community Youth Network Program',
-  },
-  {
-    link_href: 'https://gyan.tigweb.org/',
-    img_src: './images/partners/gyan.png',
-    img_alt: 'Global Youth Action Network logo',
-    img_caption: 'Global Youth Action Network Program',
-  },
-  {
-    link_href: 'https://bitcoin.org/en/',
-    img_src: './images/partners/bitcoin.png',
-    img_alt: 'Bitcoin logo',
-    img_caption: 'Bitcoin',
-  },
-  {
-    link_href: 'https://tools4change.org/',
-    img_src: './images/partners/tools4Change-Logo.png',
-    img_alt: 'Tools 4 Change logo',
-    img_caption: 'Tools 4 Change',
-  },
-  {
-    link_href: 'https://www.warchild.net/',
-    img_src: './images/partners/war-child-ic.png',
-    img_alt: 'War Child logo',
-    img_caption: 'War Child',
-  },
-  {
-    link_href: 'http://yppdatwork.org/',
-    img_src:
-      './images/partners/youthPartnershipForPeaceAndDevelopment_logo.png',
-    img_alt: 'Youth Partnership for Peace and Development logo',
-    img_caption: 'Youth Partnership for Peace and Development',
-  },
-  {
-    link_href: 'https://www.un.org/en/',
-    img_src: './images/partners/uniteNations_logo.png',
-    img_alt: 'United Nations logo',
-    img_caption: 'United Nations',
-  },
-  {
-    link_href: 'https://www.unv.org/',
-    img_src: './images/partners/UNV.jpeg',
-    img_alt: 'United Nations Volunteers logo',
-    img_caption: 'United Nations Volunteers',
-  },
-  {
-    link_href: 'https://www.lapo-nigeria.org/',
-    img_src: './images/partners/LAPO_Logo_2022.png',
-    img_alt: 'Lapo Nigeria logo',
-    img_caption: 'Lapo Nigeria',
-  },
-  {
-    link_href: 'https://www.ecobank.com/personal-banking',
-    img_src: './images/partners/ecobank.png',
-    img_alt: 'Eco Bank logo',
-    img_caption: 'Eco Bank ',
-  },
-  {
-    link_href: 'https://www.betatmercury.com/',
-    img_src: './images/partners/logo_main.png',
-    img_alt: 'Mercury International  logo',
-    img_caption: 'Mercury International ',
-  },
-  {
-    link_href: 'https://www.rokelbank.sl/',
-    img_src: './images/partners/Rokel Bank SL.png',
-    img_alt: 'Rokel Bank logo',
-    img_caption: 'Rokel Bank',
-  },
-];
-
-//FOOTER Social Media
-var socialArray = [
-  {
-    media_id: 'email',
-    media_link: [
-      'mailto:publicity.dimstudio@gmail.com',
-      'mailto:aypadorg@gmail.com',
-    ],
-    media_src: './images/icons/socialMedia/message_white.png',
-    media_alt: 'email icon',
-  },
-  {
-    media_id: 'phone',
-    media_link: ['tel:1-232-75-769929', 'tel:1-232-75-769929'],
-    media_src: './images/icons/socialMedia/phone_white.png',
-    media_alt: 'phone icon',
-  },
-  {
-    media_id: 'linkedIn',
-    media_link: [
-      'https://www.linkedin.com/in/dim-studio-ba3531332/',
-      'https://www.linkedin.com/company/africa-youth-for-peace-and-development/',
-    ],
-    media_src: './images/icons/socialMedia/linkedin_white.png',
-    media_alt: 'linkedIn icon',
-  },
-  {
-    media_id: 'facebook',
-    media_link: [
-      'https://web.facebook.com/profile.php?id=61566708072048',
-      'https://www.facebook.com/people/Africa-Youth-for-Peace-and-DevelopmentAYPAD/100065081730525/',
-    ],
-    media_src: './images/icons/socialMedia/facebook_white.png',
-    media_alt: 'facebook icon',
-  },
-  {
-    media_id: 'twitter',
-    media_link: [
-      'https://x.com/DimStudio47673?t=4lHHrWqU_8LLuUgI3olhTQ&s=09',
-      'https://x.com/aypadorg1',
-    ],
-    media_src: './images/icons/socialMedia/twitter_white.png',
-    media_alt: 'twitter icon',
-  },
-  {
-    media_id: 'instgram',
-    media_link: [
-      'https://www.instagram.com/dims_tudio/',
-      'https://www.instagram.com/aypadorganization/',
-    ],
-    media_src: './images/icons/socialMedia/instagram_white.png',
-    media_alt: 'instgram icon',
-  },
-  {
-    media_id: 'tiktok',
-    media_link: 'https://www.tiktok.com/@dimstudio0',
-    media_src: './images/icons/socialMedia/tiktok_white.png',
-    media_alt: 'tiktok icon',
-  },
-  {
-    media_id: 'youtube',
-    media_link: 'https://www.youtube.com/@aypadorganization877',
-    media_src: './images/icons/socialMedia/youtube_white.png',
-    media_alt: 'youtube icon',
   },
 ];

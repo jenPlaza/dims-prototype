@@ -3,6 +3,7 @@
 }
 :root {
   --white: #ffffff;
+  --black: #000000;
   --light-border: #ebebeb;
   --fog: #dcd6f0;
   --wisteria-purple: #c3a8c3;
@@ -44,10 +45,7 @@ body {
   min-height: 100vh;
   font: normal normal normal 12px / 1.2 'Hind Madurai', sans-serif;
   position: relative;
-  background-image: linear-gradient(
-    var(--wisteria-purple) 15%,
-    var(--dirty-purple) 100%
-  );
+  background: var(--white);
   border: 3px;
   margin: 0;
 }
@@ -126,213 +124,22 @@ ul li {
   list-style: none;
   height: auto;
 }
-/*-----------------------HEADERS ----*/
-body > header {
-  top: 0;
-  z-index: 1;
-  padding: 0.5% 0;
-  width: 100%;
-  position: fixed;
-  height: 75px;
-}
-/*-----------------------AYPAD ----*/
-
-body > header#AYPAD {
-  z-index: 5;
-  background: white;
-}
-
-body > header > div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0;
-  height: 100%;
-}
-
-body > header > div > a#logo {
-  width: 75%;
-}
-body > header > div > a#logo figure img {
-  width: 125px;
-  margin-top: -8px;
-}
-body > header > div figure#menu {
-  display: block;
-  width: 42px;
-  margin-right: 17px;
-}
-body > header figure#menu img {
-  width: 40px;
-  height: 40px;
-}
-
-body > header > div nav#nav {
-  padding: 1% 0;
-  width: 100%;
-  justify-content: end;
-  display: flex;
-  margin-left: 1%;
-  background: white;
-}
-
-body > header#AYPAD > div nav#nav > ul {
-  height: 225px;
-  padding-bottom: 5%;
-  z-index: 10;
-  position: relative;
-  background: var(--white);
-  top: 10px;
-  left: 0;
-  width: 100%;
-  max-width: 100vw;
-  filter: drop-shadow(2px 4px 2px #dcdcdc);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-}
-body > header#AYPAD > div nav#nav > ul li {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  max-width: 100vw;
-  margin: 0 auto;
-}
-body > header > div nav#nav ul li h5 {
-  font-size: 20px;
-}
 nav#nav ul li a h5 {
   color: var(--eggplant);
 }
-/*-----------------------AYPAD Brand dropdown ----*/
-nav#nav ul li.dropdown {
-  float: left;
-  overflow: visible;
-  position: relative;
+nav a h5:active {
+  color: #c757a0;
 }
-nav#nav ul li.dropdown .brandbtn {
-  background-color: inherit;
-  font-family: inherit;
-  position: relative;
-  color: var(--eggplant);
+nav a h5:hover {
+  color: #9c56dc;
 }
-nav#nav ul li.dropdown:hover .brandbtn {
-  text-decoration: underline;
-}
-
-/*-----------------------AYPAD logo container ----*/
-
-nav#nav section.logo_container {
-  position: absolute;
-  background-color: #fff;
-  min-width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 15;
-  left: 0;
-  top: 290px;
-  height: 420px;
-  width: 100vw;
-  overflow: scroll;
-  padding: 0 4%;
-  align-items: center;
-  border: 3px;
-  gap: 25px;
-}
-
-section.logo_container > header {
-  width: 90%;
-  position: relative;
-  margin: 0px 3% 9% 3%;
-  top: 0;
-  height: 225px;
-}
-
-nav#nav section.logo_container > header > div {
-  position: fixed;
-  right: 42px;
-  top: 305px;
-  font-size: 18px;
-  text-decoration: underline;
-  cursor: pointer;
-}
-section.logo_container > header h3,
-section.logo_container > header h5 {
-  color: var(--eggplant);
-}
-section.logo_container > header h3 {
-  white-space: nowrap;
-}
-
-nav#nav section.logo_container > ul {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
-  height: 300px;
-  gap: 5px;
-  position: relative;
-  padding-bottom: 80px;
-  top: 60px;
-}
-
-section.logo_container ul#brands li {
-  list-style: none;
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  padding: 5%;
-  border: 1px solid var(--fog);
-  position: static;
-}
-section.logo_container ul#brands li h5 {
-  color: var(--eggplant);
-  position: absolute;
-  bottom: -25px;
-  position: relative;
-  width: 100%;
-  text-align: center;
-  bottom: -10px;
-  white-space: normal;
-}
-
-section.logo_container ul#brands li article figure {
-  width: 300px;
-  height: 275px;
-  position: relative;
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-section.logo_container ul#brands li article figure img {
-  width: 300px;
-  min-height: 200px;
-  object-fit: contain;
-  object-position: center;
-  border-radius: 15px;
-  position: relative;
-  padding: 0 3%;
-}
-section.logo_container ul#brands li article figure figcaption {
-  bottom: 0;
-  position: relative;
-  color: var(--eggplant);
-  text-align: center;
-  height: 100px;
+/*-----------------------AYPAD Brand Header ----*/
+body
+  > header#AYPAD
+  > div
+  nav#nav
+  > ul:not(body#home > header#AYPAD > div nav#nav > ul) {
+  background: var(--white) !important;
 }
 /*-----------------------CHILD LOGO DIMS ----*/
 body section.DIMS {
@@ -341,24 +148,21 @@ body section.DIMS {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  top: 75px;
-  height: auto;
+  top: 80px;
+  height: 135px;
   padding: 2%;
   background: var(--white);
-  z-index: 1;
+  z-index: 0;
 }
 
-section.DIMS header.in-place {
-  top: 213px;
-  left: 0;
-}
 /* DIM HEADER IN- PLACE */
 section.DIMS header.in-place {
   width: 100%;
-  height: 60px;
+  height: 75px;
   transition: 0.3s ease-in-out;
   position: fixed;
   top: 215px;
+  left: 0;
   padding: 2%;
   display: flex;
   align-items: center;
@@ -378,7 +182,10 @@ section.DIMS header.in-place nav ul li a h5 {
 }
 
 /* DIM HEADER SCROLLING */
-section.DIMS header.in-place.scrolling {
+section.DIMS
+  header.in-place.scrolling:not(
+    body#home section.DIMS header.in-place.scrolling
+  ) {
   background: linear-gradient(
     to right,
     var(--wild-blue-yonder) 15%,
@@ -464,6 +271,22 @@ figure.banner h1 {
   left: 0;
   padding-left: 7%;
   position: relative;
+}
+body div.back {
+  top: 0;
+  height: 50px;
+}
+/*-----------------------partners ----*/
+main.partners {
+  top: 0;
+  min-height: 90%;
+}
+main.partners header {
+  top: 35px;
+}
+main.partners ul {
+  top: 125px;
+  padding-bottom: 165px;
 }
 /*-----------------------description paragraphs ----*/
 div.description {
@@ -560,7 +383,6 @@ section#follow_DIMS > div#socialM {
 }
 
 /*-----------------------Footer ----*/
-footer,
 section#follow_DIMS {
   width: 100%;
   display: flex;
@@ -568,71 +390,24 @@ section#follow_DIMS {
   justify-content: space-between;
   padding: 6% 3% 6% 2%;
 }
-footer {
-  align-items: center;
-  background-color: var(--eggplant);
-  height: 200px;
-}
-footer section {
-  width: 100%;
-}
-footer section:first-child {
-  display: flex;
-  align-items: start;
-  grid-gap: 8px;
-  color: white;
-  margin-bottom: 2%;
-}
-footer section:nth-child(2) {
-  text-align: center;
-  margin-bottom: 2%;
-}
-footer section:nth-child(2) ul {
-  display: flex;
-  justify-content: center;
-  grid-gap: 15px;
-  filter: drop-shadow(2px 1px 0 var(--cinder));
-}
-footer section:nth-child(2) ul li:nth-child(4) {
-  display: none;
-}
-footer section:last-child {
-  display: flex;
-  justify-content: center;
-}
-footer section:last-child ul {
-  display: flex;
-  grid-gap: 27px;
-}
-footer section#socialM ul li,
+
 section#follow_DIMS ul li {
   list-style: none;
 }
-footer section#socialM ul li a figure,
+
 section#follow_DIMS ul li a figure {
   width: 26px;
   height: 26px;
 }
-footer section#socialM ul li a figure img,
+
 section#follow_DIMS ul li a figure img {
   width: 100%;
   height: 100%;
 }
 @media screen and (min-device-width: 576px) {
-  body > header > div > a#logo {
-    width: 85%;
-  }
-  body > header > div figure#menu {
-    margin: 0 40px 0 0px;
-  }
-  body > header > div nav#nav {
-    display: block;
-    width: 100vw;
-    margin: 0 auto;
-  }
   body section.DIMS {
     padding: 0%;
-    top: 74px;
+    top: 79px;
   }
   section.DIMS header.in-place {
     top: 202px;
@@ -641,12 +416,19 @@ section#follow_DIMS ul li a figure img {
     height: 75px;
   }
   section.DIMS header.in-place nav ul {
-    max-width: 500px;
+    max-width: 475px;
     width: 100%;
   }
   main {
     top: 0;
     height: auto;
+  }
+  main.partners header {
+    top: 20px;
+  }
+  main.partners ul {
+    top: 75px;
+    padding-bottom: 115px;
   }
   figure.banner {
     top: 50px;
@@ -665,90 +447,17 @@ section#follow_DIMS ul li a figure img {
   section#follow_DIMS > div#socialM {
     margin-top: 0;
   }
-  footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
-    padding: 3%;
-  }
-  footer section {
-    width: 100%;
-  }
-  footer section:last-child {
-    position: relative;
-    justify-content: center;
-  }
 }
 @media screen and (min-device-width: 768px) {
-  body > header {
-    padding: 0 1%;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  body > header#AYPAD > div {
-    width: 100%;
-    gap: 0;
-  }
   body > header#AYPAD > div nav#nav {
-    display: flex !important;
-    padding: 1% 0;
-    width: auto;
-    justify-content: start;
-    width: 400px;
-    max-width: 450px;
-    margin: 0 auto 0 0;
+    height: 50px;
   }
-  body > header.in-place > div nav#nav > ul,
-  body > header#AYPAD > div nav#nav > ul {
-    background-color: transparent;
-    flex-direction: row;
-    height: auto;
-    width: 100%;
-    max-width: 650px;
-    top: 0;
-    padding-bottom: 0;
-    gap: 20px;
-  }
-
-  /* ---------------------------------AYPAD Navigation -------------------------- */
-  body > header > div > a#logo {
-    width: 150px;
-  }
-  body > header > div figure#menu {
-    display: none !important;
-  }
-  body > header > div > a#logo figure img {
-    margin-top: 2px;
-  }
-
-  body > header > div nav#nav ul li a h5 {
-    color: var(--eggplant);
-  }
-  nav#nav section.logo_container {
-    top: 75px;
-  }
-  nav#nav section.logo_container header {
-    width: 300px;
-    height: 325px;
-    margin: 2%;
-    top: 0;
-  }
-  nav#nav section.logo_container > header > div {
-    top: 73px;
-    right: 13px;
-  }
-
-  nav#nav section.logo_container ul#brands {
-    top: 38px;
-  }
-  /* ---------------------------------------------- */
   body section.DIMS {
     padding: 2%;
   }
   body section.DIMS figure a {
     flex-wrap: nowrap;
-    width: 258px;
+    width: 218px;
     justify-content: space-between;
     align-items: center;
   }
@@ -765,6 +474,10 @@ section#follow_DIMS ul li a figure img {
     padding: 1% 0 0% 6%;
     left: 0;
   }
+  main.partners ul {
+    top: 50px;
+    padding-bottom: 15px;
+  }
   section#mobility,
   section#commitment {
     padding: 3% 0 7% 0;
@@ -775,89 +488,33 @@ section#follow_DIMS ul li a figure img {
   section#follow_DIMS {
     padding: 2%;
   }
-  footer {
-    padding: 2% 2.5% 2% 1%;
-  }
-  footer section {
-    width: calc(100% / 3);
-  }
-  footer section:first-child {
-    margin-bottom: 0;
-  }
-  footer section:nth-child(2) {
-    margin-left: -25px;
-    margin-bottom: 0;
-  }
-  footer section:last-child {
-    position: relative;
-    right: -0.5%;
-    justify-content: flex-end;
-  }
-  footer section:last-child ul {
-    justify-content: end;
-    grid-gap: 15px;
-  }
 }
 @media screen and (min-device-width: 992px) {
-  nav#nav section.logo_container {
-    gap: 0;
-  }
-  body > header#AYPAD > div nav#nav section.logo_container header {
-    width: auto;
-    min-width: 350px;
-    max-width: 25%;
-  }
-  body > header#AYPAD > div nav#nav section.logo_container > ul {
-    justify-content: center;
-    left: 400px;
-  }
   section.DIMS header.in-place {
     top: 194px;
   }
   main > figure.banner {
     margin-bottom: 4%;
   }
+  main.partners header {
+    height: 160px;
+  }
+  main.partners ul {
+    padding-bottom: 90px;
+  }
   section#mobility {
     padding: 3% 0 6% 0;
   }
   section#testimonials ul li article {
     padding: 5% 3% 0 3%;
-    height: 165px;
+    height: 159px;
     justify-content: flex-start;
   }
   section#follow_DIMS {
     padding: 1.5% 2% 1% 1%;
   }
-  footer {
-    padding: 2% 2% 2% 0.5%;
-  }
-  footer section {
-    padding: 0;
-  }
-  footer section:nth-child(2) {
-    margin-left: 0;
-  }
-  footer section:last-child {
-    right: 0;
-  }
-  footer section:last-child ul {
-    grid-gap: 30px;
-  }
 }
 @media screen and (min-device-width: 1200px) {
-  body > header {
-    padding: 0 1%;
-  }
-  section.logo_container > header h3 {
-    width: 400px;
-  }
-  body > header#AYPAD > div nav#nav section.logo_container > ul {
-    left: 275px;
-  }
-  nav#nav section.logo_container > header > div {
-    top: 55px;
-    right: 13px;
-  }
   section.DIMS header.in-place {
     top: 202px;
     height: 60px;
@@ -881,6 +538,9 @@ section#follow_DIMS ul li a figure img {
   main div.description {
     top: 0;
   }
+  main.partners ul {
+    padding-bottom: 80px;
+  }
   section#mobility {
     padding: 3% 0 5% 0;
   }
@@ -889,25 +549,22 @@ section#follow_DIMS ul li a figure img {
     justify-content: flex-start;
     height: 160px;
   }
+  section#follow_DIMS {
+    padding: 1.5% 1% 1% 1%;
+  }
 }
 @media screen and (min-width: 1400px) {
   section.DIMS header.in-place {
     top: 210px;
   }
-  body > header > div nav#nav ul {
-    width: 45%;
-  }
   section#testimonials ul li article {
     height: 145px;
   }
-  footer {
-    padding: 1% 2% 1% 0.5%;
+  section#follow_DIMS {
+    padding: 1.5% 2% 1% 1%;
   }
 }
 @media screen and (min-width: 1600px) {
-  body > header#AYPAD div nav#nav section.logo_container header {
-    left: 0;
-  }
   section.DIMS header.in-place {
     top: 215px;
   }
@@ -916,6 +573,12 @@ section#follow_DIMS ul li a figure img {
   }
   main > figure.banner {
     margin-bottom: 1.5%;
+  }
+  main.partners header {
+    height: 110px;
+  }
+  main.partners ul {
+    top: 65px;
   }
   section#mobility {
     padding: 3% 0 4% 0;
@@ -935,39 +598,35 @@ section#follow_DIMS ul li a figure img {
   main {
     background-position: 0px -75px;
   }
-  section#follow_DIMS {
-    padding: 1%;
+  main.partners ul {
+    top: 65px;
   }
-
-  footer {
-    padding: 1% 1% 1% 0.5%;
+  section#follow_DIMS {
+    padding: 1% 2% 1% 1%;
   }
 }
 @media screen and (min-width: 2000px) {
-  nav#nav section.logo_container {
-    padding: 0 3%;
-  }
-  body > header#AYPAD > div nav#nav section.logo_container header {
-    max-width: 20%;
-  }
-  body > header#AYPAD > div nav#nav section.logo_container > ul {
-    left: 50px;
-  }
-  section.logo_container ul#brands li {
-    padding: 1.5%;
-  }
   body section.DIMS {
     padding: 0 0 1% 0;
   }
   section#testimonials ul li article {
     height: 128px;
   }
-}
-@media screen and (min-width: 2200px) {
-  body > header#AYPAD > div nav#nav section.logo_container header {
-    max-width: 25%;
+  main.partners ul {
+    padding-bottom: 25px;
   }
-  body > header#AYPAD > div nav#nav section.logo_container > ul {
-    left: 0;
+  section#follow_DIMS {
+    padding: 1% 1% 1% 1%;
+  }
+}
+@media screen and (min-width: 2400px) {
+  body section.DIMS {
+    top: 79px;
+  }
+  main.partners header {
+    top: 25px;
+  }
+  main.partners ul {
+    top: 65px;
   }
 }
