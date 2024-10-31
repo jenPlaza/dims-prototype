@@ -45,9 +45,11 @@ body {
   min-height: 100vh;
   font: normal normal normal 12px / 1.2 'Hind Madurai', sans-serif;
   position: relative;
-  background: var(--white);
   border: 3px;
   margin: 0;
+}
+body:not(body#home) {
+  background: var(--white);
 }
 body {
   display: flex;

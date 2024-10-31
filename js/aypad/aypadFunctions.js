@@ -42,12 +42,17 @@ function appear() {
 function displayBrandList() {
   var brandList = document.querySelector('.logo_container');
   var whiteHeader = document.getElementById('AYPAD');
+  var getNav = document.getElementById('nav');
+  var whiteHeaderList = getNav.querySelector('ul');
+
   if (brandList.style.display == 'none') {
     brandList.style.display = 'flex';
-    whiteHeader.style.background = 'var(--white)';
+    whiteHeader.style.background = 'var(--white)!important';
+    whiteHeaderList.style.background = 'var(--white)!important';
   } else if (brandList.style.display == 'flex') {
     brandList.style.display = 'none';
     whiteHeader.style.background = 'revert-layer';
+    whiteHeaderList.style.background = 'revert-layer';
   }
 }
 
@@ -55,9 +60,12 @@ function displayBrandList() {
 function closeBranList() {
   var brandList = document.querySelector('.logo_container');
   var whiteHeader = document.getElementById('AYPAD');
+  var getNav = document.getElementById('nav');
+  var whiteHeaderList = getNav.querySelector('ul');
   if (brandList.style.display == 'flex') {
     brandList.style.display = 'none';
     whiteHeader.style.background = 'revert-layer';
+    whiteHeaderList.style.background = 'revert-layer';
   }
 }
 

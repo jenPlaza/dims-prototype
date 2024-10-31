@@ -27,7 +27,8 @@ body
 }
 body#home > header#AYPAD > div nav#nav > ul,
 body#home > header#AYPAD {
-  background-color: #c3a8c3;
+  background-color: var(--wisteria-purple) !important;
+  filter: none !important;
 }
 body > header.in-place {
   background-color: rgba(250, 233, 216, 0.25);
@@ -137,10 +138,10 @@ body > header > div nav#nav {
   width: 100%;
   justify-content: end;
   display: flex;
-  background: white;
+  background: inherit;
   position: relative;
-  top: -25px;
-  height: 255px;
+  top: -27px;
+  /* height: 237px; */
 }
 
 body > header#AYPAD > div nav#nav > ul {
@@ -667,7 +668,7 @@ footer section#socialM ul li a figure img {
     display: block;
   }
   nav li:first-child a h5:not(section.logo_container ul#brands li h5) {
-    display: none;
+    display: block;
   }
   /*-----------------------Partners ----*/
   main.partners {

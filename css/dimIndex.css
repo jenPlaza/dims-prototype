@@ -4,18 +4,6 @@ body {
     var(--dirty-purple) 100%
   ) !important;
 }
-body > header,
-body > header.in-place > div nav#nav > ul {
-  background-color: var(--wisteria-purple) !important;
-  filter: none !important;
-}
-/* AYPAD link container  */
-body#home > header#AYPAD > div nav#nav {
-  background: var(--wisteria_purple);
-}
-body#home > header#AYPAD > div nav#nav > ul {
-  top: -5px;
-}
 /*-----------------------SECTION DIMS ----*/
 body section.DIMS,
 section.DIMS header.in-place {
