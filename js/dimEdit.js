@@ -3,7 +3,7 @@ var navArray = [
   {
     link_id: 'home',
     link_name: 'Home',
-    link_href: '/',
+    link_href: './index.html',
   },
   {
     link_id: 'about',

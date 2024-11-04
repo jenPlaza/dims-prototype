@@ -28,12 +28,12 @@ var navigationArray = [
   {
     link_id: 'contact',
     link_name: 'Contact',
-    link_href: './index#contact.html',
+    link_href: 'https://aypad.org/index#contact.html',
   },
   {
     link_id: 'donate',
     link_name: 'Donate',
-    link_href: './donate.html',
+    link_href: 'https://aypad.org/donate.html',
   },
 ];
 
